@@ -1,38 +1,132 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  gap: 5px;
+}
+
+.top {
+  padding: 1rem;
+  flex: 0;
+  border-bottom: solid 2px darkgray;
+}
+
+.bottom {
+  padding: 1rem;
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  gap: 10px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 1rem;
+}
+
+.header > * {
+  margin: 0;
+}
+
+.toolbar {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toolbar > button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.toolbar > button:not([disabled]) {
+  cursor: pointer;
+}
+
+.site-id {
+  font-size: 1.25rem;
+  width: 25rem;
+  padding: 5px 15px;
+}
+
+.version-list {
+  display: inline-block;
+}
+
+.version-list li {
+  padding: 3px 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.version-list li.active {
+  background-color: lightcyan;
+  outline: solid 1px darkcyan;
+}
+
+.version-list a {
+  display: block;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: solid 1px #bbb;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border: solid 1px #ccc;
+  padding: 5px;
+}
+
+/* half assed grid... */
+
+.row {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+[class*="card-"] {
+  background-color: lightsteelblue;
+  min-height: 40px;
   color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.version {
+  background-color: lightcoral;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-3 {
+  grid-column: auto / span 3;
+}
+
+.card-4 {
+  grid-column: auto / span 4;
+}
+
+.card-6 {
+  grid-column: auto / span 6;
+}
+
+.card-8 {
+  grid-column: auto / span 8;
+}
+
+.card-9 {
+  grid-column: auto / span 9;
+}
+
+.card-12 {
+  grid-column: auto / span 12;
 }
