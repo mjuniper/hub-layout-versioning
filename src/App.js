@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import classNames from "classnames";
 import './App.css';
-import { createSiteLayoutVersion, deleteSiteLayoutVersion, getSiteByVersion, getSiteLayoutVersions, publishSiteLayoutVersion, updateSiteLayoutVersion } from './layout-version';
+import { applyVersion, createVersion, deleteVersion, getVersionResource, getVersions, publishSiteVersion, updateVersion } from './layout-version';
 import { UserSession } from '@esri/arcgis-rest-auth';
-import { cloneObject } from '@esri/hub-common';
+import { cloneObject, getSiteById, mergeObjects } from '@esri/hub-common';
 
 const CLIENT_ID = 'Lmafo8GvkSnPwbek';
 const PORTAL_URL = 'https://qaext.arcgis.com/sharing/rest';
@@ -43,14 +43,23 @@ function App() {
   const [site, setSite] = useState({});
   const [versions, setVersions] = useState([]);
   const [activeVersionName, setActiveVersion] = useState();
+  const [activeVersionResource, setActiveVersionResource] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const site = await getSiteByVersion(siteId, activeVersionName, hubContext);
-        const versions = await getSiteLayoutVersions(siteId, hubContext);
-        console.log('got site');
+        // const site = await getSiteByVersion(siteId, activeVersionName, hubContext);
+        let site = await getSiteById(siteId, hubContext);
+        const versions = await getVersions(siteId, hubContext);
+        let versionResource;
+        if (activeVersionName) {
+          versionResource = await getVersionResource(siteId, activeVersionName, hubContext);
+          console.log('got version: ', versionResource);
+          site = applyVersion(site, versionResource);
+        }
+        console.log('got site: ', site);
         setSite(site);
+        setActiveVersionResource(versionResource);
         setVersions(versions);
       } catch (error) {
         console.log("error getting site", error);
@@ -86,10 +95,11 @@ function App() {
             }
           ]
         }, ...layout.sections ];
+    site.data.values.layout = layout;
 
-    const version = await createSiteLayoutVersion(site, layout, undefined, hubContext);
-    console.log('created version', version);
-    setActiveVersion(version);
+    const version = await createVersion(site, hubContext);
+    console.log('created version', version.name);
+    setActiveVersion(version.name);
   }
 
   async function _updateVersion (versionName) {
@@ -97,15 +107,14 @@ function App() {
       // make it obvious that we updated the version
       const layout = cloneObject(site.data.values.layout);
       layout.sections[0].rows[0].cards[0].component.settings.markdown += `; Updated: ${formatDate()}`;
+      site.data.values.layout = layout;
 
-      await updateSiteLayoutVersion(site, layout, versionName, hubContext);
+      await updateVersion(site, activeVersionResource, hubContext);
+      // setActiveVersionResource(updatedVersion);
       console.log('updated version', versionName);
-
-      // site.data.values.layout = layout;
 
       // this is janky but... it's a demo
       setActiveVersion();
-      // setSite({ ...site });
       setTimeout(() => {
         setActiveVersion(versionName);
       }, 10);
@@ -114,15 +123,16 @@ function App() {
 
   async function _deleteVersion (versionName) {
     if (versionName) {
-      await deleteSiteLayoutVersion(site, versionName, hubContext);
+      await deleteVersion(site, versionName, hubContext);
       setActiveVersion();
     }
   }
 
   async function _publishVersion (versionName) {
     if (versionName) {
-      // TODO: the site model that we have right now is already munged with the layout version... does that make sense???
-      await publishSiteLayoutVersion(site, versionName, hubContext);
+      // const versionResource = { ...activeVersionResource, data: mergeObjects(site.data.values.layout, activeVersionResource.data) };
+      await publishSiteVersion(site, activeVersionResource, hubContext);
+      // set the activeVersion to undefined which means the published site
       setActiveVersion();
     }
   }
@@ -153,6 +163,14 @@ function App() {
     return result;
   }
 
+  function renderVersionInfo(site, versionResource) {
+    let result = <h2>published (updated: {formatDate(site?.item?.modified)})</h2>
+    if (versionResource) {
+      result = <h2>{versionResource.name} (created: {formatDate(versionResource.created)}, updated: {formatDate(versionResource.updated)})</h2>
+    }
+    return result;
+  }
+
   return (
     <div className="App">
       <div className="top">
@@ -177,7 +195,7 @@ function App() {
       </div>
       <div className="bottom">
         <div className="header">
-          <h2>{site?.data?.values?.layout.name || "published"} (updated: {formatDate(site?.data?.values?.layout.updated || site?.item?.modified)})</h2>
+          {renderVersionInfo(site, activeVersionResource)}
           <div className="toolbar">
             <button type="button" disabled={!isAuthenticated} onClick={_createVersion}>create new version</button>
             <button type="button" disabled={!isAuthenticated || !activeVersionName} onClick={_ => _updateVersion(activeVersionName)}>update version</button>

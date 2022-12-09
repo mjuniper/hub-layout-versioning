@@ -1,12 +1,21 @@
 # site/layout versions
 
-/*
-- ga4...
+- ga4???
+- next sprint
+  - remove old gallery card?
 - jordan's prs
-*/
+- look at jordan's confluence page
+- other open tabs
+- email
+- year end reviews
+- fedramp courses
 
 ## TODO:
+  - think through what i did on thursday - does the api make sense?
+  - we should also keep creator/createdBy on the resource
+  - if we really need access to all the metadata (created, creator, etc) in a list view, we could store the list of versions w/ metadata on the item.data; but i'd rather not do that because it is better to have a single source of truth
   - look at / update my gh issue
+  - what are the remaining uncertainties
   - look at klara's designs
     - what is the workflow...
     - currently when you land at the site, you get the published version...
@@ -15,22 +24,20 @@
       - does that make sense in the context of versions?
       - maybe you should get the published version (ie the item)
   - ---
-  - the whole this system can version anything idea is cool but i have no idea how it would fit in with what i am doing
-    - except that that allows us to easily do pages or other things with layout
-    - layer of indirection for what the thing is and how we persist it???
-  - TS
+  - it should be able to version anything that is backed by an item
+  - the whole resources/folders thing might not make sense (and wtf is the notion of variable interpolation)
   - how do we handle resources today? i think we don't for drafts but what do we do when somebody adds an image card?
   - can/should i leverage the existing draft system???
     - can i repurpose the version system to do drafts?
   - look at the stuff we do in the draft system - we whitelist props and buldDraft(), etc, etc, etc
-  - the whole resources/folders thing might not make sense (and wtf is the notion of variable interpolation)
-  - what about other resources (images)?
   - today, if there is a draft, that is what we show when we land on the site editor - but what to do in the world of versions?
   - will this stuff go on the site class or in modules?
-  - what are we versioning? AT says the layout but we currently save the whole site as a draft but then we whitelist some props i think
+  - should we not allow deleting the published version?
+  - what are we versioning? AT says the layout but we currently save a whole bunch of the site as a draft but then we whitelist some props i think
     - layout
     - theme?
   - are there issues related to item or resource ownership?
+  - keep track of lineages??? probably not
 
 
 ## Notes

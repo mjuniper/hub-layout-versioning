@@ -1,142 +1,199 @@
 import { addItemResource, getItemResource, getItemResources, removeItemResource, updateItemResource } from "@esri/arcgis-rest-portal";
-import { createId, getProp, getSiteById, mergeObjects, objectToJsonBlob } from "@esri/hub-common";
-import { updateSite } from "@esri/hub-sites";
+import { cloneObject, createId, getProp, IHubRequestOptions, IModel, mergeObjects, objectToJsonBlob } from "@esri/hub-common";
+import { isPage, isSite, updateSite } from "@esri/hub-sites";
 
-const LAYOUT_RESOURCE_NAME = '/layout.json';
+const VERSION_RESOURCE_NAME = 'version.json';
 
-// extracts the version name from the resource name which will look like hubSiteVersion_<versionName>/layout.json
+/*
+  TODO:
+  - there should be few instances of "site" in this file
+*/
+interface IVersionResourceMetadata  {
+  updated: number;
+  name: string;
+  path: string;
+  size?: number;
+}
+
+interface IVersionResource extends IVersionResourceMetadata {
+  created: number;
+  creator: string;
+  data: Record<string, any>
+}
+
+interface ICreateVersionOptions extends IHubRequestOptions {
+  name?: string;
+}
+
+// extracts the version name from the resource name which will look like hubVersion_<versionName>/version.json
 function getVersionNameFromResourceName (resourceName: string) {
-  return resourceName.replace(getPrefix(''), '').replace(LAYOUT_RESOURCE_NAME, '');
+  return resourceName.replace(getPrefix(''), '').replace(`/${VERSION_RESOURCE_NAME}`, '');
 }
 
 // gets the resource name from the version name
 function getResourceNameFromVersionName(versionName: string) {
-  return getPrefix(versionName + LAYOUT_RESOURCE_NAME);
+  return getPrefix(`${versionName}/${VERSION_RESOURCE_NAME}`);
 }
 
 // gets the prefix from the version name
 function getPrefix(versionName: string) {
-  return `hubSiteVersion_${versionName}`;
+  return `hubVersion_${versionName}`;
 }
 
-// TODO: actually use types (i'm using a bunch of : any)
+// gets the version data (ie the part of the model that goes into the version data) from the model
+function buildVersion(model: IModel, includeList: string[]) {
+  return mergeObjects(model, {}, includeList);
+}
 
-export async function getSiteLayoutVersions (siteId: string, requestOptions: any) {
-  const resources = await getItemResources(siteId, { ...requestOptions, params: { sortField: 'created', sortOrder: 'desc' } });
+// gets the versions for the item
+export async function getVersions (itemId: string, requestOptions: IHubRequestOptions): Promise<IVersionResourceMetadata[]> {
+  const resources = await getItemResources(itemId, { ...requestOptions, params: { sortField: 'created', sortOrder: 'desc' } });
   
   // the resources api does not support q - so we fetch all of them and do the filtering here
 
   return resources.resources
-  .filter((resource: any) => resource.resource.match(/^hubSiteVersion_[a-zA-Z0-9_\s]*\/layout.json/))
+  .filter((resource: any) => resource.resource.match(/^hubVersion_[a-zA-Z0-9_\s]*\/version.json/))
   .map((resource: any) => {
     const name = getVersionNameFromResourceName(resource.resource);
     // this is sorta strange, but the created property actually seems to be the updated date
     const updated = resource.created;
     delete resource.created;
-    return { ...resource, name, updated };
+    const path = resource.resource;
+    delete resource.resource;
+    delete resource.access;
+
+    return {
+      ...resource,
+      name,
+      path,
+      updated
+    };
   });
 }
 
-export async function getSiteByVersion (siteId: string, versionName: string, requestOptions: any) {
-  // if version not supplied, return site item, if supplied get item and version and munge them
-  const site: any = await getSiteById(siteId, requestOptions);
-  if (versionName) {
-    const layout = await getSiteLayoutVersion(siteId, versionName, requestOptions);
-    site.data.values.layout = mergeObjects(layout, site.data.values.layout);
-  }
-  return site;
+export async function getVersionResource (itemId: string, versionName: string, requestOptions: IHubRequestOptions): Promise<IVersionResource> {
+  return getItemResource(itemId, { ...requestOptions, fileName: getResourceNameFromVersionName(versionName), readAs: 'json' });
 }
 
-export async function getSiteLayoutVersion (siteId: string, versionName: string, requestOptions: any) {
-  return getItemResource(siteId, { ...requestOptions, fileName: getResourceNameFromVersionName(versionName), readAs: 'json' });
-}
-
-export async function createSiteLayoutVersion (site: string, layout: any, name=createId(), requestOptions: any) {
+export async function createVersion (item: IModel, requestOptions: ICreateVersionOptions): Promise<IVersionResource> {
   // TODO: we need to check whether the version name already exists
+  const includeList = _includeListFromItemType(item);
+  const data = buildVersion(item, includeList);
 
-  // const includeList = _includeListFromItemType(siteOrPageModel.item);
-  // const draft = buildDraft(siteOrPageModel, includeList);
+  const name = requestOptions.name || createId();
 
   const prefix = getPrefix(name);
   const now = Date.now();
-  layout.created = now;
-  layout.updated = now;
-  layout.name = name;
-  const versionBlob = objectToJsonBlob(layout);
-  const resourceName = 'layout.json';
+  const resource: IVersionResource = {
+    created: now,
+    creator: getProp(requestOptions, 'authentication.username'),
+    updated: now,
+    name,
+    path: `${prefix}/${VERSION_RESOURCE_NAME}`,
+    data
+  };
+  const versionBlob = objectToJsonBlob(resource);
 
   await addItemResource({
-    id: getProp(site as any, 'item.id'),
-    owner: getProp(site as any, "item.owner"),
+    id: getProp(item, 'item.id'),
+    owner: getProp(item, "item.owner"),
     prefix,
-    name: resourceName,
+    name: VERSION_RESOURCE_NAME,
     resource: versionBlob,
     private: false,
     portal: requestOptions.portal,
-    authentication: requestOptions.authentication,
+    authentication: requestOptions.authentication as any, // not sure why TS complains about this...
   });
 
-  return name;
+  resource.size = versionBlob.size;
+
+  return resource;
 }
 
-export async function updateSiteLayoutVersion (site: any, layout: any, name: string, requestOptions: any) {
-  // TODO: we need to check whether the version name already exists
+export async function updateVersion (item: IModel, versionResource: IVersionResource, requestOptions: IHubRequestOptions): Promise<IVersionResource> {
+  // we expect the item to contain the changes that we want to apply to the version
+  // but we also need the versionResource so we can preserve the created and creator props
 
-  // const includeList = _includeListFromItemType(siteOrPageModel.item);
-  // const draft = buildDraft(siteOrPageModel, includeList);
+  const includeList = _includeListFromItemType(item);
+  versionResource.data = buildVersion(item, includeList);
 
-  const prefix = getPrefix(name);
-  layout.updated = Date.now();
-  layout.name = name;
-  const versionBlob = objectToJsonBlob(layout);
-  const resourceName = 'layout.json';
+  const prefix = getPrefix(versionResource.name);
+  versionResource.updated = Date.now();
+  const versionBlob = objectToJsonBlob(versionResource);
 
   await updateItemResource({
-    id: getProp(site, 'item.id'),
-    owner: getProp(site, "item.owner"),
+    id: getProp(item, 'item.id'),
+    owner: getProp(item, "item.owner"),
     prefix,
-    name: resourceName,
+    name: VERSION_RESOURCE_NAME,
     resource: versionBlob,
     private: false,
     portal: requestOptions.portal,
-    authentication: requestOptions.authentication,
+    authentication: requestOptions.authentication as any, // not sure why ts complains about this...
   });
 
-  return name;
+  return versionResource;
 }
 
-export async function deleteSiteLayoutVersion (site: any, versionName: string, requestOptions: any) {
+export async function deleteVersion (item: IModel, versionName: string, requestOptions: IHubRequestOptions) {
   return removeItemResource({
-    id: getProp(site, 'item.id'),
-    owner: getProp(site, "item.owner"),
+    id: getProp(item, 'item.id'),
+    owner: getProp(item, "item.owner"),
     resource: getResourceNameFromVersionName(versionName),
     portal: requestOptions.portal,
-    authentication: requestOptions.authentication
+    authentication: requestOptions.authentication as any
   });
 }
 
-export async function publishSiteLayoutVersion (site: any, versionName: string, requestOptions: any) {
-  // TODO: does it make sense that we take a site model and a version name
-  // .... i'm not sure it does but this is where i ended up on this first pass
-  // TODO: we might need to refactor this so we can pass in a layout or a layoutName
-  // save the draft
-  const layoutName = getProp(site, 'data.values.layout.name');
-  const createOrUpdate = !!layoutName ? updateSiteLayoutVersion : createSiteLayoutVersion;
-  const name = await createOrUpdate(site, site.data.values.layout, versionName, requestOptions);
-  versionName = layoutName || name;
+function _includeListFromItemType(item: IModel) {
+  const defaultIncludeList = [
+    'data.values.layout',
+    'data.values.theme',
+  ];
+  let includeList;
+  if (isSite(item.item)) {
+    includeList = defaultIncludeList;
+  } else if (isPage(item.item)) {
+    includeList = defaultIncludeList;
+  } else {
+    throw TypeError(
+      "item type does not support versioning"
+    );
+  }
 
-  // // munge them
-  // TODO: so now we ended up expecting a site that is already munged with a layout but that does not feel right
-  // site = cloneObject(site);
-  // site.data.values = mergeObjects({ layout }, site.data.values);
+  return includeList;
+}
+
+export function applyVersion (item: IModel, versionResource: IVersionResource) {
+  const includeList = _includeListFromItemType(item);
+  return mergeObjects(versionResource.data, cloneObject(item), includeList);
+}
+
+// site specific stuff
+
+// export async function getSiteByVersion (siteId: string, versionName: string, requestOptions: any) {
+//   // if version not supplied, return site item, if supplied get item and version and munge them
+//   const site: any = await getSiteById(siteId, requestOptions);
+//   if (versionName) {
+//     const versionResource = await getVersion(siteId, versionName, requestOptions);
+//     site.data.values.layout = mergeObjects(versionResource.data, site.data.values.layout);
+//   }
+//   return site;
+// }
+
+export async function publishSiteVersion (site: any, versionResource: IVersionResource, requestOptions: IHubRequestOptions) {
+  // we expect the site to contain the changes that we want to apply to the version
+  // but we also need the versionResource so we can preserve the created and creator props
+
+  await updateVersion(site, versionResource, requestOptions);
 
   // add a prop to the site indicating the published version?
   let typeKeywords: string[] = getProp(site, 'item.typeKeywords') || [];
   typeKeywords = typeKeywords.filter(keyword => !keyword.match(/^hubSiteLayoutVersionPublished:/));
-  typeKeywords.push(`hubSiteLayoutVersionPublished:${versionName}`);
+  typeKeywords.push(`hubSiteLayoutVersionPublished:${versionResource.name}`);
   site.item.typeKeywords = typeKeywords;
   
   // save the site
   // TODO: requestOptions takes allowList and updateVersions props...
-  return updateSite(site, requestOptions);
+  return updateSite(site, requestOptions as any);
 }
