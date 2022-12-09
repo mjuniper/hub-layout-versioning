@@ -4,10 +4,6 @@ import { isPage, isSite, updateSite } from "@esri/hub-sites";
 
 const VERSION_RESOURCE_NAME = 'version.json';
 
-/*
-  TODO:
-  - there should be few instances of "site" in this file
-*/
 interface IVersionResourceMetadata  {
   updated: number;
   name: string;

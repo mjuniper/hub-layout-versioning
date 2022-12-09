@@ -3,7 +3,7 @@ import classNames from "classnames";
 import './App.css';
 import { applyVersion, createVersion, deleteVersion, getVersionResource, getVersions, publishSiteVersion, updateVersion } from './layout-version';
 import { UserSession } from '@esri/arcgis-rest-auth';
-import { cloneObject, getSiteById, mergeObjects } from '@esri/hub-common';
+import { cloneObject, getSiteById } from '@esri/hub-common';
 
 const CLIENT_ID = 'Lmafo8GvkSnPwbek';
 const PORTAL_URL = 'https://qaext.arcgis.com/sharing/rest';
