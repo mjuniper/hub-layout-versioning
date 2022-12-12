@@ -42,19 +42,19 @@ function getVersionData(model: IModel, includeList: string[]) {
 }
 
 // applies the version to the model
-export function applyVersion (item: IModel, versionResource: IVersionResource, includeList: string[]) {
-  return mergeObjects(versionResource.data, cloneObject(item), includeList);
+export function applyVersion (model: IModel, versionResource: IVersionResource, includeList: string[]) {
+  return mergeObjects(versionResource.data, cloneObject(model), includeList);
 }
 
-export function getIncludeListFromItemType(item: IModel) {
+export function getIncludeListFromItemType(model: IModel): string[] {
   const defaultIncludeList = [
     'data.values.layout',
     'data.values.theme',
   ];
   let includeList;
-  if (isSite(item.item)) {
+  if (isSite(model.item)) {
     includeList = defaultIncludeList;
-  } else if (isPage(item.item)) {
+  } else if (isPage(model.item)) {
     includeList = [
       'data.values.layout'
     ];
@@ -68,7 +68,7 @@ export function getIncludeListFromItemType(item: IModel) {
 }
 
 // gets the versions for the item
-export async function getVersions (itemId: string, requestOptions: IHubRequestOptions): Promise<IVersionResourceMetadata[]> {
+export async function getItemVersions (itemId: string, requestOptions: IHubRequestOptions): Promise<IVersionResourceMetadata[]> {
   const resources = await getItemResources(itemId, { ...requestOptions, params: { sortField: 'created', sortOrder: 'desc' } });
   
   // the resources api does not support q - so we fetch all of them and do the filtering here
@@ -93,14 +93,14 @@ export async function getVersions (itemId: string, requestOptions: IHubRequestOp
   });
 }
 
-export async function getVersionResource (itemId: string, versionName: string, requestOptions: IHubRequestOptions): Promise<IVersionResource> {
+export async function getItemVersion (itemId: string, versionName: string, requestOptions: IHubRequestOptions): Promise<IVersionResource> {
   return getItemResource(itemId, { ...requestOptions, fileName: getResourceNameFromVersionName(versionName), readAs: 'json' });
 }
 
-export async function createVersion (item: IModel, requestOptions: ICreateVersionOptions): Promise<IVersionResource> {
+export async function createVersion (model: IModel, requestOptions: ICreateVersionOptions): Promise<IVersionResource> {
   // TODO: we need to check whether the version name already exists
-  const includeList = getIncludeListFromItemType(item);
-  const data = getVersionData(item, includeList);
+  const includeList = getIncludeListFromItemType(model);
+  const data = getVersionData(model, includeList);
 
   const name = requestOptions.name || createId();
 
@@ -117,8 +117,8 @@ export async function createVersion (item: IModel, requestOptions: ICreateVersio
   const versionBlob = objectToJsonBlob(resource);
 
   await addItemResource({
-    id: getProp(item, 'item.id'),
-    owner: getProp(item, "item.owner"),
+    id: getProp(model, 'item.id'),
+    owner: getProp(model, "item.owner"),
     prefix,
     name: VERSION_RESOURCE_NAME,
     resource: versionBlob,
@@ -132,20 +132,20 @@ export async function createVersion (item: IModel, requestOptions: ICreateVersio
   return resource;
 }
 
-export async function updateVersion (item: IModel, versionResource: IVersionResource, requestOptions: IHubRequestOptions): Promise<IVersionResource> {
+export async function updateVersion (model: IModel, versionResource: IVersionResource, requestOptions: IHubRequestOptions): Promise<IVersionResource> {
   // we expect the item to contain the changes that we want to apply to the version
   // but we also need the versionResource so we can preserve the created and creator props
 
-  const includeList = getIncludeListFromItemType(item);
-  versionResource.data = getVersionData(item, includeList);
+  const includeList = getIncludeListFromItemType(model);
+  versionResource.data = getVersionData(model, includeList);
 
   const prefix = getPrefix(versionResource.name);
   versionResource.updated = Date.now();
   const versionBlob = objectToJsonBlob(versionResource);
 
   await updateItemResource({
-    id: getProp(item, 'item.id'),
-    owner: getProp(item, "item.owner"),
+    id: getProp(model, 'item.id'),
+    owner: getProp(model, "item.owner"),
     prefix,
     name: VERSION_RESOURCE_NAME,
     resource: versionBlob,
@@ -157,10 +157,10 @@ export async function updateVersion (item: IModel, versionResource: IVersionReso
   return versionResource;
 }
 
-export async function deleteVersion (item: IModel, versionName: string, requestOptions: IHubRequestOptions) {
+export async function deleteVersion (model: IModel, versionName: string, requestOptions: IHubRequestOptions) {
   return removeItemResource({
-    id: getProp(item, 'item.id'),
-    owner: getProp(item, "item.owner"),
+    id: getProp(model, 'item.id'),
+    owner: getProp(model, "item.owner"),
     resource: getResourceNameFromVersionName(versionName),
     portal: requestOptions.portal,
     authentication: requestOptions.authentication as any
