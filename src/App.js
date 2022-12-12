@@ -189,7 +189,7 @@ function App() {
           </div>
         </div>
         <h2>Versions</h2>
-        <div class="flex-row">
+        <div className="flex-row">
           <ul className="version-list">
             <li className={classNames({ active: !activeVersionName })} onClick={_ => _selectVersion()}>Published</li>
             {versions.map((version) => (
@@ -198,7 +198,7 @@ function App() {
               </li>
             ))}
           </ul>
-          <div class="help">
+          <div className="help">
             <p>At left is a list of versions for the current site. The highlighted one is the currently "active" one - the one whose layout is shown below. The one with an asterisk is the one that is currently publishedl. Most of the versions have names that were randomly generated. But some may have been given a specific name (ie original, julianas special version).</p>
             <p>Click on a version to make it active.</p>
 
