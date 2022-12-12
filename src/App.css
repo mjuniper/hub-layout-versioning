@@ -44,6 +44,19 @@
   cursor: pointer;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: space-between;
+}
+
+.help {
+  border: solid 2px darkgray;
+  background-color: lightcyan;
+  padding: 2rem;
+}
+
 .site-id {
   font-size: 1.25rem;
   width: 25rem;
@@ -52,6 +65,7 @@
 
 .version-list {
   display: inline-block;
+  flex: 0 0 max-content;
 }
 
 .version-list li {

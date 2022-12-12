@@ -27,10 +27,14 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(!!hubContext.authentication.username);
   const [siteId, setSiteId] = useState(SITE_ID);
 
+  const href = window.location.href;
+  const separator = href.endsWith('/') ? '' : '/';
+  const redirectUri = `${href}${separator}redirect.html`;
+
   const signIn = async () => {
     const authentication = await UserSession.beginOAuth2({
       clientId: CLIENT_ID,
-      redirectUri: "http://localhost:3000/redirect.html",
+      redirectUri,
       portal: PORTAL_URL
     });
 
@@ -185,23 +189,34 @@ function App() {
           </div>
         </div>
         <h2>Versions</h2>
-        <ul className="version-list">
-          <li className={classNames({ active: !activeVersionName })} onClick={_ => _selectVersion()}>Published</li>
-          {versions.map((version) => (
-            <li className={classNames({ active: (version.name === activeVersionName) })} key={version.name}>
-              <a onClick={_ => _selectVersion(version)}>{site.item.typeKeywords.includes(`hubSiteLayoutVersionPublished:${version.name}`) ? '* ' : ''}{version.name} (updated: {formatDate(version.updated)})</a>
-            </li>
-          ))}
-        </ul>
+        <div class="flex-row">
+          <ul className="version-list">
+            <li className={classNames({ active: !activeVersionName })} onClick={_ => _selectVersion()}>Published</li>
+            {versions.map((version) => (
+              <li className={classNames({ active: (version.name === activeVersionName) })} key={version.name}>
+                <a onClick={_ => _selectVersion(version)}>{site.item.typeKeywords.includes(`hubSiteLayoutVersionPublished:${version.name}`) ? '* ' : ''}{version.name} (updated: {formatDate(version.updated)})</a>
+              </li>
+            ))}
+          </ul>
+          <div class="help">
+            <p>At left is a list of versions for the current site. The highlighted one is the currently "active" one - the one whose layout is shown below. The one with an asterisk is the one that is currently publishedl. Most of the versions have names that were randomly generated. But some may have been given a specific name (ie original, julianas special version).</p>
+            <p>Click on a version to make it active.</p>
+
+            <p>Click on the <strong>create new version</strong> button to create a new version based on the currently active version. This will add a section at the top of the layout to distinguish it from other versions.</p>
+            <p>Click on the <strong>update version</strong> button to update the currently active version. This will add an updated date to the top section of the layout to distinguish it from other versions.</p>
+            <p>Click on the <strong>delete version</strong> button to delete the currently active version.</p>
+            <p>Click on the <strong>publish version</strong> button to publish the currently active version. This will update the version resource with the current site model and save the site.</p>
+          </div>
+        </div>
       </div>
       <div className="bottom">
         <div className="header">
           {renderVersionInfo(site, activeVersionResource)}
           <div className="toolbar">
-            <button type="button" disabled={!isAuthenticated} onClick={_createVersion}>create new version</button>
-            <button type="button" disabled={!isAuthenticated || !activeVersionName} onClick={_ => _updateVersion(activeVersionName)}>update version</button>
-            <button type="button" disabled={!isAuthenticated || !activeVersionName} onClick={_ => _deleteVersion(activeVersionName)}>delete version</button>
-            <button type="button" disabled={!isAuthenticated || !activeVersionName} onClick={_ => _publishVersion(activeVersionName)}>publish version</button>
+            <button type="button" disabled={!isAuthenticated} onClick={_createVersion} title="Create a new version based on the currently active version. This will add a section at the top of the layout.">create new version</button>
+            <button type="button" disabled={!isAuthenticated || !activeVersionName} onClick={_ => _updateVersion(activeVersionName)} title="Update the currently active version. This will add an updated date to the top section of the layout.">update version</button>
+            <button type="button" disabled={!isAuthenticated || !activeVersionName} onClick={_ => _deleteVersion(activeVersionName)} title="Delete the currently active version.">delete version</button>
+            <button type="button" disabled={!isAuthenticated || !activeVersionName} onClick={_ => _publishVersion(activeVersionName)} title="Publish the currently active version. This will update the version resource with the current site model and save the site.">publish version</button>
             {/* <button>update version</button> */}
           </div>
         </div>
