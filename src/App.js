@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import classNames from "classnames";
 import './App.css';
-import { applyVersion, createVersion, deleteVersion, getVersionResource, getVersions, publishSiteVersion, updateVersion } from './layout-version';
+import { applyVersion, createVersion, deleteVersion, getVersionResource, getVersions, getIncludeListFromItemType, publishSiteVersion, updateVersion } from './layout-version';
 import { UserSession } from '@esri/arcgis-rest-auth';
 import { cloneObject, getSiteById } from '@esri/hub-common';
 
@@ -55,7 +55,8 @@ function App() {
         if (activeVersionName) {
           versionResource = await getVersionResource(siteId, activeVersionName, hubContext);
           console.log('got version: ', versionResource);
-          site = applyVersion(site, versionResource);
+          const includeList = getIncludeListFromItemType(site);
+          site = applyVersion(site, versionResource, includeList);
         }
         console.log('got site: ', site);
         setSite(site);

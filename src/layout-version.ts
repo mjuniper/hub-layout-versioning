@@ -37,8 +37,34 @@ function getPrefix(versionName: string) {
 }
 
 // gets the version data (ie the part of the model that goes into the version data) from the model
-function buildVersion(model: IModel, includeList: string[]) {
+function getVersionData(model: IModel, includeList: string[]) {
   return mergeObjects(model, {}, includeList);
+}
+
+// applies the version to the model
+export function applyVersion (item: IModel, versionResource: IVersionResource, includeList: string[]) {
+  return mergeObjects(versionResource.data, cloneObject(item), includeList);
+}
+
+export function getIncludeListFromItemType(item: IModel) {
+  const defaultIncludeList = [
+    'data.values.layout',
+    'data.values.theme',
+  ];
+  let includeList;
+  if (isSite(item.item)) {
+    includeList = defaultIncludeList;
+  } else if (isPage(item.item)) {
+    includeList = [
+      'data.values.layout'
+    ];
+  } else {
+    throw TypeError(
+      "item type does not support versioning"
+    );
+  }
+
+  return includeList;
 }
 
 // gets the versions for the item
@@ -73,8 +99,8 @@ export async function getVersionResource (itemId: string, versionName: string, r
 
 export async function createVersion (item: IModel, requestOptions: ICreateVersionOptions): Promise<IVersionResource> {
   // TODO: we need to check whether the version name already exists
-  const includeList = _includeListFromItemType(item);
-  const data = buildVersion(item, includeList);
+  const includeList = getIncludeListFromItemType(item);
+  const data = getVersionData(item, includeList);
 
   const name = requestOptions.name || createId();
 
@@ -110,8 +136,8 @@ export async function updateVersion (item: IModel, versionResource: IVersionReso
   // we expect the item to contain the changes that we want to apply to the version
   // but we also need the versionResource so we can preserve the created and creator props
 
-  const includeList = _includeListFromItemType(item);
-  versionResource.data = buildVersion(item, includeList);
+  const includeList = getIncludeListFromItemType(item);
+  versionResource.data = getVersionData(item, includeList);
 
   const prefix = getPrefix(versionResource.name);
   versionResource.updated = Date.now();
@@ -141,30 +167,6 @@ export async function deleteVersion (item: IModel, versionName: string, requestO
   });
 }
 
-function _includeListFromItemType(item: IModel) {
-  const defaultIncludeList = [
-    'data.values.layout',
-    'data.values.theme',
-  ];
-  let includeList;
-  if (isSite(item.item)) {
-    includeList = defaultIncludeList;
-  } else if (isPage(item.item)) {
-    includeList = defaultIncludeList;
-  } else {
-    throw TypeError(
-      "item type does not support versioning"
-    );
-  }
-
-  return includeList;
-}
-
-export function applyVersion (item: IModel, versionResource: IVersionResource) {
-  const includeList = _includeListFromItemType(item);
-  return mergeObjects(versionResource.data, cloneObject(item), includeList);
-}
-
 // site specific stuff
 
 // export async function getSiteByVersion (siteId: string, versionName: string, requestOptions: any) {
@@ -172,7 +174,7 @@ export function applyVersion (item: IModel, versionResource: IVersionResource) {
 //   const site: any = await getSiteById(siteId, requestOptions);
 //   if (versionName) {
 //     const versionResource = await getVersion(siteId, versionName, requestOptions);
-//     site.data.values.layout = mergeObjects(versionResource.data, site.data.values.layout);
+//     site.data.values.layout = applyVersion(versionResource, site);
 //   }
 //   return site;
 // }
