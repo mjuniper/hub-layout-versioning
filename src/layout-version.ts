@@ -4,14 +4,15 @@ import { isPage, isSite, updateSite } from "@esri/hub-sites";
 
 const VERSION_RESOURCE_NAME = 'version.json';
 
-interface IVersionResourceMetadata  {
+interface IVersionMetadata  {
+  access?: string;
   updated: number;
   name: string;
   path: string;
   size?: number;
 }
 
-interface IVersionResource extends IVersionResourceMetadata {
+interface IVersion extends IVersionMetadata {
   created: number;
   creator: string;
   data: Record<string, any>
@@ -22,9 +23,9 @@ interface ICreateVersionOptions extends IHubRequestOptions {
 }
 
 // extracts the version name from the resource name which will look like hubVersion_<versionName>/version.json
-function getVersionNameFromResourceName (resourceName: string) {
-  return resourceName.replace(getPrefix(''), '').replace(`/${VERSION_RESOURCE_NAME}`, '');
-}
+// function getVersionNameFromResourceName (resourceName: string) {
+//   return resourceName.replace(getPrefix(''), '').replace(`/${VERSION_RESOURCE_NAME}`, '');
+// }
 
 // gets the resource name from the version name
 function getResourceNameFromVersionName(versionName: string) {
@@ -42,7 +43,7 @@ function getVersionData(model: IModel, includeList: string[]) {
 }
 
 // applies the version to the model
-export function applyVersion (model: IModel, versionResource: IVersionResource, includeList: string[]) {
+export function applyVersion (model: IModel, versionResource: IVersion, includeList: string[]) {
   return mergeObjects(versionResource.data, cloneObject(model), includeList);
 }
 
@@ -68,7 +69,7 @@ export function getIncludeListFromItemType(model: IModel): string[] {
 }
 
 // gets the versions for the item
-export async function getItemVersions (itemId: string, requestOptions: IHubRequestOptions): Promise<IVersionResourceMetadata[]> {
+export async function searchItemVersions (itemId: string, requestOptions: IHubRequestOptions): Promise<IVersionMetadata[]> {
   const resources = await getItemResources(itemId, { ...requestOptions, params: { sortField: 'created', sortOrder: 'desc' } });
   
   // the resources api does not support q - so we fetch all of them and do the filtering here
@@ -76,37 +77,40 @@ export async function getItemVersions (itemId: string, requestOptions: IHubReque
   return resources.resources
   .filter((resource: any) => resource.resource.match(/^hubVersion_[a-zA-Z0-9_\s]*\/version.json/))
   .map((resource: any) => {
-    const name = getVersionNameFromResourceName(resource.resource);
-    // this is sorta strange, but the created property actually seems to be the updated date
-    const updated = resource.created;
-    delete resource.created;
-    const path = resource.resource;
-    delete resource.resource;
-    delete resource.access;
+    const { access, resource: path, size } = resource;
+
+    let properties = {};
+    if (resource.properties) {
+      if (typeof resource.properties === 'string') {
+        properties = JSON.parse(resource.properties);
+      }
+    }
 
     return {
-      ...resource,
-      name,
+      ...properties,
+      access,
       path,
-      updated
+      size,
     };
   });
 }
 
-export async function getItemVersion (itemId: string, versionName: string, requestOptions: IHubRequestOptions): Promise<IVersionResource> {
+export async function getItemVersion (itemId: string, versionName: string, requestOptions: IHubRequestOptions): Promise<IVersion> {
   return getItemResource(itemId, { ...requestOptions, fileName: getResourceNameFromVersionName(versionName), readAs: 'json' });
 }
 
-export async function createVersion (model: IModel, requestOptions: ICreateVersionOptions): Promise<IVersionResource> {
+export async function createVersion (model: IModel, requestOptions: ICreateVersionOptions): Promise<IVersion> {
   // TODO: we need to check whether the version name already exists
   const includeList = getIncludeListFromItemType(model);
+
+  // TODO: in the future, we could make the data a separate resource file and reference it here with jsonref or something: { data: "#resources/data.json" }
   const data = getVersionData(model, includeList);
 
   const name = requestOptions.name || createId();
 
   const prefix = getPrefix(name);
   const now = Date.now();
-  const resource: IVersionResource = {
+  const resource: IVersion = {
     created: now,
     creator: getProp(requestOptions, 'authentication.username'),
     updated: now,
@@ -116,14 +120,17 @@ export async function createVersion (model: IModel, requestOptions: ICreateVersi
   };
   const versionBlob = objectToJsonBlob(resource);
 
+  const properties = mergeObjects(resource, {}, ['created', 'creator', 'updated', 'name']);
+
   await addItemResource({
     id: getProp(model, 'item.id'),
     owner: getProp(model, "item.owner"),
     prefix,
     name: VERSION_RESOURCE_NAME,
     resource: versionBlob,
-    private: false,
+    private: true,
     portal: requestOptions.portal,
+    params: { properties },
     authentication: requestOptions.authentication as any, // not sure why TS complains about this...
   });
 
@@ -132,9 +139,11 @@ export async function createVersion (model: IModel, requestOptions: ICreateVersi
   return resource;
 }
 
-export async function updateVersion (model: IModel, versionResource: IVersionResource, requestOptions: IHubRequestOptions): Promise<IVersionResource> {
+export async function updateVersion (model: IModel, versionResource: IVersion, requestOptions: IHubRequestOptions): Promise<IVersion> {
   // we expect the item to contain the changes that we want to apply to the version
   // but we also need the versionResource so we can preserve the created and creator props
+
+  // TODO: we should fetch the version and ensure that its updated date is not newer than what we have in memory
 
   const includeList = getIncludeListFromItemType(model);
   versionResource.data = getVersionData(model, includeList);
@@ -142,6 +151,8 @@ export async function updateVersion (model: IModel, versionResource: IVersionRes
   const prefix = getPrefix(versionResource.name);
   versionResource.updated = Date.now();
   const versionBlob = objectToJsonBlob(versionResource);
+
+  const properties = mergeObjects(versionResource, {}, ['created', 'creator', 'updated', 'name']);
 
   await updateItemResource({
     id: getProp(model, 'item.id'),
@@ -151,6 +162,7 @@ export async function updateVersion (model: IModel, versionResource: IVersionRes
     resource: versionBlob,
     private: false,
     portal: requestOptions.portal,
+    params: { properties },
     authentication: requestOptions.authentication as any, // not sure why ts complains about this...
   });
 
@@ -179,13 +191,13 @@ export async function deleteVersion (model: IModel, versionName: string, request
 //   return site;
 // }
 
-export async function publishSiteVersion (site: any, versionResource: IVersionResource, requestOptions: IHubRequestOptions) {
+export async function publishSiteVersion (site: any, versionResource: IVersion, requestOptions: IHubRequestOptions) {
   // we expect the site to contain the changes that we want to apply to the version
   // but we also need the versionResource so we can preserve the created and creator props
 
   await updateVersion(site, versionResource, requestOptions);
 
-  // add a prop to the site indicating the published version?
+  // add a prop to the site indicating the published version
   let typeKeywords: string[] = getProp(site, 'item.typeKeywords') || [];
   typeKeywords = typeKeywords.filter(keyword => !keyword.match(/^hubSiteLayoutVersionPublished:/));
   typeKeywords.push(`hubSiteLayoutVersionPublished:${versionResource.name}`);
