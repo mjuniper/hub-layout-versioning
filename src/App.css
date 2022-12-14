@@ -64,11 +64,11 @@
 }
 
 .version-list {
-  display: inline-block;
+  /* display: inline-block; */
   flex: 0 0 max-content;
 }
 
-.version-list li {
+/* .version-list li {
   padding: 3px 5px;
   margin: 2px;
   cursor: pointer;
@@ -81,7 +81,7 @@
 
 .version-list a {
   display: block;
-}
+} */
 
 .preview {
   display: flex;

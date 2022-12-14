@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { setAssetPath } from "@esri/calcite-components/dist/components";
+// CDN hosted assets
+setAssetPath("https://unpkg.com/@esri/calcite-components/dist/calcite/assets");
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

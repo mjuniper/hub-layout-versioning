@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import classNames from "classnames";
+import "@esri/calcite-components/dist/calcite/calcite.css";
 import './App.css';
 import { applyVersion, createVersion, deleteVersion, getItemVersion, searchItemVersions, getIncludeListFromItemType, publishSiteVersion, updateVersion } from './layout-version';
 import { UserSession } from '@esri/arcgis-rest-auth';
 import { cloneObject, getSiteById } from '@esri/hub-common';
+import "@esri/calcite-components/dist/components/calcite-pick-list";
+import "@esri/calcite-components/dist/components/calcite-pick-list-item";
 
 const CLIENT_ID = 'Lmafo8GvkSnPwbek';
 const PORTAL_URL = 'https://qaext.arcgis.com/sharing/rest';
@@ -177,6 +180,26 @@ function App() {
     return result;
   }
 
+  function renderVersionListItem(version, idx) {
+    const isActive = version.name === activeVersionName;
+    // return (
+    //   <li className={classNames({ active })} key={version.name}>
+    //     <a onClick={_ => _selectVersion(version)}>{site.item.typeKeywords.includes(`hubSiteLayoutVersionPublished:${version.name}`) ? '* ' : ''}{version.name} (updated: {formatDate(version.updated)})</a>
+    //   </li>
+    // );
+    debugger;
+    return (
+      <calcite-pick-list-item
+        description="foobar"
+        key={version.name}
+        label={version.name}
+        selected={isActive ? true : undefined}
+        value={version}>
+        {/* <calcite-action slot="secondaryAction" text="Delete" onClick={_ => _deleteVersion(version.name)} /> */}
+      </calcite-pick-list-item>
+    );
+  }
+
   return (
     <div className="App">
       <div className="top">
@@ -191,18 +214,16 @@ function App() {
         </div>
         <h2>Versions</h2>
         <div className="flex-row">
-          <ul className="version-list">
-            <li className={classNames({ active: !activeVersionName })} onClick={_ => _selectVersion()}>Published</li>
-            {versions.map((version) => (
-              <li className={classNames({ active: (version.name === activeVersionName) })} key={version.name}>
-                <a onClick={_ => _selectVersion(version)}>{site.item.typeKeywords.includes(`hubSiteLayoutVersionPublished:${version.name}`) ? '* ' : ''}{version.name} (updated: {formatDate(version.updated)})</a>
-              </li>
-            ))}
-          </ul>
+          <calcite-pick-list class="version-list">
+          {/* <ul className="version-list"> */}
+            {/* <li className={classNames({ active: !activeVersionName })} onClick={_ => _selectVersion()}>Published</li> */}
+            <calcite-pick-list-item label="Published" value={undefined} selected={!activeVersionName} />
+            {versions.map(renderVersionListItem)}
+          {/* </ul> */}
+          </calcite-pick-list>
           <div className="help">
             <p>At left is a list of versions for the current site. The highlighted one is the currently "active" one - the one whose layout is shown below. The one with an asterisk is the one that is currently publishedl. Most of the versions have names that were randomly generated. But some may have been given a specific name (ie original, julianas special version).</p>
             <p>Click on a version to make it active.</p>
-
             <p>Click on the <strong>create new version</strong> button to create a new version based on the currently active version. This will add a section at the top of the layout to distinguish it from other versions.</p>
             <p>Click on the <strong>update version</strong> button to update the currently active version. This will add an updated date to the top section of the layout to distinguish it from other versions.</p>
             <p>Click on the <strong>delete version</strong> button to delete the currently active version.</p>
