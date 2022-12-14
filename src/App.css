@@ -17,6 +17,10 @@
   flex: 1;
 }
 
+.bottom .header h2 {
+  margin: 0 0 0.5rem 0;
+}
+
 .header {
   display: flex;
   gap: 10px;
@@ -63,25 +67,9 @@
   padding: 5px 15px;
 }
 
-.version-list {
-  /* display: inline-block; */
-  flex: 0 0 max-content;
+calcite-pick-list {
+  flex: 0 0 35%;
 }
-
-/* .version-list li {
-  padding: 3px 5px;
-  margin: 2px;
-  cursor: pointer;
-}
-
-.version-list li.active {
-  background-color: lightcyan;
-  outline: solid 1px darkcyan;
-}
-
-.version-list a {
-  display: block;
-} */
 
 .preview {
   display: flex;

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import classNames from "classnames";
+import React, { useCallback, useEffect, useState } from "react";
 import "@esri/calcite-components/dist/calcite/calcite.css";
 import './App.css';
 import { applyVersion, createVersion, deleteVersion, getItemVersion, searchItemVersions, getIncludeListFromItemType, publishSiteVersion, updateVersion } from './layout-version';
@@ -49,7 +48,7 @@ function App() {
 
   const [site, setSite] = useState({});
   const [versions, setVersions] = useState([]);
-  const [activeVersionName, setActiveVersion] = useState();
+  const [activeVersionId, setActiveVersionId] = useState();
   const [activeVersionResource, setActiveVersionResource] = useState();
 
   useEffect(() => {
@@ -60,8 +59,8 @@ function App() {
         const versions = await searchItemVersions(siteId, hubContext);
         console.log(versions);
         let versionResource;
-        if (activeVersionName) {
-          versionResource = await getItemVersion(siteId, activeVersionName, hubContext);
+        if (activeVersionId) {
+          versionResource = await getItemVersion(siteId, activeVersionId, hubContext);
           console.log('got version: ', versionResource);
           const includeList = getIncludeListFromItemType(site);
           site = applyVersion(site, versionResource, includeList);
@@ -76,7 +75,19 @@ function App() {
     };
 
     fetchData();
-  }, [ activeVersionName, hubContext, siteId ]);
+  }, [ activeVersionId, hubContext, siteId ]);
+
+  const setListRef = useCallback(el => {
+    function _selectVersion (event) {
+      const versionId = event.detail.keys().next().value;
+      setActiveVersionId(versionId);
+    }
+
+    if (el && el.addEventListener) {
+      el.removeEventListener('calciteListChange', _selectVersion);
+      el.addEventListener('calciteListChange', _selectVersion);
+    }
+  });
 
   async function _createVersion () {
     // push something unique into the layout
@@ -106,50 +117,51 @@ function App() {
         }, ...layout.sections ];
     site.data.values.layout = layout;
 
-    const version = await createVersion(site, hubContext);
-    console.log('created version', version.name);
-    setActiveVersion(version.name);
+    const options = {
+      ...hubContext,
+      parentId: activeVersionId
+    };
+    const version = await createVersion(site, options);
+
+    console.log('created version', version.id);
+    // this is janky but... it's a demo
+    setActiveVersionId();
+    setTimeout(() => {
+      setActiveVersionId(version.id);
+    }, 500);
   }
 
-  async function _updateVersion (versionName) {
-    if (versionName) {
+  async function _updateVersion (versionId) {
+    if (versionId) {
       // make it obvious that we updated the version
       const layout = cloneObject(site.data.values.layout);
       layout.sections[0].rows[0].cards[0].component.settings.markdown += `; Updated: ${formatDate()}`;
       site.data.values.layout = layout;
 
       await updateVersion(site, activeVersionResource, hubContext);
-      // setActiveVersionResource(updatedVersion);
-      console.log('updated version', versionName);
+      console.log('updated version', versionId);
 
       // this is janky but... it's a demo
-      setActiveVersion();
+      setActiveVersionId();
       setTimeout(() => {
-        setActiveVersion(versionName);
+        setActiveVersionId(versionId);
       }, 10);
     }
   }
 
-  async function _deleteVersion (versionName) {
-    if (versionName) {
-      await deleteVersion(site, versionName, hubContext);
-      setActiveVersion();
+  async function _deleteVersion (versionId) {
+    if (versionId) {
+      await deleteVersion(site, versionId, hubContext);
+      setActiveVersionId();
     }
   }
 
-  async function _publishVersion (versionName) {
-    if (versionName) {
-      // const versionResource = { ...activeVersionResource, data: mergeObjects(site.data.values.layout, activeVersionResource.data) };
+  async function _publishVersion (versionId) {
+    if (versionId) {
       await publishSiteVersion(site, activeVersionResource, hubContext);
       // set the activeVersion to undefined which means the published site
-      setActiveVersion();
-    }
-  }
-
-  async function _selectVersion (version) {
-    if (version?.name !== activeVersionName) {
-      version = version?.name;
-      setActiveVersion(version);
+      console.log('>>>>> calling setActiveVersionId from _publishVersion with ');
+      setActiveVersionId();
     }
   }
 
@@ -158,7 +170,7 @@ function App() {
     return `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
   }
 
-  function renderCard(card, idx) {
+  function renderLayoutCard(card, idx) {
     let result = (
       <div className={`card-${card.width}`} key={idx}>
         {card.component.name}
@@ -172,30 +184,40 @@ function App() {
     return result;
   }
 
-  function renderVersionInfo(site, versionResource) {
-    let result = <h2>published (updated: {formatDate(site?.item?.modified)})</h2>
-    if (versionResource) {
-      result = <h2>{versionResource.name} (created: {formatDate(versionResource.created)}, updated: {formatDate(versionResource.updated)})</h2>
+  function renderVersionInfo(site, version) {
+    if (!version) {
+      version = {
+        name: 'Published',
+        updated: site?.item?.modified
+      }
     }
-    return result;
+    const versionName = getDisplayName(version);
+    return (
+      <div>
+        <h2>{versionName}</h2>
+        <div>updated: {formatDate(version.updated)}</div>
+        {version.creator ? <div>creator: {version.creator}</div> : null}
+      </div>
+    );
+  }
+
+  function getDisplayName (version) {
+    return version.name || formatDate(version.created);
   }
 
   function renderVersionListItem(version, idx) {
-    const isActive = version.name === activeVersionName;
-    // return (
-    //   <li className={classNames({ active })} key={version.name}>
-    //     <a onClick={_ => _selectVersion(version)}>{site.item.typeKeywords.includes(`hubSiteLayoutVersionPublished:${version.name}`) ? '* ' : ''}{version.name} (updated: {formatDate(version.updated)})</a>
-    //   </li>
-    // );
-    debugger;
+    const isPublished = site.item.typeKeywords.includes(`hubSiteLayoutVersionPublished:${version.id}`);
+    const isActive = version.id === activeVersionId;
+    const versionName = getDisplayName(version);
+
     return (
       <calcite-pick-list-item
-        description="foobar"
-        key={version.name}
-        label={version.name}
+        description={`created by: ${version.creator}, last updated: ${formatDate(version.updated)}`}
+        key={version.id}
+        label={`${isPublished ? '* ' : ''}${versionName}`}
         selected={isActive ? true : undefined}
-        value={version}>
-        {/* <calcite-action slot="secondaryAction" text="Delete" onClick={_ => _deleteVersion(version.name)} /> */}
+        value={version.id}>
+        {/* <calcite-action slot="secondaryAction" text="Delete" onClick={_ => _deleteVersion(version.id)} /> */}
       </calcite-pick-list-item>
     );
   }
@@ -214,12 +236,9 @@ function App() {
         </div>
         <h2>Versions</h2>
         <div className="flex-row">
-          <calcite-pick-list class="version-list">
-          {/* <ul className="version-list"> */}
-            {/* <li className={classNames({ active: !activeVersionName })} onClick={_ => _selectVersion()}>Published</li> */}
-            <calcite-pick-list-item label="Published" value={undefined} selected={!activeVersionName} />
+          <calcite-pick-list ref={setListRef}>
+            <calcite-pick-list-item key="published" label="Published" value={undefined} selected={activeVersionId ? undefined : true} />
             {versions.map(renderVersionListItem)}
-          {/* </ul> */}
           </calcite-pick-list>
           <div className="help">
             <p>At left is a list of versions for the current site. The highlighted one is the currently "active" one - the one whose layout is shown below. The one with an asterisk is the one that is currently publishedl. Most of the versions have names that were randomly generated. But some may have been given a specific name (ie original, julianas special version).</p>
@@ -236,9 +255,9 @@ function App() {
           {renderVersionInfo(site, activeVersionResource)}
           <div className="toolbar">
             <button type="button" disabled={!isAuthenticated} onClick={_createVersion} title="Create a new version based on the currently active version. This will add a section at the top of the layout.">create new version</button>
-            <button type="button" disabled={!isAuthenticated || !activeVersionName} onClick={_ => _updateVersion(activeVersionName)} title="Update the currently active version. This will add an updated date to the top section of the layout.">update version</button>
-            <button type="button" disabled={!isAuthenticated || !activeVersionName} onClick={_ => _deleteVersion(activeVersionName)} title="Delete the currently active version.">delete version</button>
-            <button type="button" disabled={!isAuthenticated || !activeVersionName} onClick={_ => _publishVersion(activeVersionName)} title="Publish the currently active version. This will update the version resource with the current site model and save the site.">publish version</button>
+            <button type="button" disabled={!isAuthenticated || !activeVersionId} onClick={_ => _updateVersion(activeVersionId)} title="Update the currently active version. This will add an updated date to the top section of the layout.">update version</button>
+            <button type="button" disabled={!isAuthenticated || !activeVersionId} onClick={_ => _deleteVersion(activeVersionId)} title="Delete the currently active version.">delete version</button>
+            <button type="button" disabled={!isAuthenticated || !activeVersionId} onClick={_ => _publishVersion(activeVersionId)} title="Publish the currently active version. This will update the version resource with the current site model and save the site.">publish version</button>
             {/* <button>update version</button> */}
           </div>
         </div>
@@ -247,7 +266,7 @@ function App() {
             <div className="section" key={idx}>
               {section.rows.map((row, idx) => (
                 <div className="row" key={idx}>
-                  {row.cards.map(renderCard)}
+                  {row.cards.map(renderLayoutCard)}
                 </div>
               ))}
             </div>

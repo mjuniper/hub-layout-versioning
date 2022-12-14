@@ -1,18 +1,14 @@
 # site/layout versions
 
 ## TODO:
-  - more work on component prototype
   - image resources - copied to version directory
-  [-] - access control - private by default
-  [-] - check if i can send { properties: {} } or something like that to addResource - and if i can get it back out
-  [ ] - store parent: string
-  [-] - getItemVersions => searchItemVersions (getItemVersions is too similar to getItemVersion)
-  [-] - IVersionResource => IVersion, IVersionResourceMetadata => IVersionMetadata
+  - access control - private by default
+  - more work on component prototype
+  - dave's comment
   - look at klara's workflow diagrams
   - think through other workflows
     - when are versions created?
     - are you always editing a version?
-  - dave's suggestions
   - AT: we shouldn't be thinking about pixels yet, instead workflows; some time soon i will create a sequence diagram? then a rosetta stone?
   - take another look at the stuff we do in the draft system
   ---
