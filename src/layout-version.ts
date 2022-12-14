@@ -68,6 +68,29 @@ export function getIncludeListFromItemType(model: IModel): string[] {
   return includeList;
 }
 
+function versionMetadataFromResource (resource: any) {
+  const { access, resource: path, size } = resource;
+
+  let properties = resource.properties || {};
+  if (properties) {
+    if (typeof properties === 'string') {
+      try {
+        properties = JSON.parse(properties);
+      } catch (e) {
+        console.log('error parsing resource properties', e);
+        properties = {};
+      }
+    }
+  }
+
+  return {
+    ...properties,
+    access,
+    path,
+    size,
+  };
+}
+
 // gets the versions for the item
 export async function searchItemVersions (itemId: string, requestOptions: IHubRequestOptions): Promise<IVersionMetadata[]> {
   const resources = await getItemResources(itemId, { ...requestOptions, params: { sortField: 'created', sortOrder: 'desc' } });
@@ -76,23 +99,7 @@ export async function searchItemVersions (itemId: string, requestOptions: IHubRe
 
   return resources.resources
   .filter((resource: any) => resource.resource.match(/^hubVersion_[a-zA-Z0-9_\s]*\/version.json/))
-  .map((resource: any) => {
-    const { access, resource: path, size } = resource;
-
-    let properties = {};
-    if (resource.properties) {
-      if (typeof resource.properties === 'string') {
-        properties = JSON.parse(resource.properties);
-      }
-    }
-
-    return {
-      ...properties,
-      access,
-      path,
-      size,
-    };
-  });
+  .map(versionMetadataFromResource);
 }
 
 export async function getItemVersion (itemId: string, versionName: string, requestOptions: IHubRequestOptions): Promise<IVersion> {
