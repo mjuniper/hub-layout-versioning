@@ -50,6 +50,7 @@ function App() {
   const [versions, setVersions] = useState([]);
   const [activeVersionId, setActiveVersionId] = useState();
   const [activeVersionResource, setActiveVersionResource] = useState();
+  const [newVersionName, setNewVersionName] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -119,16 +120,18 @@ function App() {
 
     const options = {
       ...hubContext,
-      parentId: activeVersionId
+      parentId: activeVersionId,
+      name: newVersionName
     };
     const version = await createVersion(site, options);
 
     console.log('created version', version.id);
     // this is janky but... it's a demo
+    setNewVersionName('');
     setActiveVersionId();
     setTimeout(() => {
       setActiveVersionId(version.id);
-    }, 500);
+    }, 650);
   }
 
   async function _updateVersion (versionId) {
@@ -160,7 +163,6 @@ function App() {
     if (versionId) {
       await publishSiteVersion(site, activeVersionResource, hubContext);
       // set the activeVersion to undefined which means the published site
-      console.log('>>>>> calling setActiveVersionId from _publishVersion with ');
       setActiveVersionId();
     }
   }
@@ -209,12 +211,13 @@ function App() {
     const isPublished = site.item.typeKeywords.includes(`hubSiteLayoutVersionPublished:${version.id}`);
     const isActive = version.id === activeVersionId;
     const versionName = getDisplayName(version);
-
+    
     return (
       <calcite-pick-list-item
+        class={isPublished ? 'published' : ''}
         description={`created by: ${version.creator}, last updated: ${formatDate(version.updated)}`}
         key={version.id}
-        label={`${isPublished ? '* ' : ''}${versionName}`}
+        label={`${versionName}${isPublished ? ' (published)' : ''}`}
         selected={isActive ? true : undefined}
         value={version.id}>
         {/* <calcite-action slot="secondaryAction" text="Delete" onClick={_ => _deleteVersion(version.id)} /> */}
@@ -254,6 +257,7 @@ function App() {
         <div className="header">
           {renderVersionInfo(site, activeVersionResource)}
           <div className="toolbar">
+            <input type="text" className="version-name" value={newVersionName} onChange={evt => setNewVersionName(evt.target.value)} />
             <button type="button" disabled={!isAuthenticated} onClick={_createVersion} title="Create a new version based on the currently active version. This will add a section at the top of the layout.">create new version</button>
             <button type="button" disabled={!isAuthenticated || !activeVersionId} onClick={_ => _updateVersion(activeVersionId)} title="Update the currently active version. This will add an updated date to the top section of the layout.">update version</button>
             <button type="button" disabled={!isAuthenticated || !activeVersionId} onClick={_ => _deleteVersion(activeVersionId)} title="Delete the currently active version.">delete version</button>

@@ -71,6 +71,11 @@ calcite-pick-list {
   flex: 0 0 35%;
 }
 
+calcite-pick-list-item.published {
+  --calcite-font-weight-normal: bold;
+  --calcite-ui-text-1: purple;
+}
+
 .preview {
   display: flex;
   flex-direction: column;

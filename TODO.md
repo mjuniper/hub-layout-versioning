@@ -1,8 +1,10 @@
 # site/layout versions
 
 ## TODO:
-  - image resources - copied to version directory
   - access control - private by default
+  - image resources - copied to version directory
+  - sequence diagram + logical model of what's occurring between the "Version microapp" and Portal API / storage
+  - ---
   - more work on component prototype
   - dave's comment
   - look at klara's workflow diagrams
