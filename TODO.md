@@ -1,9 +1,14 @@
 # site/layout versions
 
 ## TODO:
-  - access control - private by default
-  - image resources - copied to version directory
   - sequence diagram + logical model of what's occurring between the "Version microapp" and Portal API / storage
+  - access control - private by default
+    - jupe_pa, paige_pa, & julianna_pa can see all
+    - chezelle_pa can only see the ones that are public ('inherit') *and cannot create versions*
+      - when added to the group, she can see all of them and create them
+    - so it looks like the ones that are inherit can be seen by anyone (because the site is public?) and the ones that are private can only be seen by people in the group
+    - what if the site were not public?
+  - image resources - copied to version directory
   - ---
   - more work on component prototype
   - dave's comment

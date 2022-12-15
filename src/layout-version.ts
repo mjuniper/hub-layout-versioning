@@ -26,11 +26,6 @@ interface ICreateVersionOptions extends IHubRequestOptions {
   parentId?: string;
 }
 
-// extracts the version name from the resource name which will look like hubVersion_<versionName>/version.json
-// function getVersionNameFromResourceName (resourceName: string) {
-//   return resourceName.replace(getPrefix(''), '').replace(`/${VERSION_RESOURCE_NAME}`, '');
-// }
-
 // gets the resource name from the version name
 function getResourceNameFromVersionId(versionId: string) {
   return getPrefix(`${versionId}/${VERSION_RESOURCE_NAME}`);
@@ -113,7 +108,6 @@ export async function getItemVersion (itemId: string, versionId: string, request
 }
 
 export async function createVersion (model: IModel, requestOptions: ICreateVersionOptions): Promise<IVersion> {
-  // TODO: we need to check whether the version name already exists
   const includeList = getIncludeListFromItemType(model);
 
   // TODO: in the future, we could make the data a separate resource file and reference it here with jsonref or something: { data: "#resources/data.json" }

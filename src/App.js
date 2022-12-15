@@ -3,29 +3,13 @@ import "@esri/calcite-components/dist/calcite/calcite.css";
 import './App.css';
 import { applyVersion, createVersion, deleteVersion, getItemVersion, searchItemVersions, getIncludeListFromItemType, publishSiteVersion, updateVersion } from './layout-version';
 import { UserSession } from '@esri/arcgis-rest-auth';
+import { CLIENT_ID, LOCAL_STORAGE_KEY, PORTAL_URL, SITE_ID } from './environment';
 import { cloneObject, getSiteById } from '@esri/hub-common';
 import "@esri/calcite-components/dist/components/calcite-pick-list";
 import "@esri/calcite-components/dist/components/calcite-pick-list-item";
 
-const CLIENT_ID = 'Lmafo8GvkSnPwbek';
-const PORTAL_URL = 'https://qaext.arcgis.com/sharing/rest';
-const session = new UserSession({
-  portal: PORTAL_URL,
-});
-let initialContext = { authentication: session };
-
-const LOCAL_STORAGE_KEY = `__CONTEXT_${CLIENT_ID}`
-// if we have a context in localStorage, we will use that as the initial context
-const json = localStorage.getItem(LOCAL_STORAGE_KEY);
-if (json) {
-  const authentication = UserSession.deserialize(json);
-  initialContext = { authentication };
-}
-
-const SITE_ID = '2b90df90e70549c1a256ebb6230f7451'; // brollywood: d4f484fe02324aaf86c4275a5ee72d3e
-
-function App() {
-  const [hubContext, setContext] = useState(initialContext);
+function App(props) {
+  const [hubContext, setContext] = useState(props.initialContext);
   const [isAuthenticated, setIsAuthenticated] = useState(!!hubContext.authentication.username);
   const [siteId, setSiteId] = useState(SITE_ID);
 
@@ -50,7 +34,8 @@ function App() {
   const [versions, setVersions] = useState([]);
   const [activeVersionId, setActiveVersionId] = useState();
   const [activeVersionResource, setActiveVersionResource] = useState();
-  const [newVersionName, setNewVersionName] = useState();
+  const [newVersionName, setNewVersionName] = useState('');
+  const [shouldShowHelp, setShouldShowHelp] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -131,7 +116,7 @@ function App() {
     setActiveVersionId();
     setTimeout(() => {
       setActiveVersionId(version.id);
-    }, 650);
+    }, 500);
   }
 
   async function _updateVersion (versionId) {
@@ -186,6 +171,17 @@ function App() {
     return result;
   }
 
+  function renderHelp() {
+    return <div className="help">
+      <p>At left is a list of versions for the current site. The highlighted one is the currently "active" one - the one whose layout is shown below. The one with an asterisk is the one that is currently publishedl. Most of the versions have names that were randomly generated. But some may have been given a specific name (ie original, julianas special version).</p>
+      <p>Click on a version to make it active.</p>
+      <p>Click on the <strong>create new version</strong> button to create a new version based on the currently active version. This will add a section at the top of the layout to distinguish it from other versions.</p>
+      <p>Click on the <strong>update version</strong> button to update the currently active version. This will add an updated date to the top section of the layout to distinguish it from other versions.</p>
+      <p>Click on the <strong>delete version</strong> button to delete the currently active version.</p>
+      <p>Click on the <strong>publish version</strong> button to publish the currently active version. This will update the version resource with the current site model and save the site.</p>
+    </div>;
+  }
+
   function renderVersionInfo(site, version) {
     if (!version) {
       version = {
@@ -237,19 +233,17 @@ function App() {
             <button type="button" disabled={isAuthenticated} onClick={signIn}>sign in</button>
           </div>
         </div>
-        <h2>Versions</h2>
         <div className="flex-row">
-          <calcite-pick-list ref={setListRef}>
-            <calcite-pick-list-item key="published" label="Published" value={undefined} selected={activeVersionId ? undefined : true} />
-            {versions.map(renderVersionListItem)}
-          </calcite-pick-list>
-          <div className="help">
-            <p>At left is a list of versions for the current site. The highlighted one is the currently "active" one - the one whose layout is shown below. The one with an asterisk is the one that is currently publishedl. Most of the versions have names that were randomly generated. But some may have been given a specific name (ie original, julianas special version).</p>
-            <p>Click on a version to make it active.</p>
-            <p>Click on the <strong>create new version</strong> button to create a new version based on the currently active version. This will add a section at the top of the layout to distinguish it from other versions.</p>
-            <p>Click on the <strong>update version</strong> button to update the currently active version. This will add an updated date to the top section of the layout to distinguish it from other versions.</p>
-            <p>Click on the <strong>delete version</strong> button to delete the currently active version.</p>
-            <p>Click on the <strong>publish version</strong> button to publish the currently active version. This will update the version resource with the current site model and save the site.</p>
+          <div className="left">
+            <h2>Versions</h2>
+            <calcite-pick-list ref={setListRef}>
+              <calcite-pick-list-item key="published" label="Published" value={undefined} selected={activeVersionId ? undefined : true} />
+              {versions.map(renderVersionListItem)}
+            </calcite-pick-list>
+          </div>
+          <div className="right">
+            <label>Show help: <input type="checkbox" checked={shouldShowHelp} onChange={evt => setShouldShowHelp(evt.target.checked)} /></label>
+            {shouldShowHelp ? renderHelp() : null}
           </div>
         </div>
       </div>
