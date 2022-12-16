@@ -1,7 +1,6 @@
 # site/layout versions
 
 ## TODO:
-  - sequence diagram + logical model of what's occurring between the "Version microapp" and Portal API / storage
   - access control - private by default
     - jupe_pa, paige_pa, & julianna_pa can see all
     - chezelle_pa can only see the ones that are public ('inherit') *and cannot create versions*
@@ -10,9 +9,9 @@
     - what if the site were not public?
   - image resources - copied to version directory
   - ---
-  - more work on component prototype
   - dave's comment
   - look at klara's workflow diagrams
+  - look at her new ui diagrams
   - think through other workflows
     - when are versions created?
     - are you always editing a version?
@@ -21,7 +20,6 @@
   ---
   - the whole resources/folders thing might not make sense (and wtf is the notion of variable interpolation - AT was talking about variable interpolation and a root level variables object and adlib and something about {version#3}.dog.jpg...)
   - should we not allow deleting the published version - i think it is fine - the published version is really the item
-  - will this stuff go on the site class or in modules? - i think we start with modules because that is what we use in od-ui today
 
 ## UX concerns
 - the "published version" could have new changes that are not published - need to account for that in the ui
