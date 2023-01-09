@@ -134,7 +134,7 @@ export async function createVersion (model: IModel, requestOptions: ICreateVersi
 
   await addItemResource({
     id: getProp(model, 'item.id'),
-    owner: getProp(model, "item.owner"),
+    owner: getProp(model, 'item.owner'),
     prefix,
     name: VERSION_RESOURCE_NAME,
     resource: versionBlob,

@@ -51,7 +51,7 @@
 .flex-row {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 2rem;
   justify-content: space-between;
 }
 

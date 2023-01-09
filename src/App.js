@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import "@esri/calcite-components/dist/calcite/calcite.css";
 import './App.css';
-import { applyVersion, createVersion, deleteVersion, getItemVersion, searchItemVersions, getIncludeListFromItemType, publishSiteVersion, updateVersion } from './layout-version';
+import { applyVersion, createVersion, deleteVersion, getItemVersion, searchItemVersions, getIncludeListFromItemType, publishSiteVersion, updateVersion } from './item-version';
 import { UserSession } from '@esri/arcgis-rest-auth';
 import { CLIENT_ID, LOCAL_STORAGE_KEY, PORTAL_URL, SITE_ID } from './environment';
 import { cloneObject, getSiteById } from '@esri/hub-common';
