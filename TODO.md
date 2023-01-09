@@ -1,22 +1,13 @@
 # site/layout versions
 
 ## TODO:
+  - access control - private by default
+    - jupe_pa, paige_pa, & julianna_pa can see all
+    - chezelle_pa can only see the ones that are public ('inherit') *and cannot create versions*
+      - when added to the group, she can see all of them and create them
+    - so it looks like the ones that are inherit can be seen by anyone (because the site is public?) and the ones that are private can only be seen by people in the group
+    - what if the site were not public?
   - image resources - copied to version directory
-    - how to make it generic - what i am doing is fairly specific to layouts / sections / image card...
-    - when we create a version, we need to copy all the images into the version directory
-    - when we update a version, we need to do the same but do we need to update instead
-    - when we delete, we need to remove all resources with the prefix
-      - but what if it is the published one???
-      - maybe publish needs to copy the resources to the root
-      - i think this gets back to: are you always editing a resource
-    - i don't think we need to do anything different when we get
-    - for searchItemVersions we need the size to reflect the total size including image resources
-    - how slow is it?
-    - this could mean using lots of storage
-    - today, we need to deal with image cards and section backgrounds... anything else?
-  - alternatives to copying resources to version directories:
-    - media gallery???
-    - keep a resources.json registry on the item that is a registry of resources and where they are used???
   - ---
   - dave's comment
   - look at klara's workflow diagrams

@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import "@esri/calcite-components/dist/calcite/calcite.css";
 import './App.css';
-import { applyVersion, createVersion, deleteVersion, getItemVersion, searchItemVersions, getIncludeListFromItemType, publishSiteVersion, updateVersion } from './item-versions';
+import { applyVersion, createVersion, deleteVersion, getItemVersion, searchItemVersions, getIncludeListFromItemType, publishSiteVersion, updateVersion } from './layout-version';
 import { UserSession } from '@esri/arcgis-rest-auth';
 import { CLIENT_ID, LOCAL_STORAGE_KEY, PORTAL_URL, SITE_ID } from './environment';
 import { cloneObject, getSiteById } from '@esri/hub-common';
@@ -116,7 +116,7 @@ function App(props) {
     setActiveVersionId();
     setTimeout(() => {
       setActiveVersionId(version.id);
-    }, 650);
+    }, 500);
   }
 
   async function _updateVersion (versionId) {
@@ -163,14 +163,6 @@ function App(props) {
         {card.component.name}
       </div>
     );
-
-    if (card.component.name === 'image-card') {
-      result = (
-        <div className={`card-${card.width} image-card`} key={idx}>
-          <img src={`${hubContext.authentication.portal}/content/items/${site.item.id}/resources/${card.component.settings.cropSrc}?token=${hubContext.authentication.token}`} />
-        </div>
-      );
-    }
 
     if (card.newVersion) {
       result = <div className="card-12 version" key={idx}>{card.component.settings.markdown}</div>;
@@ -264,6 +256,7 @@ function App(props) {
             <button type="button" disabled={!isAuthenticated || !activeVersionId} onClick={_ => _updateVersion(activeVersionId)} title="Update the currently active version. This will add an updated date to the top section of the layout.">update version</button>
             <button type="button" disabled={!isAuthenticated || !activeVersionId} onClick={_ => _deleteVersion(activeVersionId)} title="Delete the currently active version.">delete version</button>
             <button type="button" disabled={!isAuthenticated || !activeVersionId} onClick={_ => _publishVersion(activeVersionId)} title="Publish the currently active version. This will update the version resource with the current site model and save the site.">publish version</button>
+            {/* <button>update version</button> */}
           </div>
         </div>
         <div className="preview">
