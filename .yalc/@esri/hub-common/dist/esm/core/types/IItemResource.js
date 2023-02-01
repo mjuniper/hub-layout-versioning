@@ -1,0 +1,1 @@
+//# sourceMappingURL=IItemResource.js.map

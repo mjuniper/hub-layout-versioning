@@ -1,4 +1,4 @@
-import { addItemResource, getItemResource, getItemResources, removeItemResource, updateItemResource } from "@esri/arcgis-rest-portal";
+import { addItemResource, removeItemResource, updateItemResource } from "@esri/arcgis-rest-portal";
 import { cloneObject, createId, getProp, IHubRequestOptions, IModel, mergeObjects, objectToJsonBlob } from "@esri/hub-common";
 import { isPage, isSite, updateSite } from "@esri/hub-sites";
 
@@ -67,45 +67,45 @@ export function getIncludeListFromItemType(model: IModel): string[] {
   return includeList;
 }
 
-function versionMetadataFromResource (resource: any) {
-  // we get access, path, and size from the resource itself
-  const { access, resource: path, size } = resource;
+// function versionMetadataFromResource (resource: any) {
+//   // we get access, path, and size from the resource itself
+//   const { access, resource: path, size } = resource;
 
-  // the rest is on properties as a json string
-  let properties = resource.properties || {};
-  if (properties) {
-    if (typeof properties === 'string') {
-      try {
-        properties = JSON.parse(properties);
-      } catch (e) {
-        console.log('error parsing resource properties', e);
-        properties = {};
-      }
-    }
-  }
+//   // the rest is on properties as a json string
+//   let properties = resource.properties || {};
+//   if (properties) {
+//     if (typeof properties === 'string') {
+//       try {
+//         properties = JSON.parse(properties);
+//       } catch (e) {
+//         console.log('error parsing resource properties', e);
+//         properties = {};
+//       }
+//     }
+//   }
 
-  return {
-    ...properties,
-    access,
-    path,
-    size,
-  };
-}
+//   return {
+//     ...properties,
+//     access,
+//     path,
+//     size,
+//   };
+// }
 
 // gets the versions for the item
-export async function searchItemVersions (itemId: string, requestOptions: IHubRequestOptions): Promise<IVersionMetadata[]> {
-  const resources = await getItemResources(itemId, { ...requestOptions, params: { sortField: 'created', sortOrder: 'desc' } });
+// export async function searchItemVersions (itemId: string, requestOptions: IHubRequestOptions): Promise<IVersionMetadata[]> {
+//   const resources = await getItemResources(itemId, { ...requestOptions, params: { sortField: 'created', sortOrder: 'desc' } });
   
-  // the resources api does not support q - so we fetch all of them and do the filtering here
+//   // the resources api does not support q - so we fetch all of them and do the filtering here
 
-  return resources.resources
-  .filter((resource: any) => resource.resource.match(/^hubVersion_[a-zA-Z0-9_\s]*\/version.json/))
-  .map(versionMetadataFromResource);
-}
+//   return resources.resources
+//   .filter((resource: any) => resource.resource.match(/^hubVersion_[a-zA-Z0-9_\s]*\/version.json/))
+//   .map(versionMetadataFromResource);
+// }
 
-export async function getItemVersion (itemId: string, versionId: string, requestOptions: IHubRequestOptions): Promise<IVersion> {
-  return getItemResource(itemId, { ...requestOptions, fileName: getResourceNameFromVersionId(versionId), readAs: 'json' });
-}
+// export async function getItemVersion (itemId: string, versionId: string, requestOptions: IHubRequestOptions): Promise<IVersion> {
+//   return getItemResource(itemId, { ...requestOptions, fileName: getResourceNameFromVersionId(versionId), readAs: 'json' });
+// }
 
 export async function createVersion (model: IModel, requestOptions: ICreateVersionOptions): Promise<IVersion> {
   const includeList = getIncludeListFromItemType(model);

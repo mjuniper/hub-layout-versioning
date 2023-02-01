@@ -1,0 +1,1 @@
+//# sourceMappingURL=IEntityResource.js.map

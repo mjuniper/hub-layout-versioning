@@ -1,10 +1,20 @@
 import React, { useCallback, useEffect, useState } from "react";
 import "@esri/calcite-components/dist/calcite/calcite.css";
 import './App.css';
-import { applyVersion, createVersion, deleteVersion, getItemVersion, searchItemVersions, getIncludeListFromItemType, publishSiteVersion, updateVersion } from './item-version';
+import { publishSiteVersion } from './item-version';
 import { UserSession } from '@esri/arcgis-rest-auth';
 import { CLIENT_ID, LOCAL_STORAGE_KEY, PORTAL_URL, SITE_ID } from './environment';
-import { cloneObject, getSiteById } from '@esri/hub-common';
+import {
+  applyVersion,
+  cloneObject,
+  createVersion,
+  deleteVersion,
+  getIncludeListFromItemType,
+  getSiteById,
+  getVersion,
+  searchVersions,
+  updateVersion
+} from '@esri/hub-common';
 import "@esri/calcite-components/dist/components/calcite-pick-list";
 import "@esri/calcite-components/dist/components/calcite-pick-list-item";
 
@@ -42,11 +52,11 @@ function App(props) {
       try {
         // const site = await getSiteByVersion(siteId, activeVersionName, hubContext);
         let site = await getSiteById(siteId, hubContext);
-        const versions = await searchItemVersions(siteId, hubContext);
+        const versions = await searchVersions(siteId, hubContext);
         console.log(versions);
         let versionResource;
         if (activeVersionId) {
-          versionResource = await getItemVersion(siteId, activeVersionId, hubContext);
+          versionResource = await getVersion(siteId, activeVersionId, hubContext);
           console.log('got version: ', versionResource);
           const includeList = getIncludeListFromItemType(site);
           site = applyVersion(site, versionResource, includeList);
@@ -104,11 +114,10 @@ function App(props) {
     site.data.values.layout = layout;
 
     const options = {
-      ...hubContext,
       parentId: activeVersionId,
       name: newVersionName
     };
-    const version = await createVersion(site, options);
+    const version = await createVersion(site, hubContext, options);
 
     console.log('created version', version.id);
     // this is janky but... it's a demo
@@ -139,7 +148,7 @@ function App(props) {
 
   async function _deleteVersion (versionId) {
     if (versionId) {
-      await deleteVersion(site, versionId, hubContext);
+      await deleteVersion(site.item.id, versionId, site.item.owner, hubContext);
       setActiveVersionId();
     }
   }

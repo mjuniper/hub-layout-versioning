@@ -1,0 +1,1 @@
+{"version":3,"file":"getVersionData.js","sourceRoot":"","sources":["../../../../src/versioning/_internal/getVersionData.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,YAAY,EAAE,MAAM,eAAe,CAAC;AAE7C,kGAAkG;AAClG,MAAM,UAAU,cAAc,CAAC,KAAa,EAAE,WAAqB;IACjE,OAAO,YAAY,CAAC,KAAK,EAAE,EAAE,EAAE,WAAW,CAAC,CAAC;AAC9C,CAAC"}

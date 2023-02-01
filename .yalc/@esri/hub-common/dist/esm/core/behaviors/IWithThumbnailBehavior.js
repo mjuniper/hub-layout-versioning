@@ -1,0 +1,1 @@
+//# sourceMappingURL=IWithThumbnailBehavior.js.map

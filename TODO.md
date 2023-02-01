@@ -1,23 +1,46 @@
 # site/layout versions
 
-## TODO:
-  - image resources - copied to version directory
-    - how to make it generic - what i am doing is fairly specific to layouts / sections / image card...
-    - when we create a version, we need to copy all the images into the version directory
-    - when we update a version, we need to do the same but do we need to update instead
-    - when we delete, we need to remove all resources with the prefix
-      - but what if it is the published one???
-      - maybe publish needs to copy the resources to the root
-      - i think this gets back to: are you always editing a resource
-    - i don't think we need to do anything different when we get
-    - for searchItemVersions we need the size to reflect the total size including image resources
-    - how slow is it?
-    - this could mean using lots of storage
-    - today, we need to deal with image cards and section backgrounds... anything else?
-  - alternatives to copying resources to version directories:
+WRT image resource copying, i think these 2 scenarios are what we are worried about:
+setup: user has 2 (or more) versions of the same site, they both have an image card that uses the same image
+1. user deletes the image card from one of the versions
+  - today we delete the image resource (i think)
+  - we would just need to either not do that OR check if it is used elsewhere
+2. user uploads a new image with the same name to one of the versions (ie they replace the image)
+  - today we flag the user that an image with that name already exists and offer to let them replace it
+  - we could offer to let them upload it with a different name, thus avoiding the collision
+  - we could attempt to check if it is in use before telling them it already exists
+
+i think these ideas in conjuntion with a media gallery might address the issues
+  - but i think we would want to tell the user where the various image resources are used
+
+this all points to the need to know if an image resource is in use - this could be tricky today but i have been thinking about the idea of a central resource registry - i don't love that tho because i prefer the individual layouts to be the source of truth wrt what image resources it uses - but it might be necessary if we do not copy resources around into version folders
+
+i think the core issue is that we either need to never overwrite or delete image resources
+  - this could be viable if we give them a media gallery (but we will still need to know if/where images are used)
+    - but maybe for this use case we could do the check when we load it up
+OR we need to be able to know if/where an image resource is in use
+  - one way to do that is by always keeping image resources next to the version (ie in version folders)
+  - another is to check every time we need to know (by downloading all the versions and parsing them) - this is not viable
+  - another is to maintain an image resource registry
+
+- the fundamental problem is that they are editing a model in memory and we don't know what they're going to do with it
+  - so we don't know where to put the images that they might upload when they upload them
+  - so we upload them to the root and copy them to the version directory if they save as a version
+  - it is hard to know if we should be moving them instead of copying them... 
+    - which maybe is the fundamenatal problem - keeping the right images in the right folders might be hard - we will probably end up with orphans
+  - then when they publish the site, we copy them back to the root (either that or we have to disallow deleting the published version or we have to keep track of the images referenced by the published site and be sure not to delete those when deleting a version...) - we may be stepping on stuff that is already there... is that ok???
+- alternatives to copying resources to version directories:
     - media gallery???
     - keep a resources.json registry on the item that is a registry of resources and where they are used???
-  - ---
+- what is the problem we are trying to solve???
+  - is it preventing collisions (upload a new version of an image for your version not realizing that other versions reference it)?
+  - there is also the issue of deleting an image card in one version that actually shares an image with other versions (is that potentially a problem even if we do copy resources)...
+  maybe we can mitigate that by:
+    - allowing uploading with a new name?
+    - giving them a media gallery?
+      - i think that would have to tell them what resources are referenced by versions
+    - maybe we need to have a central image resource dictionary that lists all the resources and where they are used... but that seems brittle
+## TODO:
   - dave's comment
   - look at klara's workflow diagrams
   - look at her new ui diagrams

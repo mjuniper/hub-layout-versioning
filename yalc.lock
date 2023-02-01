@@ -1,0 +1,8 @@
+{
+  "version": "v1",
+  "packages": {
+    "@esri/hub-common": {
+      "signature": "22596d2c95fcc440df2f1abe77562bdf"
+    }
+  }
+}

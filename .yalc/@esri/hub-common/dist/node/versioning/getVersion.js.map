@@ -1,0 +1,1 @@
+{"version":3,"file":"getVersion.js","sourceRoot":"","sources":["../../../src/versioning/getVersion.ts"],"names":[],"mappings":";;;AAAA,iEAA2D;AAG3D,2CAA2D;AAE3D;;;;;;GAMG;AACI,KAAK,UAAU,UAAU,CAC9B,EAAU,EACV,SAAiB,EACjB,cAAmC;IAEnC,OAAO,oCAAe,CAAC,EAAE,kCAAO,cAAc,KAAE,QAAQ,EAAE,wCAA4B,CAAC,SAAS,CAAC,EAAE,MAAM,EAAE,MAAM,IAAG,CAAC;AACvH,CAAC;AAND,gCAMC"}

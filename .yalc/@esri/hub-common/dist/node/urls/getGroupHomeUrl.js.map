@@ -1,0 +1,1 @@
+{"version":3,"file":"getGroupHomeUrl.js","sourceRoot":"","sources":["../../../src/urls/getGroupHomeUrl.ts"],"names":[],"mappings":";;;AAGA,qDAAgD;AAEhD;;;;;GAKG;AACH,SAAgB,eAAe,CAC7B,OAAe,EACf,iBAA2E;IAE3E,MAAM,SAAS,GAAG,6BAAY,CAAC,iBAAiB,CAAC,CAAC;IAClD,OAAO,GAAG,SAAS,uBAAuB,OAAO,EAAE,CAAC;AACtD,CAAC;AAND,0CAMC"}
