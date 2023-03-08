@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhub_layout_versioning=self.webpackChunkhub_layout_versioning||[]).push([[41566],{41566:function(e,n,t){t.r(n),t.d(n,{arcgis_hub_entity_overview:function(){return h}});var i=t(15671),u=t(43144),r=t(72585),h=function(){function e(n){(0,i.Z)(this,e),(0,r.r)(this,n)}return(0,u.Z)(e,[{key:"render",value:function(){return(0,r.h)(r.H,{"data-element":"entity-overview"},(0,r.h)("h2",null,"Overview"),(0,r.h)("h5",null,this.entity.name))}}]),e}();h.style=":host{display:block}"}}]);
-//# sourceMappingURL=41566.6a1d0743.chunk.js.map
