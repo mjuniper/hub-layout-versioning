@@ -5,9 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { UserSession } from '@esri/arcgis-rest-auth';
 import { LOCAL_STORAGE_KEY, PORTAL_URL } from './environment';
-import { setAssetPath } from "@esri/calcite-components/dist/components";
+import hubComponentsPackageInfo from '@esri/hub-components/package.json';
+import { defineCustomElements } from "@esri/hub-components/dist/loader";
+
 // CDN hosted assets
-setAssetPath("https://unpkg.com/@esri/calcite-components/dist/calcite/assets");
+defineCustomElements(window, { resourcesUrl: `https://hubcdn.arcgis.com/@esri/hub-components/${hubComponentsPackageInfo.version}/dist/hub-components/` });
 
 const session = new UserSession({
   portal: PORTAL_URL,

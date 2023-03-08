@@ -1,1 +1,0 @@
-{"version":3,"file":"getResourceNameFromVersionId.js","sourceRoot":"","sources":["../../../../src/versioning/_internal/getResourceNameFromVersionId.ts"],"names":[],"mappings":";;;AAAA,2CAAwC;AACxC,2CAAoD;AAEpD,+CAA+C;AAC/C,SAAgB,4BAA4B,CAAC,SAAiB;IAC5D,OAAO,qBAAS,CAAC,GAAG,SAAS,IAAI,iCAAqB,EAAE,CAAC,CAAC;AAC5D,CAAC;AAFD,oEAEC"}

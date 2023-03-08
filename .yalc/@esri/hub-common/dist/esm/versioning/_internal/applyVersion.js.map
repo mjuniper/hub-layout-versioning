@@ -1,1 +1,0 @@
-{"version":3,"file":"applyVersion.js","sourceRoot":"","sources":["../../../../src/versioning/_internal/applyVersion.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAU,YAAY,EAAE,MAAM,aAAa,CAAC;AAGhE,mCAAmC;AACnC,MAAM,UAAU,YAAY,CAAE,KAAa,EAAE,OAAiB,EAAE,WAAqB;IACnF,OAAO,YAAY,CAAC,OAAO,CAAC,IAAI,EAAE,WAAW,CAAC,KAAK,CAAC,EAAE,WAAW,CAAC,CAAC;AACrE,CAAC"}

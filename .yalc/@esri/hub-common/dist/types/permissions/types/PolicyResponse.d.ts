@@ -1,4 +1,0 @@
-/**`
- * Human readable response from a policy check
- */
-export declare type PolicyResponse = "granted" | "org-member" | "not-org-member" | "group-member" | "not-group-member" | "not-group-admin" | "is-user" | "not-owner" | "not-licensed" | "not-licensed-available" | "not-available" | "not-granted" | "no-edit-access" | "edit-access" | "invalid-permission" | "invalid-capability" | "privilege-required" | "system-offline" | "system-maintenance" | "entity-required" | "not-authenticated" | "not-alpha-org" | "property-missing" | "property-not-array" | "array-contains-invalid-value" | "array-missing-required-value" | "property-mismatch" | "user-not-group-member" | "user-not-group-manager" | "user-not-group-owner" | "assertion-property-not-found" | "assertion-failed" | "assertion-requires-numeric-values" | "property-match";

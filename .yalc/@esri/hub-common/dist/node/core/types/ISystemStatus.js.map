@@ -1,1 +1,0 @@
-{"version":3,"file":"ISystemStatus.js","sourceRoot":"","sources":["../../../../src/core/types/ISystemStatus.ts"],"names":[],"mappings":";;;AAgBA,MAAM,eAAe,GAAG;IACtB,aAAa;IACb,QAAQ;IACR,aAAa;IACb,OAAO;IACP,SAAS;IACT,eAAe;IACf,OAAO;IACP,UAAU;IACV,QAAQ;IACR,OAAO;CACC,CAAC;AAMX;;;;GAIG;AACH,SAAgB,WAAW,CAAC,cAAsB;IAChD,OAAO,eAAe,CAAC,QAAQ,CAAC,cAA8B,CAAC,CAAC;AAClE,CAAC;AAFD,kCAEC"}
