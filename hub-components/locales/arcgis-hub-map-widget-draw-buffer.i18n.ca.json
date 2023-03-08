@@ -1,8 +1,0 @@
-{
-  "panel.heading": "Filtre d'ubicacions",
-  "panel.reset": "Restableix el filtre",
-  "distance.title": "Distància",
-  "distance.placeholder": "Introduïu un número...",
-  "distance.message": "Introduïu un número per ampliar l'àrea filtrada.",
-  "units.title": "Unitats"
-}
