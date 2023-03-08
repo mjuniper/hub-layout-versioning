@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Videz",
+  "accordionData": "Podatki",
+  "corners": {
+    "label": "Koti",
+    "enum": {
+      "round": "Okroglo",
+      "square": "Pravokotno"
+    }
+  },
+  "dropShadow": {
+    "label": "Zasenči",
+    "enum": {
+      "heavy": "Močna",
+      "low": "Nizko",
+      "medium": "Srednje",
+      "none": "Brez"
+    }
+  },
+  "layout": {
+    "label": "Statistična postavitev",
+    "enum": {
+      "dataViz": "Vizualizacija podatkov",
+      "moreInfo": "Več informacij",
+      "simple": "Enostavno"
+    }
+  },
+  "popoverTitle": "Pojavno okno z naslovom",
+  "popoverDescription": "Pojavno okno z opisom",
+  "popoverLogo": "Pojavno okno z logotipom",
+  "publisher": "Izdajatelj",
+  "showShareIcon": "Omogoči deljenje",
+  "shareableByValue": "Omogoči vdelave",
+  "shareableOnHover": "Omogoči lebdenje",
+  "subtitle": "Podnaslov",
+  "textAlign": "Poravnava besedila",
+  "title": "Naslov",
+  "titleTooltip": "Zaslonski namig",
+  "trailingText": "Zaključno besedilo",
+  "unit": "Enota",
+  "unitPosition": {
+    "label": "Položaj enote",
+    "enum": {
+      "after": "Po",
+      "before": "Pred",
+      "below": "Spodaj"
+    }
+  },
+  "value": "Vrednost",
+  "valueColor": "Barva za poudarjanje",
+  "visualInterest": {
+    "label": "Vizualni interes",
+    "enum": {
+      "icon": "Ikona",
+      "logo": "Logotip",
+      "none": "Brez",
+      "sparkline": "Trendna črta"
+    }
+  }
+}

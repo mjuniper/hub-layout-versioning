@@ -1,0 +1,20 @@
+{
+  "moreResults": "더 많은 결과",
+  "search": "검색",
+  "filter": "필터",
+  "viewResults": "결과 보기({numResults})",
+  "resultsCount": "1 - {pageTotal}/{searchTotal}",
+  "backToTop": "맨 위로 이동",
+  "facets": {
+    "access": {
+      "private": "본인",
+      "shared": "소유자 및 그룹",
+      "org": "기관",
+      "public": "공개"
+    }
+  },
+  "layoutOptions": {
+    "list": "표시 목록",
+    "grid": "표시 그리드"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "select": "Seç",
+  "cancel": "İptal Et",
+  "iconModalTitle": "Bir Simge Seç",
+  "scope": {
+    "enum": {
+      "library": "Kütüphaneden seç",
+      "url": "Kendi ögeniz için URL girin"
+    }
+  },
+  "altText": {
+    "label": "Alternatif Metin",
+    "helperText": "Eklenmezse, simge dekoratif olarak işaretlenir."
+  }
+}

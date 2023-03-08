@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Locatiefilter",
+  "panel.reset": "Filter resetten",
+  "distance.title": "Afstand",
+  "distance.placeholder": "Voer een getal in...",
+  "distance.message": "Voer een getal in om het gefilterde gebied uit te breiden.",
+  "units.title": "Eenheden"
+}

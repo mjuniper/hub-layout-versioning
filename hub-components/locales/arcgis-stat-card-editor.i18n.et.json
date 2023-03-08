@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Väljanägemine",
+  "accordionData": "Andmed",
+  "corners": {
+    "label": "Nurgad",
+    "enum": {
+      "round": "Ümar",
+      "square": "Ruut"
+    }
+  },
+  "dropShadow": {
+    "label": "Varjuefekt",
+    "enum": {
+      "heavy": "Raske",
+      "low": "Madal",
+      "medium": "Keskmine",
+      "none": "Puudub"
+    }
+  },
+  "layout": {
+    "label": "Statistika paigutus",
+    "enum": {
+      "dataViz": "Andmete visualiseerimine",
+      "moreInfo": "Lisateave",
+      "simple": "Lihtne"
+    }
+  },
+  "popoverTitle": "Hüpiku tiitel",
+  "popoverDescription": "Hüpiku kirjeldus",
+  "popoverLogo": "Hüpiku logo",
+  "publisher": "Avaldaja",
+  "showShareIcon": "Luba jagamine",
+  "shareableByValue": "Luba manused",
+  "shareableOnHover": "Luba hõljumine",
+  "subtitle": "Alapealkiri",
+  "textAlign": "Teksti joondamine",
+  "title": "Pealkiri",
+  "titleTooltip": "Kohtspikker",
+  "trailingText": "Tagumine tekst",
+  "unit": "Ühik",
+  "unitPosition": {
+    "label": "Ühiku asukoht",
+    "enum": {
+      "after": "Pärast",
+      "before": "Enne",
+      "below": "All"
+    }
+  },
+  "value": "Väärtus",
+  "valueColor": "Aktsendi värv",
+  "visualInterest": {
+    "label": "Visuaalne huvi",
+    "enum": {
+      "icon": "Ikoon",
+      "logo": "Logo",
+      "none": "Puudub",
+      "sparkline": "Minigraafik"
+    }
+  }
+}

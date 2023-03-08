@@ -1,0 +1,33 @@
+{
+  "purpose": "Tarkoitus",
+  "description": "Toimintasuunnitelma",
+  "details": "Yksityiskohdat",
+  "featuredImageAlt": "Projisoi esitelty kuva",
+  "trackProgress": "Seuraa edistymistämme",
+  "participatingGroups": "Osallistuvat ryhmät",
+  "whosInvolved": "Osallistujat",
+  "tags": "Tunnisteet",
+  "status": {
+    "label": "Projektin tila",
+    "notStarted": "Ei aloitettu",
+    "inProgress": "Käynnissä",
+    "complete": "Valmis"
+  },
+  "resources": "Resurssit",
+  "metadata": {
+    "sharing": {
+      "public": "Kaikki voivat nähdä tämän projektin",
+      "org": "Kaikki organisaatiossasi voivat nähdä tämän projektin",
+      "private": "Vain sinä voit nähdä tämän projektin",
+      "shared": "Valitut ryhmät voivat nähdä tämän projektin",
+      "labels": {
+        "public": "Julkinen",
+        "org": "Organisaatio",
+        "private": "Omistaja",
+        "shared": "Jaettu yksityisesti"
+      }
+    },
+    "dateCreated": "Julkaisupäivämäärä",
+    "dateUpdated": "Päivitetty viimeksi"
+  }
+}

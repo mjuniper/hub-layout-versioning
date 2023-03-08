@@ -1,0 +1,9 @@
+{
+  "new": "Novo",
+  "project": {
+    "form": {
+      "title": "Kreiraj novi projekat",
+      "description": "Projekti su vremenski ograničeni i orijentisani ka cilju"
+    }
+  }
+}

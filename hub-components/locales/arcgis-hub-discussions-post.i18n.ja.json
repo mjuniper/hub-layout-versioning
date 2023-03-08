@@ -1,0 +1,20 @@
+{
+  "posted": "{groupName} で {channelAccess} にポスト",
+  "anonymous": "匿名",
+  "noUser": "ユーザー名がありません",
+  "privateUser": "プライベート メンバー",
+  "delete": "削除",
+  "edit": "編集",
+  "public": "パブリック",
+  "org": "組織",
+  "private": "メンバーのみ",
+  "options": "ポスト オプション",
+  "numReplies": "返信数",
+  "edited": "編集済み",
+  "error": "問題が発生しました",
+  "deleteFailure": "投稿の削除をもう一度お試しください。",
+  "deleted.title": "投稿が削除されました",
+  "deleted.message": "この投稿は削除されたため、表示できません。",
+  "actions.reply": "返信",
+  "actions.view": "すべての返信を表示"
+}

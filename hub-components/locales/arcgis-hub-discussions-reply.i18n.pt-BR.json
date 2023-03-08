@@ -1,0 +1,16 @@
+{
+  "delete": "Excluir",
+  "edit": "Editar",
+  "options": "Opções de postagem",
+  "noUser": "Nenhum Nome de Usuário",
+  "anonymous": "Anônimo",
+  "privateUser": "Membro Privado",
+  "edited": "Editado",
+  "error": "Aconteceu algo errado",
+  "deleteFailure": "Tente novamente excluir sua resposta.",
+  "deleted.title": "Resposta excluída",
+  "deleted.message": "A resposta vinculada foi excluída e não pode ser exibida.",
+  "delete.action": "Visualizar todas as respostas",
+  "replyingTo": "Respondendo a {fullName}",
+  "viewPost": "Visualizar Postagem"
+}

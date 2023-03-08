@@ -1,0 +1,16 @@
+{
+  "delete": "Smazat",
+  "edit": "Upravit",
+  "options": "Možnosti odesílání příspěvků",
+  "noUser": "Žádné uživatelské jméno",
+  "anonymous": "Anonymní",
+  "privateUser": "Soukromý člen",
+  "edited": "Upraveno",
+  "error": "Něco se pokazilo",
+  "deleteFailure": "Zkuste prosím svoji odpověď smazat znovu.",
+  "deleted.title": "Odpověď smazána",
+  "deleted.message": "Propojená odpověď byla smazána a nelze ji zobrazit.",
+  "delete.action": "Zobrazit všechny odpovědi",
+  "replyingTo": "Odpověď uživateli {fullName}",
+  "viewPost": "Zobrazit příspěvek"
+}

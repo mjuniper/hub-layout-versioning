@@ -1,0 +1,42 @@
+{
+  "cancel": "Zrušiť",
+  "create": "Vytvoriť",
+  "next": "Ďalšie",
+  "project": {
+    "form": {
+      "title": "Vytvoriť nový projekt",
+      "description": "Projekty sú časovo ohraničené a orientované na cieľ"
+    },
+    "describeProject": {
+      "label": "Popísať projekt"
+    },
+    "name": {
+      "label": "Názov"
+    },
+    "summary": {
+      "label": "Zámer",
+      "helperText": "Stručne opíšte ciele vášho projektu."
+    },
+    "description": {
+      "label": "Popis",
+      "helperText": "Opíšte, ako váš projekt dosiahne stanovené ciele. Zahrňte relevantné základné informácie a zmeny očakávané z projektovej práce."
+    },
+    "setLocation": {
+      "label": "Nastaviť lokalitu"
+    },
+    "statusAndTimeline": {
+      "label": "Stav a časová os"
+    },
+    "status": {
+      "label": "Stav",
+      "enum": {
+        "notStarted": "Nezačaté",
+        "inProgress": "Prebieha",
+        "complete": "Dokončené"
+      }
+    },
+    "timeline": {
+      "label": "Časová os"
+    }
+  }
+}

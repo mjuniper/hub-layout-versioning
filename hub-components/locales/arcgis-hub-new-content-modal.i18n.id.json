@@ -1,0 +1,42 @@
+{
+  "cancel": "Batalkan",
+  "create": "Buat",
+  "next": "Selanjutnya",
+  "project": {
+    "form": {
+      "title": "Buat Proyek Baru",
+      "description": "Proyek terikat waktu dan memiliki tujuan"
+    },
+    "describeProject": {
+      "label": "Deskripsikan Proyek"
+    },
+    "name": {
+      "label": "Nama"
+    },
+    "summary": {
+      "label": "Tujuan",
+      "helperText": "Jelaskan secara singkat tujuan Proyek Anda."
+    },
+    "description": {
+      "label": "Keterangan",
+      "helperText": "Jelaskan cara Proyek Anda nanti memenuhi tujuan ini. Sertakan informasi latar belakang yang relevan dan perubahan yang diperkirakan dari kerja Proyek."
+    },
+    "setLocation": {
+      "label": "Tetapkan Lokasi"
+    },
+    "statusAndTimeline": {
+      "label": "Status dan Garis Waktu"
+    },
+    "status": {
+      "label": "Status",
+      "enum": {
+        "notStarted": "Belum Dimulai",
+        "inProgress": "Dalam Proses",
+        "complete": "Selesai"
+      }
+    },
+    "timeline": {
+      "label": "Garis Waktu"
+    }
+  }
+}

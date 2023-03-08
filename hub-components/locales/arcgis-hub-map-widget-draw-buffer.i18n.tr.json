@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Konum Filtresi",
+  "panel.reset": "Filtreyi sıfırla",
+  "distance.title": "Mesafe",
+  "distance.placeholder": "Bir sayı gir...",
+  "distance.message": "Filtrelenen alanı genişletmek için bir sayı girin.",
+  "units.title": "Birimler"
+}

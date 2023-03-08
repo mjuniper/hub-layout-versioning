@@ -1,0 +1,16 @@
+{
+  "delete": "מחיקה",
+  "edit": "ערוך",
+  "options": "אפשרויות פרסום",
+  "noUser": "אין שם משתמש",
+  "anonymous": "אנונימי",
+  "privateUser": "חבר פרטי",
+  "edited": "נערך",
+  "error": "משהו השתבש",
+  "deleteFailure": "נסה למחוק את התגובה שוב.",
+  "deleted.title": "התשובה נמחקה",
+  "deleted.message": "התשובה הקשורה נמחקה ואי אפשר להציג אותה.",
+  "delete.action": "הצג את כל התשובות",
+  "replyingTo": "משיב ל-{fullName}",
+  "viewPost": "הצג פוסט"
+}

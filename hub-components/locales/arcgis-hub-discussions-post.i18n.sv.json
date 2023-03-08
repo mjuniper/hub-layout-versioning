@@ -1,0 +1,20 @@
+{
+  "posted": "Publicerat i {groupName} till {channelAccess}",
+  "anonymous": "Anonymt",
+  "noUser": "Inget användarnamn",
+  "privateUser": "Privat medlem",
+  "delete": "Ta bort",
+  "edit": "Redigera",
+  "public": "Allmän",
+  "org": "Min organisation",
+  "private": "Endast medlemmar",
+  "options": "Alternativ för inlägg",
+  "numReplies": "Antal svar",
+  "edited": "Redigerad",
+  "error": "Det uppstod ett fel",
+  "deleteFailure": "Försök igen för att radera ditt inlägg.",
+  "deleted.title": "Inlägg har tagits bort",
+  "deleted.message": "Det här inlägget har tagits bort och kan inte visas.",
+  "actions.reply": "Svara",
+  "actions.view": "Visa alla svar"
+}

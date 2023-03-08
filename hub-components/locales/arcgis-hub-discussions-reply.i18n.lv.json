@@ -1,0 +1,16 @@
+{
+  "delete": "Izdzēst",
+  "edit": "Rediģēt",
+  "options": "Publicēšanas iespējas",
+  "noUser": "Bez lietotājvārda",
+  "anonymous": "Anonīms",
+  "privateUser": "Privāts dalībnieks",
+  "edited": "Rediģēts",
+  "error": "Radās kāda problēma",
+  "deleteFailure": "Lūdzu, mēģiniet vēlreiz izdzēst savu atbildi.",
+  "deleted.title": "Atbilde ir izdzēsta",
+  "deleted.message": "Saistītā atdilde tika izdzēsta, un to nevar parādīt.",
+  "delete.action": "Skatīt visas atbildes",
+  "replyingTo": "Sniedz atbildi {fullName}",
+  "viewPost": "Skatīt publikāciju"
+}

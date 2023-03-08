@@ -1,0 +1,20 @@
+{
+  "posted": "Gepost in {groupName} voor {channelAccess}",
+  "anonymous": "Anoniem",
+  "noUser": "Geen gebruikersnaam",
+  "privateUser": "Privé lid",
+  "delete": "Verwijderen",
+  "edit": "Bewerken",
+  "public": "Openbaar",
+  "org": "Mijn Organisatie",
+  "private": "Alleen voor leden",
+  "options": "Opties voor posten",
+  "numReplies": "Aantal antwoorden",
+  "edited": "Bewerkt",
+  "error": "Er is iets fout gegaan",
+  "deleteFailure": "Probeer opnieuw uw post te verwijderen.",
+  "deleted.title": "Post verwijderd",
+  "deleted.message": "Post is verwijderd en kan niet worden weergegeven.",
+  "actions.reply": "Beantwoorden",
+  "actions.view": "Alle antwoorden weergeven"
+}

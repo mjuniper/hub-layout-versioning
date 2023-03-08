@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Novietojuma filtrs",
+  "panel.reset": "Atiestatīt filtru",
+  "distance.title": "Distance",
+  "distance.placeholder": "Ievadīt skaitli",
+  "distance.message": "Ievadīt skaitli, lai paplašinātu filtrēto teritoriju.",
+  "units.title": "Vienības"
+}

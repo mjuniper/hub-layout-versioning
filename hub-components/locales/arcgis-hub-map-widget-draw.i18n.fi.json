@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Suodata tähän alueeseen",
+  "filter.point": "Suodata tähän pisteeseen",
+  "filter.polyline": "Suodata tähän viivaan",
+  "delete": "Poista piirustus",
+  "update": "Päivitä piirustus",
+  "cancel": "Peruuta muutokset",
+  "save": "Tallenna muutokset",
+  "select": "Valitse",
+  "point": "Pudota piste",
+  "polyline": "Piirrä viiva",
+  "polygon": "Piirrä alue",
+  "options": "Piirustusasetukset",
+  "close": "Sulje piirustusasetukset",
+  "open": "Avaa piirustusasetukset",
+  "updating": "Päivitetään piirustusta",
+  "stop": "Lopeta piirustus",
+  "finish": "Viimeistele piirustuksen päivitykset"
+}

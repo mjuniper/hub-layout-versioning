@@ -1,0 +1,16 @@
+{
+  "visiblePrivate": "Matoma tik nariams",
+  "visibleOrg": "Matoma organizacijoje",
+  "visibleAll": "Matoma visiems",
+  "anonymous": "Anonimas",
+  "privateUser": "Privatus narys",
+  "noUser": "Nėra naudotojo vardo",
+  "orgLabel": "Organizacija",
+  "privateOrg": "Privati organizacija",
+  "location": "Vieta",
+  "profile": "Eiti į profilį",
+  "postedIn": "Publikuota {groupName}",
+  "manageChannel": "Tvarkyti kanalą",
+  "information": "Informacija apie įrašą",
+  "group.deleted": "Ištrinta grupė"
+}

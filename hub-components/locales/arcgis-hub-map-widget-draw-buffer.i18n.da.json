@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Positionsfilter",
+  "panel.reset": "Nulstil filter",
+  "distance.title": "Afstand",
+  "distance.placeholder": "Indtast tal...",
+  "distance.message": "Indtast et tal for at udvide filtreret område.",
+  "units.title": "Enheder"
+}

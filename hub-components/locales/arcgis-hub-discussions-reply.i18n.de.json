@@ -1,0 +1,16 @@
+{
+  "delete": "Löschen",
+  "edit": "Bearbeiten",
+  "options": "Beitragsoptionen",
+  "noUser": "Kein Benutzername",
+  "anonymous": "Anonym",
+  "privateUser": "Privates Mitglied",
+  "edited": "Bearbeitet",
+  "error": "Ein Fehler ist aufgetreten.",
+  "deleteFailure": "Versuchen Sie erneut, Ihre Antwort zu löschen.",
+  "deleted.title": "Antwort gelöscht",
+  "deleted.message": "Die verknüpfte Antwort wurde gelöscht und kann nicht angezeigt werden.",
+  "delete.action": "Alle Antworten anzeigen",
+  "replyingTo": "Antwort an {fullName}",
+  "viewPost": "Beitrag anzeigen"
+}

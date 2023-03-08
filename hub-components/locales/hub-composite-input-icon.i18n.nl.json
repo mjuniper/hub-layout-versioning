@@ -1,0 +1,15 @@
+{
+  "select": "Selecteren",
+  "cancel": "Afbreken",
+  "iconModalTitle": "Een pictogram selecteren",
+  "scope": {
+    "enum": {
+      "library": "Kiezen in bibliotheek",
+      "url": "Zelf URL opgeven"
+    }
+  },
+  "altText": {
+    "label": "Alt-tekst",
+    "helperText": "Indien niet toegevoegd, zal het pictogram als decoratief gemarkeerd worden."
+  }
+}

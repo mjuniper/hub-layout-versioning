@@ -1,0 +1,20 @@
+{
+  "posted": "Paskelbta {groupName} - {channelAccess}",
+  "anonymous": "Anonimas",
+  "noUser": "Nėra naudotojo vardo",
+  "privateUser": "Privatus narys",
+  "delete": "Pašalinti",
+  "edit": "Redaguoti",
+  "public": "Vieša",
+  "org": "Organizacija",
+  "private": "Tik nariai",
+  "options": "Įrašo parinktys",
+  "numReplies": "Atsakymų skaičius",
+  "edited": "Redaguota",
+  "error": "Įvyko klaida",
+  "deleteFailure": "Pabandykite iš naujo panaikinti savo įrašą.",
+  "deleted.title": "Įrašas panaikintas",
+  "deleted.message": "Šis įrašas buvo panaikintas ir jo parodyti negalima.",
+  "actions.reply": "Atsakyti",
+  "actions.view": "Peržiūrėti visus atsakymus"
+}

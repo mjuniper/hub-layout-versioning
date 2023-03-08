@@ -1,0 +1,9 @@
+{
+  "new": "Jauns",
+  "project": {
+    "form": {
+      "title": "Izveidot jaunu projektu",
+      "description": "Projekti ir sasaistīti ar laiku un orientēti uz mērķi."
+    }
+  }
+}

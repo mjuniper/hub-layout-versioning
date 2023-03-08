@@ -1,0 +1,20 @@
+{
+  "posted": "Publikované v {groupName} do {channelAccess}",
+  "anonymous": "Anonymný",
+  "noUser": "Žiadne používateľské meno",
+  "privateUser": "Súkromný člen",
+  "delete": "Zmazať",
+  "edit": "Editovať",
+  "public": "Verejné",
+  "org": "Moja organizácia",
+  "private": "Iba členovia",
+  "options": "Možnosti príspevku",
+  "numReplies": "Počet odpovedí",
+  "edited": "Upravené",
+  "error": "Niečo sa pokazilo",
+  "deleteFailure": "Skúste prosím znova pre odstránenie vášho príspevku.",
+  "deleted.title": "Príspevok odstránený",
+  "deleted.message": "Tento príspevok bol odstránený a nie je možné ho zobraziť.",
+  "actions.reply": "Odpovedať",
+  "actions.view": "Zobraziť všetky odpovede"
+}

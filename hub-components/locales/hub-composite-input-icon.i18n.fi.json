@@ -1,0 +1,15 @@
+{
+  "select": "Valitse",
+  "cancel": "Peruuta",
+  "iconModalTitle": "Valitse kuvake",
+  "scope": {
+    "enum": {
+      "library": "Valitse kirjastosta",
+      "url": "Määritä oman kohteen URL-osoite"
+    }
+  },
+  "altText": {
+    "label": "Vaihtoehtoinen teksti",
+    "helperText": "Jos ei lisätty, kuvake merkitään koristeelliseksi."
+  }
+}

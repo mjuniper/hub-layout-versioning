@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filter area ini",
+  "filter.point": "Filter titik ini",
+  "filter.polyline": "Filter garis ini",
+  "delete": "Hapus gambar",
+  "update": "Perbarui gambar",
+  "cancel": "Batalkan perubahan",
+  "save": "Simpan perubahan",
+  "select": "Pilih",
+  "point": "Letakkan titik",
+  "polyline": "Gambar garis",
+  "polygon": "Gambar sebuah area",
+  "options": "Opsi Menggambar",
+  "close": "Tutup opsi menggambar",
+  "open": "Buka opsi menggambar",
+  "updating": "Memperbarui gambar",
+  "stop": "Hentikan menggambar",
+  "finish": "Selesaikan menggambar pembaruan"
+}

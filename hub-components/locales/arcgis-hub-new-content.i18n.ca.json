@@ -1,0 +1,9 @@
+{
+  "new": "Nou",
+  "project": {
+    "form": {
+      "title": "Crea un projecte nou",
+      "description": "Els projectes tenen límits de temps i estan orientats a objectius"
+    }
+  }
+}

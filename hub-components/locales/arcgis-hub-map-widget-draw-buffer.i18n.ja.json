@@ -1,0 +1,8 @@
+{
+  "panel.heading": "位置フィルター",
+  "panel.reset": "フィルターのリセット",
+  "distance.title": "距離",
+  "distance.placeholder": "数字を入力...",
+  "distance.message": "数字を入力して、フィルター処理されたエリアを拡張してください。",
+  "units.title": "単位"
+}

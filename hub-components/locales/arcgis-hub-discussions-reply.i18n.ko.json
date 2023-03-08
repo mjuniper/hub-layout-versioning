@@ -1,0 +1,16 @@
+{
+  "delete": "삭제",
+  "edit": "편집",
+  "options": "게시물 옵션",
+  "noUser": "사용자 이름 없음",
+  "anonymous": "익명",
+  "privateUser": "비공개 구성원",
+  "edited": "편집됨",
+  "error": "오류가 발생했습니다.",
+  "deleteFailure": "회신을 삭제하려면 다시 시도하세요.",
+  "deleted.title": "답글이 삭제됨",
+  "deleted.message": "연결된 답글이 삭제되어 표시할 수 없습니다.",
+  "delete.action": "모든 답글 보기",
+  "replyingTo": "{fullName}에 회신",
+  "viewPost": "게시물 보기"
+}

@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Izskats",
+  "accordionData": "Dati",
+  "corners": {
+    "label": "Stūri",
+    "enum": {
+      "round": "Apaļš",
+      "square": "Kvadrāts"
+    }
+  },
+  "dropShadow": {
+    "label": "Krītoša ēna",
+    "enum": {
+      "heavy": "Biezs",
+      "low": "Zems",
+      "medium": "Vidējs",
+      "none": "Nav"
+    }
+  },
+  "layout": {
+    "label": "Statistikas izkārtojums",
+    "enum": {
+      "dataViz": "Datu vizualizācija",
+      "moreInfo": "Plašāka informācija",
+      "simple": "Vienkāršs"
+    }
+  },
+  "popoverTitle": "Uznirstošā loga nosaukums",
+  "popoverDescription": "Uznirstošā loga apraksts",
+  "popoverLogo": "Uznirstošā loga logotips",
+  "publisher": "Izdevējs",
+  "showShareIcon": "Iespējot koplietošanu",
+  "shareableByValue": "Iespējot iegulšanu",
+  "shareableOnHover": "Iespējot norādīšanu",
+  "subtitle": "Apakšvirsraksts",
+  "textAlign": "Teksta līdzinājums",
+  "title": "Virsraksts",
+  "titleTooltip": "Rīka padoms",
+  "trailingText": "Noslēdzošais teksts",
+  "unit": "Mērvienība",
+  "unitPosition": {
+    "label": "Vienības novietojums",
+    "enum": {
+      "after": "Pēc",
+      "before": "Pirms",
+      "below": "Zem"
+    }
+  },
+  "value": "Vērtība",
+  "valueColor": "Akcenta krāsa",
+  "visualInterest": {
+    "label": "Vizuālā interese",
+    "enum": {
+      "icon": "Ikona",
+      "logo": "Logotips",
+      "none": "Nav",
+      "sparkline": "Sīkdiagramma"
+    }
+  }
+}

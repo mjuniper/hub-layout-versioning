@@ -1,0 +1,11 @@
+{
+  "access-org": "Echipa de organizare",
+  "access-private": "Echipa privată",
+  "access-public": "Echipa publică",
+  "dateUpdated": "Actualizat",
+  "edit": "Aveți acces la editare",
+  "members": "{count, plural, =0 { niciun membru} one { # membru } other { # membri }}",
+  "teamAccess": "Acces echipă",
+  "view": "Aveți acces la vizualizare",
+  "moreInfo": "Informații suplimentare"
+}

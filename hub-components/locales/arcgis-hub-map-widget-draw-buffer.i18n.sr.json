@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Filter lokacije",
+  "panel.reset": "Resetuj filter",
+  "distance.title": "Rastojanje",
+  "distance.placeholder": "Unesi broj...",
+  "distance.message": "Unesi broj za širenje filtrirane oblasti.",
+  "units.title": "Jedinice"
+}

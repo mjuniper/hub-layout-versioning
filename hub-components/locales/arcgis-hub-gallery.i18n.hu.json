@@ -1,0 +1,20 @@
+{
+  "moreResults": "Több eredmény",
+  "search": "Keresés",
+  "filter": "Szűrők",
+  "viewResults": "Eredmények megtekintése ({numResults})",
+  "resultsCount": "1 – {pageTotal} / {searchTotal}",
+  "backToTop": "Vissza az elejére",
+  "facets": {
+    "access": {
+      "private": "Saját magam",
+      "shared": "Tulajdonos és Csoportok",
+      "org": "Szervezet",
+      "public": "Nyilvános"
+    }
+  },
+  "layoutOptions": {
+    "list": "Lista megjelenítése",
+    "grid": "Rácsháló megjelenítése"
+  }
+}

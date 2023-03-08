@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filtrovať na túto plochu",
+  "filter.point": "Filtrovať na tento bod",
+  "filter.polyline": "Filtrovať na túto líniu",
+  "delete": "Vymazať nákres",
+  "update": "Aktualizovať nákres",
+  "cancel": "Zrušiť zmeny",
+  "save": "Uložiť zmeny",
+  "select": "Vybrať",
+  "point": "Umiestniť bod",
+  "polyline": "Nakresliť líniu",
+  "polygon": "Nakresliť oblasť",
+  "options": "Možnosti kreslenia",
+  "close": "Zatvoriť možnosti kreslenia",
+  "open": "Otvoriť možnosti kreslenia",
+  "updating": "Aktualizácia kreslenia",
+  "stop": "Zastaviť kreslenie",
+  "finish": "Dokončenie aktualizácií kreslenia"
+}

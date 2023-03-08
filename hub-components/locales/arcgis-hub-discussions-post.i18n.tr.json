@@ -1,0 +1,20 @@
+{
+  "posted": "{groupName}'da {channelAccess}'ya gönderildi",
+  "anonymous": "Anonim",
+  "noUser": "Kullanıcı Adı Yok",
+  "privateUser": "Özel Üye",
+  "delete": "Sil",
+  "edit": "Düzenle",
+  "public": "Genel",
+  "org": "Organizasyonum",
+  "private": "Sadece Üyeler",
+  "options": "Gönderi seçenekleri",
+  "numReplies": "Yanıt sayısı",
+  "edited": "Düzenleme",
+  "error": "Bir şey ters gitti",
+  "deleteFailure": "Lütfen gönderinizi silmeyi yeniden deneyin.",
+  "deleted.title": "Gönderi Silindi",
+  "deleted.message": "Bu gönderi silindi ve görüntülenemez.",
+  "actions.reply": "Yanıtla",
+  "actions.view": "Tüm yanıtları görüntüle"
+}

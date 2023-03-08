@@ -1,0 +1,20 @@
+{
+  "posted": "Publisert i {groupName} på {channelAccess}",
+  "anonymous": "Anonym",
+  "noUser": "Uten brukernavn",
+  "privateUser": "Privat medlem",
+  "delete": "Slett",
+  "edit": "Rediger",
+  "public": "Felles",
+  "org": "Min organisasjon",
+  "private": "Kun medlemmer",
+  "options": "Alternativer for innlegg",
+  "numReplies": "Antall svar",
+  "edited": "Redigert",
+  "error": "Noe gikk galt",
+  "deleteFailure": "Prøv på nytt for å slette innlegget ditt.",
+  "deleted.title": "Innlegg slettet",
+  "deleted.message": "Innlegget er slettet og kan ikke vises.",
+  "actions.reply": "Svar",
+  "actions.view": "Vis alle svarene"
+}

@@ -1,0 +1,20 @@
+{
+  "posted": "Postat în {groupName} la {channelAccess}",
+  "anonymous": "Anonim",
+  "noUser": "Fără Nume de utilizator",
+  "privateUser": "Membru privat",
+  "delete": "Ștergere",
+  "edit": "Editare",
+  "public": "Public",
+  "org": "Organizația mea",
+  "private": "Numai membri",
+  "options": "Opțiuni de postare",
+  "numReplies": "Număr de răspunsuri",
+  "edited": "Editat",
+  "error": "Ceva nu a mers bine",
+  "deleteFailure": "Încercați din nou să ștergeți postarea.",
+  "deleted.title": "Postare ștearsă",
+  "deleted.message": "Această postare a fost ștearsă și nu poate fi afișată.",
+  "actions.reply": "Răspuns",
+  "actions.view": "Vizualizați toate răspunsurile"
+}

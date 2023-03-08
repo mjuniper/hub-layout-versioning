@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Φίλτρο τοποθεσίας",
+  "panel.reset": "Επαναφορά φίλτρου",
+  "distance.title": "Απόσταση",
+  "distance.placeholder": "Εισαγωγή αριθμού",
+  "distance.message": "Εισάγετε αριθμό για να επεκτείνετε τη φιλτραρισμένη περιοχή.",
+  "units.title": "Μονάδες"
+}

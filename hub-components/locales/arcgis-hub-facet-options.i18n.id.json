@@ -1,0 +1,7 @@
+{
+  "showMore": "Tampilkan {num} Selengkapnya",
+  "showLess": "Tampilkan Lebih Sedikit",
+  "inputPlaceholder": "Opsi filter",
+  "noMatchesNotice": "Tidak ditemukan opsi yang cocok",
+  "inputAriaLabel": "Cari opsi berdasarkan kata kunci"
+}

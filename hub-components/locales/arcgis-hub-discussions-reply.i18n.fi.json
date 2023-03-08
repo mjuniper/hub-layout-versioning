@@ -1,0 +1,16 @@
+{
+  "delete": "Poista",
+  "edit": "Muokkaa",
+  "options": "Julkaisuasetukset",
+  "noUser": "Ei käyttäjänimeä",
+  "anonymous": "Anonyymi",
+  "privateUser": "Yksityinen jäsen",
+  "edited": "Muokattu",
+  "error": "Tapahtui virhe",
+  "deleteFailure": "Yritä poistaa vastaus uudelleen.",
+  "deleted.title": "Vastaus poistettu",
+  "deleted.message": "Linkitetty vastaus on poistettu, eikä sitä voi näyttää.",
+  "delete.action": "Näytä kaikki vastaukset",
+  "replyingTo": "Vastataan seuraavalle: {fullName}",
+  "viewPost": "Näytä julkaisu"
+}

@@ -1,0 +1,16 @@
+{
+  "delete": "Ștergere",
+  "edit": "Editare",
+  "options": "Opțiuni de postare",
+  "noUser": "Fără Nume de utilizator",
+  "anonymous": "Anonim",
+  "privateUser": "Membru privat",
+  "edited": "Editat",
+  "error": "Ceva nu a mers bine",
+  "deleteFailure": "Încercați din nou să ștergeți răspunsul.",
+  "deleted.title": "Răspuns șters",
+  "deleted.message": "Răspunsul asociat a fost șters și nu poate fi afișat.",
+  "delete.action": "Vizualizați toate răspunsurile",
+  "replyingTo": "Răspuns la {fullName}",
+  "viewPost": "Vizualizare postare"
+}

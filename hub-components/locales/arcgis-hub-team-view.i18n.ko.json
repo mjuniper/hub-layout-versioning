@@ -1,0 +1,11 @@
+{
+  "access-org": "기관 팀",
+  "access-private": "비공개 팀",
+  "access-public": "공개 팀",
+  "dateUpdated": "업데이트됨",
+  "edit": "편집 권한이 있음",
+  "members": "{count, plural, =0 { 구성원 없음} one { 구성원 #명 } other { 구성원 #명 }}",
+  "teamAccess": "팀 접근",
+  "view": "보기 권한이 있음",
+  "moreInfo": "추가 정보"
+}

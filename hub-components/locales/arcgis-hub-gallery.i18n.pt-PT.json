@@ -1,0 +1,20 @@
+{
+  "moreResults": "Mais Resultados",
+  "search": "Pesquisar",
+  "filter": "Filtros",
+  "viewResults": "Ver Resultados ({numResults})",
+  "resultsCount": "1 - {pageTotal} de {searchTotal}",
+  "backToTop": "Voltar Ao Topo",
+  "facets": {
+    "access": {
+      "private": "Eu",
+      "shared": "Proprietário e Grupos",
+      "org": "Organização",
+      "public": "Público"
+    }
+  },
+  "layoutOptions": {
+    "list": "Exibir Lista",
+    "grid": "Exibir Grelha"
+  }
+}

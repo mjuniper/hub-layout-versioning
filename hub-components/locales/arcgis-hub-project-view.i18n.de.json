@@ -1,0 +1,33 @@
+{
+  "purpose": "Zweck",
+  "description": "Unsere Strategie",
+  "details": "Details",
+  "featuredImageAlt": "Ausgewähltes Projektbild",
+  "trackProgress": "Fortschritte verfolgen",
+  "participatingGroups": "Beteiligte Gruppen",
+  "whosInvolved": "Beteiligte",
+  "tags": "Tags",
+  "status": {
+    "label": "Projektstatus",
+    "notStarted": "Nicht gestartet",
+    "inProgress": "In Bearbeitung",
+    "complete": "Abgeschlossen"
+  },
+  "resources": "Ressourcen",
+  "metadata": {
+    "sharing": {
+      "public": "Projekt ist für alle Benutzer sichtbar",
+      "org": "Projekt ist für alle Mitglieder Ihrer Organisation sichtbar",
+      "private": "Projekt ist nur für Sie sichtbar",
+      "shared": "Projekt ist für bestimmte Gruppen sichtbar",
+      "labels": {
+        "public": "Öffentlich",
+        "org": "Organisation",
+        "private": "Besitzer",
+        "shared": "Privat freigegeben"
+      }
+    },
+    "dateCreated": "Veröffentlichungsdatum",
+    "dateUpdated": "Aktualisierungsdatum"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "purpose": "Cél",
+  "description": "Hogyan jutottunk el idáig",
+  "details": "Részletek",
+  "featuredImageAlt": "Projekt kiemelt képe",
+  "trackProgress": "Kövesse fejlődésünket",
+  "participatingGroups": "Részt vevő csoportok",
+  "whosInvolved": "Ki vesz részt?",
+  "tags": "Címkék",
+  "status": {
+    "label": "Projektállapot",
+    "notStarted": "Nem kezdődött el",
+    "inProgress": "Folyamatban",
+    "complete": "Befejeződött"
+  },
+  "resources": "Források",
+  "metadata": {
+    "sharing": {
+      "public": "Bárki megtekintheti ezt a projektet",
+      "org": "Szervezetéből bárki láthatja ezt a projektet",
+      "private": "Csak Ön láthatja ezt a projektet",
+      "shared": "Válassza ki azokat a csoportokat, amelyek láthatják a projektet",
+      "labels": {
+        "public": "Nyilvános",
+        "org": "Szervezet",
+        "private": "Tulajdonos",
+        "shared": "Magánjellegűként megosztva"
+      }
+    },
+    "dateCreated": "Közzététel napja",
+    "dateUpdated": "Frissítés dátuma"
+  }
+}

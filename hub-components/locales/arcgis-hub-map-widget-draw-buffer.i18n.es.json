@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Filtro de ubicación",
+  "panel.reset": "Restablecer filtro",
+  "distance.title": "Distancia",
+  "distance.placeholder": "Introducir un número...",
+  "distance.message": "Introduzca un número para expandir el área filtrada.",
+  "units.title": "Unidades"
+}

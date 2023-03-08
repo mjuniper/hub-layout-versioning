@@ -1,0 +1,16 @@
+{
+  "delete": "Supprimer",
+  "edit": "Mise à jour",
+  "options": "Options de publication",
+  "noUser": "Pas de nom d’utilisateur",
+  "anonymous": "Anonyme",
+  "privateUser": "Membre privé",
+  "edited": "Modifié",
+  "error": "Un problème est survenu",
+  "deleteFailure": "Réessayez de supprimer votre réponse.",
+  "deleted.title": "Réponse supprimée",
+  "deleted.message": "La réponse liée a été supprimée et ne peut pas être affichée.",
+  "delete.action": "Afficher toutes les réponses",
+  "replyingTo": "Réponse à {fullName}",
+  "viewPost": "Afficher la publication"
+}

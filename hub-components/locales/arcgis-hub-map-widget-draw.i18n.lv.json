@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filtrēt līdz šai teritorijai",
+  "filter.point": "Filtrēt līdz šim punktam",
+  "filter.polyline": "Filtrēt līdz šai līnijai",
+  "delete": "Dzēst zīmējumu",
+  "update": "Atjaunot zīmējumu",
+  "cancel": "Atcelt izmaiņas",
+  "save": "Saglabāt izmaiņas",
+  "select": "Atlasīt",
+  "point": "Nomest punktu",
+  "polyline": "Zīmēt līniju",
+  "polygon": "Zīmēt teritoriju",
+  "options": "Zīmēšanas opcijas",
+  "close": "Aizvērt zīmēšanas opcijas",
+  "open": "Atvērt zīmēšanas opcijas",
+  "updating": "Zīmējuma atjaunināšana",
+  "stop": "Apturēt zīmēšanu",
+  "finish": "Pabeigt atjauninājumu zīmēšanu"
+}

@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "外觀",
+  "accordionData": "資料",
+  "corners": {
+    "label": "拐角",
+    "enum": {
+      "round": "圓化",
+      "square": "正方形"
+    }
+  },
+  "dropShadow": {
+    "label": "陰影",
+    "enum": {
+      "heavy": "重",
+      "low": "低",
+      "medium": "中",
+      "none": "無"
+    }
+  },
+  "layout": {
+    "label": "統計資訊版面配置",
+    "enum": {
+      "dataViz": "資料視覺化",
+      "moreInfo": "詳細資訊",
+      "simple": "簡易"
+    }
+  },
+  "popoverTitle": "浮動提示標題",
+  "popoverDescription": "浮動提示描述",
+  "popoverLogo": "浮動提示標誌",
+  "publisher": "發佈者",
+  "showShareIcon": "啟用分享",
+  "shareableByValue": "啟用嵌入內容",
+  "shareableOnHover": "啟用懸停",
+  "subtitle": "副標題",
+  "textAlign": "文字對齊",
+  "title": "標題",
+  "titleTooltip": "工具提示",
+  "trailingText": "尾端文字",
+  "unit": "單位",
+  "unitPosition": {
+    "label": "單位位置",
+    "enum": {
+      "after": "之後",
+      "before": "之前",
+      "below": "低於"
+    }
+  },
+  "value": "數值",
+  "valueColor": "輔色",
+  "visualInterest": {
+    "label": "視覺興趣",
+    "enum": {
+      "icon": "圖示",
+      "logo": "標誌",
+      "none": "無",
+      "sparkline": "迷你"
+    }
+  }
+}

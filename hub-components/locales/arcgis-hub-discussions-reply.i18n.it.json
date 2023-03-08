@@ -1,0 +1,16 @@
+{
+  "delete": "Elimina",
+  "edit": "Modifica",
+  "options": "Opzioni messaggio",
+  "noUser": "Nessun nome utente",
+  "anonymous": "Anonimo",
+  "privateUser": "Membro privato",
+  "edited": "Modificata",
+  "error": "Si è verificato un errore",
+  "deleteFailure": "Riprovare per eliminare la risposta.",
+  "deleted.title": "Risposta eliminata",
+  "deleted.message": "La risposta a questo link è stata eliminata e non può essere visualizzata.",
+  "delete.action": "Visualizza tutte le risposte",
+  "replyingTo": "Risposta a {fullName}",
+  "viewPost": "Visualizza post"
+}

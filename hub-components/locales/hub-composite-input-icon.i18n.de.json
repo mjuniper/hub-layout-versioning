@@ -1,0 +1,15 @@
+{
+  "select": "Auswählen",
+  "cancel": "Abbrechen",
+  "iconModalTitle": "Ein Symbol auswählen",
+  "scope": {
+    "enum": {
+      "library": "Aus Bibliothek auswählen",
+      "url": "URL für eigenes Element angeben"
+    }
+  },
+  "altText": {
+    "label": "Alternativer Text",
+    "helperText": "Wird keine Angabe hinzugefügt, wird das Symbol als dekorativ gekennzeichnet."
+  }
+}

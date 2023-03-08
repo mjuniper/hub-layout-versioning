@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Szűrés erre a területre",
+  "filter.point": "Szűrés erre a pontra",
+  "filter.polyline": "Szűrés erre a vonalra",
+  "delete": "Rajz törlése",
+  "update": "Rajz frissítése",
+  "cancel": "Módosítások elvetése",
+  "save": "Módosítások mentése",
+  "select": "Kiválasztás",
+  "point": "Pont elhelyezése",
+  "polyline": "Vonal rajzolása",
+  "polygon": "Terület rajzolása",
+  "options": "Rajzi beállítások",
+  "close": "Rajzi beállítások bezárása",
+  "open": "Rajzi beállítások megnyitása",
+  "updating": "Rajz frissítése",
+  "stop": "Rajz leállítása",
+  "finish": "Rajz frissítések befejezése"
+}

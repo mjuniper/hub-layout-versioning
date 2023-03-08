@@ -1,0 +1,20 @@
+{
+  "posted": "{channelAccess}에 대한 {groupName}에 게시됨",
+  "anonymous": "익명",
+  "noUser": "사용자 이름 없음",
+  "privateUser": "비공개 구성원",
+  "delete": "삭제",
+  "edit": "편집",
+  "public": "공개",
+  "org": "내 기관",
+  "private": "구성원만",
+  "options": "게시물 옵션",
+  "numReplies": "댓글 수",
+  "edited": "편집됨",
+  "error": "오류가 발생했습니다.",
+  "deleteFailure": "게시물을 삭제하려면 다시 시도하세요.",
+  "deleted.title": "게시물이 삭제됨",
+  "deleted.message": "해당 게시물이 삭제되어 표시할 수 없습니다.",
+  "actions.reply": "회신",
+  "actions.view": "모든 답글 보기"
+}

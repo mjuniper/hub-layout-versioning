@@ -1,0 +1,9 @@
+{
+  "new": "Ny",
+  "project": {
+    "form": {
+      "title": "Opprett nytt prosjekt",
+      "description": "Prosjekter er tidsbestemte og målorienterte"
+    }
+  }
+}

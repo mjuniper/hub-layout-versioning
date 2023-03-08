@@ -1,0 +1,20 @@
+{
+  "posted": "Postitatud gruppi {groupName} eesmärgiga {channelAccess}",
+  "anonymous": "Anonüümne",
+  "noUser": "Kasutajanimi puudub",
+  "privateUser": "Privaatne liige",
+  "delete": "Kustuta",
+  "edit": "Muuda",
+  "public": "Avalik",
+  "org": "Minu organisatsioon",
+  "private": "Ainult liikmed",
+  "options": "Postituse valikud",
+  "numReplies": "Vastuste arv",
+  "edited": "Muudetud",
+  "error": "Midagi läks valesti",
+  "deleteFailure": "Proovige oma postitust uuesti kustutada.",
+  "deleted.title": "Postitus kustutatud",
+  "deleted.message": "See posititus kustutati ja seda ei saa kuvada.",
+  "actions.reply": "Vasta",
+  "actions.view": "Kuva kõik vastused"
+}

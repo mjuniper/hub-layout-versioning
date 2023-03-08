@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Bu alana kadar filtrele",
+  "filter.point": "Bu noktaya kadar filtrele",
+  "filter.polyline": "Bu çizgiye kadar filtrele",
+  "delete": "Çizimi sil",
+  "update": "Çizimi güncelle",
+  "cancel": "Değişiklikleri iptal et",
+  "save": "Değişiklikleri kaydet",
+  "select": "Seç",
+  "point": "Bir nokta bırak",
+  "polyline": "Bir çizgi çiz",
+  "polygon": "Bir alan çizebilirsiniz",
+  "options": "Çizim Seçenekleri",
+  "close": "Çizim seçeneklerini kapat",
+  "open": "Çizim seçeneklerini aç",
+  "updating": "Çizim güncelleniyor",
+  "stop": "Çizimi durdur",
+  "finish": "Çizgi güncellemelerini bitir"
+}

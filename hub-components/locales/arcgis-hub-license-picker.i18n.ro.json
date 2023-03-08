@@ -1,0 +1,19 @@
+{
+  "chooseButton": "Alegeți licența",
+  "editorLabel": "Licență selectată",
+  "editorRemoveWarning": "Avertizare, urmează să ștergeți condițiile de utilizare.",
+  "licenseDescriptionCc0": "Această sarcină este dedicată publicului",
+  "licenseDescriptionCcBy": "Necesită atribuire",
+  "licenseDescriptionCcByNc": "Necesită atribuire, permite recombinarea, dar interzice utilizarea comercială",
+  "licenseDescriptionCcByNcNd": "Cea mai restrictivă, necesită atribuire, interzice utilizarea comercială și recombinarea",
+  "licenseDescriptionCcByNcSa": "Necesită atribuire, permite recombinarea, dar interzice utilizarea comercială și sarcinile derivate trebuie să mențină aceeași licență",
+  "licenseDescriptionCcByNd": "Necesită atribuire, permite utilizarea comercială, dar interzice distribuirea materialelor derivate",
+  "licenseDescriptionCcBySa": "Necesită atribuire, permite recombinarea și utilizarea comercială",
+  "licenseDescriptionCustom": "Vizualizarea detaliilor despre licență",
+  "licenseDescriptionOdbl": "Permite distribuirea, crearea și adaptarea atâta timp când alte atribute, de genul distribuirii, sunt menținute deschise",
+  "licenseDescriptionOdcBy": "Permite distribuirea, crearea și adaptarea atâta timp când alte atribute",
+  "licenseDescriptionPddl": "Permite distribuirea, crearea și adaptarea",
+  "licenseInfoButtonAriaLabel": "Detalii despre licență, se deschid într-o filă nouă",
+  "selectedLicenseLabelFallback": "Personalizare",
+  "selectedLicenseLabelNoLicense": "Fără licență"
+}

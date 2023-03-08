@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Helyszűrő",
+  "panel.reset": "Szűrő alaphelyzetbe állítása",
+  "distance.title": "Távolság",
+  "distance.placeholder": "Adja meg a kívánt számot…",
+  "distance.message": "Adja meg a szűrt terület bővítésének számát.",
+  "units.title": "Mértékegységek"
+}

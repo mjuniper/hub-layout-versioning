@@ -1,0 +1,42 @@
+{
+  "cancel": "Avbryt",
+  "create": "Opprett",
+  "next": "Neste",
+  "project": {
+    "form": {
+      "title": "Opprett nytt prosjekt",
+      "description": "Prosjekter er tidsbestemte og målorienterte"
+    },
+    "describeProject": {
+      "label": "Beskriv prosjektet"
+    },
+    "name": {
+      "label": "Navn"
+    },
+    "summary": {
+      "label": "Formål",
+      "helperText": "Beskriv kort prosjektets mål."
+    },
+    "description": {
+      "label": "Beskrivelse",
+      "helperText": "Beskriv hvordan prosjektet vil nå disse målene. Inkluder relevant bakgrunnsinformasjon og forventede endringer som følge av prosjektarbeidet."
+    },
+    "setLocation": {
+      "label": "Angi lokasjon"
+    },
+    "statusAndTimeline": {
+      "label": "Status og tidslinje"
+    },
+    "status": {
+      "label": "Status",
+      "enum": {
+        "notStarted": "Ikke startet",
+        "inProgress": "Pågår",
+        "complete": "Fullført"
+      }
+    },
+    "timeline": {
+      "label": "Tidslinje"
+    }
+  }
+}

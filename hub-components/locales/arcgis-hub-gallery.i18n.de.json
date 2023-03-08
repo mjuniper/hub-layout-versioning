@@ -1,0 +1,20 @@
+{
+  "moreResults": "Weitere Ergebnisse",
+  "search": "Suchen",
+  "filter": "Filter",
+  "viewResults": "Ergebnisse anzeigen ({numResults})",
+  "resultsCount": "1–{pageTotal} von {searchTotal}",
+  "backToTop": "Nach oben",
+  "facets": {
+    "access": {
+      "private": "Mich selbst",
+      "shared": "Besitzer und Gruppen",
+      "org": "Organisation",
+      "public": "Öffentlich"
+    }
+  },
+  "layoutOptions": {
+    "list": "Liste anzeigen",
+    "grid": "Raster anzeigen"
+  }
+}

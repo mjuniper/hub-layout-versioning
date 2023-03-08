@@ -1,0 +1,20 @@
+{
+  "posted": "Publicat a {groupName} a {channelAccess}",
+  "anonymous": "Anònim",
+  "noUser": "Sense nom d'usuari",
+  "privateUser": "Membre privat",
+  "delete": "Suprimeix",
+  "edit": "Edita",
+  "public": "Públic",
+  "org": "La meva organització",
+  "private": "Només membres",
+  "options": "Opcions de la publicació",
+  "numReplies": "Nombre de respostes",
+  "edited": "Editat",
+  "error": "Hi ha hagut algun problema",
+  "deleteFailure": "Torneu a provar de suprimir la publicació.",
+  "deleted.title": "Publicació eliminada",
+  "deleted.message": "Aquesta publicació s'ha eliminat i no es pot visualitzar.",
+  "actions.reply": "Resposta",
+  "actions.view": "Visualitza totes les respostes"
+}

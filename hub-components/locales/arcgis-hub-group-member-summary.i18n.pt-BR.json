@@ -1,0 +1,3 @@
+{
+  "members": "{count, plural, =0 { sem membros} one { # membro } other { # membros }}"
+}

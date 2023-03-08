@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Auf diese Fläche filtern",
+  "filter.point": "Auf diesen Punkt filtern",
+  "filter.polyline": "Auf diese Linie filtern",
+  "delete": "Zeichnung löschen",
+  "update": "Zeichnung aktualisieren",
+  "cancel": "Änderungen verwerfen",
+  "save": "Änderungen speichern",
+  "select": "Auswählen",
+  "point": "Punkt hinzufügen",
+  "polyline": "Linie zeichnen",
+  "polygon": "Bereich zeichnen",
+  "options": "Zeichnungsoptionen",
+  "close": "Zeichnungsoptionen schließen",
+  "open": "Zeichnungsoptionen öffnen",
+  "updating": "Zeichnung wird aktualisiert",
+  "stop": "Zeichnen beenden",
+  "finish": "Aktualisierungen der Zeichnung fertigstellen"
+}

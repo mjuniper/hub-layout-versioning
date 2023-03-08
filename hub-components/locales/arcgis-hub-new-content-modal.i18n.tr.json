@@ -1,0 +1,42 @@
+{
+  "cancel": "İptal",
+  "create": "Oluştur",
+  "next": "İleri",
+  "project": {
+    "form": {
+      "title": "Yeni bir Proje Oluştur",
+      "description": "Projeler zamana bağlı ve hedefe yöneliktir"
+    },
+    "describeProject": {
+      "label": "Projenizi açıklayın"
+    },
+    "name": {
+      "label": "Adı"
+    },
+    "summary": {
+      "label": "Amaç",
+      "helperText": "Projenizin hedeflerini kısaca açıklayın."
+    },
+    "description": {
+      "label": "Açıklama",
+      "helperText": "Projenizin bu hedeflere nasıl ulaşacağını açıklayın. Proje çalışmasından beklenen ilgili arkaplan bilgileri ve değişiklikleri dahil edin."
+    },
+    "setLocation": {
+      "label": "Konum Ayarla"
+    },
+    "statusAndTimeline": {
+      "label": "Durum ve Zaman Çizgisi"
+    },
+    "status": {
+      "label": "Durum",
+      "enum": {
+        "notStarted": "Başlatılmadı",
+        "inProgress": "Devam Ediyor",
+        "complete": "Tamamla"
+      }
+    },
+    "timeline": {
+      "label": "Zaman çizgisi"
+    }
+  }
+}

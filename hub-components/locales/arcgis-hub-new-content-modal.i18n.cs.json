@@ -1,0 +1,42 @@
+{
+  "cancel": "Storno",
+  "create": "Vytvořit",
+  "next": "Další",
+  "project": {
+    "form": {
+      "title": "Vytvořit nový projekt",
+      "description": "Projekty jsou časově omezené a zaměřené na dosažení daného cíle"
+    },
+    "describeProject": {
+      "label": "Popsat projekt"
+    },
+    "name": {
+      "label": "Název"
+    },
+    "summary": {
+      "label": "Účel",
+      "helperText": "Stručně popište cíle vašeho projektu."
+    },
+    "description": {
+      "label": "Popis",
+      "helperText": "Popište, jak váš projekt splňuje tyto cíle. Zahrňte relevantní informace a změny očekávané od práce na projektu."
+    },
+    "setLocation": {
+      "label": "Nastavit polohu"
+    },
+    "statusAndTimeline": {
+      "label": "Stav a časový plán"
+    },
+    "status": {
+      "label": "Stav",
+      "enum": {
+        "notStarted": "Nespuštěno",
+        "inProgress": "Probíhá",
+        "complete": "Dokončeno"
+      }
+    },
+    "timeline": {
+      "label": "Časová osa"
+    }
+  }
+}

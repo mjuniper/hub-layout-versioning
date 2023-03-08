@@ -1,0 +1,42 @@
+{
+  "cancel": "Hủy",
+  "create": "Tạo",
+  "next": "Tiếp",
+  "project": {
+    "form": {
+      "title": "Tạo Dự án Mới",
+      "description": "Các dự án có thời hạn và định hướng mục tiêu"
+    },
+    "describeProject": {
+      "label": "Mô tả Dự án"
+    },
+    "name": {
+      "label": "Tên"
+    },
+    "summary": {
+      "label": "Mục đích",
+      "helperText": "Mô tả ngắn gọn các mục tiêu có trong Dự án của bạn."
+    },
+    "description": {
+      "label": "Thông tin mô tả",
+      "helperText": "Mô tả cách Dự án của bạn sẽ đáp ứng các mục tiêu này. Bao gồm thông tin nền có liên quan và thay đổi thông tin dự kiến từ công việc của Dự án."
+    },
+    "setLocation": {
+      "label": "Thiết lập Vị trí"
+    },
+    "statusAndTimeline": {
+      "label": "Trạng thái và Dòng thời gian"
+    },
+    "status": {
+      "label": "Trạng thái",
+      "enum": {
+        "notStarted": "Chưa Bắt đầu",
+        "inProgress": "Đang tiến hành",
+        "complete": "Hoàn tất"
+      }
+    },
+    "timeline": {
+      "label": "Dòng thời gian"
+    }
+  }
+}

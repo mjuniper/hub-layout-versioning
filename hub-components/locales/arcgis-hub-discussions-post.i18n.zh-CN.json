@@ -1,0 +1,20 @@
+{
+  "posted": "发布到 {groupName} 的 {channelAccess}",
+  "anonymous": "匿名",
+  "noUser": "无用户名",
+  "privateUser": "私有成员",
+  "delete": "删除",
+  "edit": "编辑",
+  "public": "公共",
+  "org": "我的组织",
+  "private": "仅限成员",
+  "options": "发布选项",
+  "numReplies": "回复数量",
+  "edited": "已编辑",
+  "error": "发生错误",
+  "deleteFailure": "请重新尝试删除帖子。",
+  "deleted.title": "已删除帖子",
+  "deleted.message": "此帖子已删除，无法显示。",
+  "actions.reply": "回复",
+  "actions.view": "查看所有回复"
+}

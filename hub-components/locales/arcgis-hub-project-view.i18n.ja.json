@@ -1,0 +1,33 @@
+{
+  "purpose": "目的",
+  "description": "達成方法",
+  "details": "詳細",
+  "featuredImageAlt": "プロジェクトの注目の画像",
+  "trackProgress": "進捗の追跡",
+  "participatingGroups": "参加しているグループ",
+  "whosInvolved": "参加者",
+  "tags": "タグ",
+  "status": {
+    "label": "プロジェクト ステータス",
+    "notStarted": "開始前",
+    "inProgress": "進行中",
+    "complete": "完了"
+  },
+  "resources": "リソース",
+  "metadata": {
+    "sharing": {
+      "public": "このプロジェクトは誰でも表示できます",
+      "org": "組織内のすべてのユーザーがこのプロジェクトを表示できます",
+      "private": "このプロジェクトを表示できるのはあなただけです",
+      "shared": "選択したグループがこのプロジェクトを表示できます",
+      "labels": {
+        "public": "パブリック",
+        "org": "組織",
+        "private": "所有者",
+        "shared": "プライベートに共有"
+      }
+    },
+    "dateCreated": "公開日",
+    "dateUpdated": "更新日"
+  }
+}

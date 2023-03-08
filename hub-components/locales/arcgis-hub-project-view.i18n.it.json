@@ -1,0 +1,33 @@
+{
+  "purpose": "Scopo",
+  "description": "Come ci arriveremo",
+  "details": "Dettagli",
+  "featuredImageAlt": "Immagine in primo piano del progetto",
+  "trackProgress": "Traccia i nostri progressi",
+  "participatingGroups": "Gruppi partecipanti",
+  "whosInvolved": "Chi è coinvolto",
+  "tags": "Tag",
+  "status": {
+    "label": "Stato progetto",
+    "notStarted": "Non iniziato",
+    "inProgress": "In progresso",
+    "complete": "Completo"
+  },
+  "resources": "Risorse",
+  "metadata": {
+    "sharing": {
+      "public": "Chiunque può vedere questo progetto",
+      "org": "Chiunque nella tua organizzazione può vedere questo progetto",
+      "private": "Solo tu puoi vedere questo progetto",
+      "shared": "Seleziona gruppi che possono vedere questo progetto",
+      "labels": {
+        "public": "Pubblico",
+        "org": "Organizzazione",
+        "private": "Proprietario",
+        "shared": "Condiviso privatamente"
+      }
+    },
+    "dateCreated": "Data di pubblicazione",
+    "dateUpdated": "Data aggiornamento"
+  }
+}

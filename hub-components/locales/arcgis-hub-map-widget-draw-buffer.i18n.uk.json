@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Фільтр місця розташування",
+  "panel.reset": "Скинути фільтр",
+  "distance.title": "Відстань",
+  "distance.placeholder": "Ввести число...",
+  "distance.message": "Введіть номер для розширення відфільтрованої області.",
+  "units.title": "Одиниці"
+}

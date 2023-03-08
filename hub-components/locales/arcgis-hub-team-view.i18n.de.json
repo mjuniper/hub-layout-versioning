@@ -1,0 +1,11 @@
+{
+  "access-org": "Organisationsteamaa",
+  "access-private": "Privates Team",
+  "access-public": "Öffentliches Team",
+  "dateUpdated": "Aktualisiert",
+  "edit": "Sie haben Bearbeitungszugriff",
+  "members": "{count, plural, =0 { keine Mitglieder} one { # Mitglied } other { # Mitglieder }}",
+  "teamAccess": "Teamzugriff",
+  "view": "Sie haben Lesezugriff",
+  "moreInfo": "Weitere Informationen"
+}

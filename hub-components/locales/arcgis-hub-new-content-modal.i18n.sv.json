@@ -1,0 +1,42 @@
+{
+  "cancel": "Avbryt",
+  "create": "Skapa",
+  "next": "Nästa",
+  "project": {
+    "form": {
+      "title": "Skapa ett nytt projekt",
+      "description": "Projekt är tidsbundna och målorienterade"
+    },
+    "describeProject": {
+      "label": "Beskriv projekt"
+    },
+    "name": {
+      "label": "Namn"
+    },
+    "summary": {
+      "label": "Syfte",
+      "helperText": "Beskriv kort målen för ditt projekt."
+    },
+    "description": {
+      "label": "Beskrivning",
+      "helperText": "Beskriv hur ditt projekt kommer att uppfylla dessa mål. Inkludera relevant bakgrundsinformation och förväntade förändringar från projektarbetet."
+    },
+    "setLocation": {
+      "label": "Ange plats"
+    },
+    "statusAndTimeline": {
+      "label": "Status och tidslinje"
+    },
+    "status": {
+      "label": "Status",
+      "enum": {
+        "notStarted": "Inte startad",
+        "inProgress": "Pågår",
+        "complete": "Fullständig"
+      }
+    },
+    "timeline": {
+      "label": "Tidslinje"
+    }
+  }
+}

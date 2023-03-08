@@ -1,0 +1,33 @@
+{
+  "purpose": "Objet",
+  "description": "Notre démarche",
+  "details": "Détails",
+  "featuredImageAlt": "Image à l’affiche du projet",
+  "trackProgress": "Suivre la progression",
+  "participatingGroups": "Groupes participants",
+  "whosInvolved": "Personnes concernées",
+  "tags": "Balises",
+  "status": {
+    "label": "Statut du projet",
+    "notStarted": "Non commencé",
+    "inProgress": "En cours",
+    "complete": "Terminé"
+  },
+  "resources": "Ressources",
+  "metadata": {
+    "sharing": {
+      "public": "Tout le monde peut voir ce projet",
+      "org": "Tous les membres de votre organisation peuvent voir ce projet",
+      "private": "Vous seul pouvez voir ce projet",
+      "shared": "Certains groupes peuvent voir ce projet",
+      "labels": {
+        "public": "Public",
+        "org": "Organisation",
+        "private": "Propriétaire",
+        "shared": "Partagé en privé"
+      }
+    },
+    "dateCreated": "Date de publication",
+    "dateUpdated": "Date de mise à jour"
+  }
+}

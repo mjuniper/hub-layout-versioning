@@ -1,0 +1,16 @@
+{
+  "delete": "Slet",
+  "edit": "Redigér",
+  "options": "Indstillinger for opslag",
+  "noUser": "Intet brugernavn",
+  "anonymous": "Anonym",
+  "privateUser": "Privat medlem",
+  "edited": "Redigeret",
+  "error": "Der gik noget galt",
+  "deleteFailure": "Prøv at slette dit svar igen.",
+  "deleted.title": "Svar slettet",
+  "deleted.message": "Det tilknyttede svar er slettet og kan ikke vises.",
+  "delete.action": "Vis alle svar",
+  "replyingTo": "Sender svar til {fullName}",
+  "viewPost": "Vis post"
+}

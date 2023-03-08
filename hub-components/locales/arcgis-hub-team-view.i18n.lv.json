@@ -1,0 +1,11 @@
+{
+  "access-org": "Organizācijas komanda",
+  "access-private": "Privāta komanda",
+  "access-public": "Publiska komanda",
+  "dateUpdated": "Atjaunināts",
+  "edit": "Jums ir rediģēšanas piekļuve",
+  "members": "{count, plural, =0 { nav dalībnieku} one { # dalībnieks } other { # dalībnieki }}",
+  "teamAccess": "Grupas piekļuve",
+  "view": "Jums ir skatīšanas piekļuve",
+  "moreInfo": "Papildinformācija"
+}

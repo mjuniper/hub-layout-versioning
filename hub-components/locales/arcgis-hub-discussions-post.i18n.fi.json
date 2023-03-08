@@ -1,0 +1,20 @@
+{
+  "posted": "Julkaistu ryhmässä {groupName} kohteeseen {channelAccess}",
+  "anonymous": "Anonyymi",
+  "noUser": "Ei käyttäjänimeä",
+  "privateUser": "Yksityinen jäsen",
+  "delete": "Poista",
+  "edit": "Muokkaa",
+  "public": "Julkinen",
+  "org": "Oma organisaatio",
+  "private": "Vain jäsenet",
+  "options": "Julkaisuasetukset",
+  "numReplies": "Vastausten lukumäärä",
+  "edited": "Muokattu",
+  "error": "Tapahtui virhe",
+  "deleteFailure": "Yritä poistaa julkaisu uudelleen.",
+  "deleted.title": "Julkaisu poistettu",
+  "deleted.message": "Tämä julkaisu on poistettu, eikä sitä voi näyttää.",
+  "actions.reply": "Vastaa",
+  "actions.view": "Näytä kaikki vastaukset"
+}

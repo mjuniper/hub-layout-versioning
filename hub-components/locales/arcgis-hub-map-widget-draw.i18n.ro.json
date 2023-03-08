@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filtrare în această zonă",
+  "filter.point": "Filtrare în acest punct",
+  "filter.polyline": "Filtrare pe acest rând",
+  "delete": "Ștergere trasare",
+  "update": "Actualizare trasare",
+  "cancel": "Anulare modificări",
+  "save": "Salvare modificări",
+  "select": "Selectare",
+  "point": "Eliminați un punct",
+  "polyline": "Trasare linie",
+  "polygon": "Trasare suprafaţă",
+  "options": "Opțiuni de trasare",
+  "close": "Închidere opțiuni de trasare",
+  "open": "Deschidere opțiuni de trasare",
+  "updating": "Se actualizează trasarea",
+  "stop": "Oprire trasare",
+  "finish": "Finalizare actualizări de trasare"
+}

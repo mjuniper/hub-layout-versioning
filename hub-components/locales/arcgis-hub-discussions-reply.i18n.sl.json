@@ -1,0 +1,16 @@
+{
+  "delete": "Zbriši",
+  "edit": "Uredi",
+  "options": "Možnosti objav",
+  "noUser": "Brez uporabniškega imena",
+  "anonymous": "Anonimno",
+  "privateUser": "Zasebni uporabnik",
+  "edited": "Urejeno",
+  "error": "Nekaj je šlo narobe",
+  "deleteFailure": "Poskusite znova, da izbrišete vaš odgovor.",
+  "deleted.title": "Odgovor je izbrisan",
+  "deleted.message": "Povezani odgovor je bil izbrisan in ga ni mogoče prikazati.",
+  "delete.action": "Ogled vseh odgovorov",
+  "replyingTo": "Odgovor za {fullName}",
+  "viewPost": "Ogled objave"
+}

@@ -1,0 +1,42 @@
+{
+  "cancel": "Atšaukti",
+  "create": "Sukurti",
+  "next": "Kitas",
+  "project": {
+    "form": {
+      "title": "Kurti naują projektą",
+      "description": "Projektai yra orientuoti į atlikimo laikotarpį ir tikslą"
+    },
+    "describeProject": {
+      "label": "Aprašyti projektą"
+    },
+    "name": {
+      "label": "Pavadinimas"
+    },
+    "summary": {
+      "label": "Paskirtis",
+      "helperText": "Trumpai aprašykite savo projekto tikslus."
+    },
+    "description": {
+      "label": "Aprašas",
+      "helperText": "Aprašykite, kaip jūsų projektas padės įgyvendinti šiuos tikslus. Įtraukite atitinkamą pagrindinę informaciją ir numatomus projekto užduočių pakeitimus."
+    },
+    "setLocation": {
+      "label": "Nustatyti vietą"
+    },
+    "statusAndTimeline": {
+      "label": "Būsena ir laiko juosta"
+    },
+    "status": {
+      "label": "Būsena",
+      "enum": {
+        "notStarted": "Nepradėta",
+        "inProgress": "Vykdoma",
+        "complete": "Baigta"
+      }
+    },
+    "timeline": {
+      "label": "Laiko juosta"
+    }
+  }
+}

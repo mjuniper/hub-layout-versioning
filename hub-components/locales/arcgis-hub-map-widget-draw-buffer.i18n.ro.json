@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Filtru de locație",
+  "panel.reset": "Resetați filtrul",
+  "distance.title": "Distanţă",
+  "distance.placeholder": "Introduceți un număr...",
+  "distance.message": "Introduceți un număr pentru a extinde zona filtrată.",
+  "units.title": "Unităţi"
+}

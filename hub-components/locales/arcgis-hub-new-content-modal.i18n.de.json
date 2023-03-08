@@ -1,0 +1,42 @@
+{
+  "cancel": "Abbrechen",
+  "create": "Erstellen",
+  "next": "Weiter",
+  "project": {
+    "form": {
+      "title": "Neues Projekt erstellen",
+      "description": "Projekte sind zeitgebunden und zielgerichtet."
+    },
+    "describeProject": {
+      "label": "Projekt beschreiben"
+    },
+    "name": {
+      "label": "Name"
+    },
+    "summary": {
+      "label": "Zweck",
+      "helperText": "Beschreiben Sie kurz die Ziele des Projekts."
+    },
+    "description": {
+      "label": "Beschreibung",
+      "helperText": "Beschreiben Sie, wie die Projektziele erreicht werden. Geben Sie relevante Hintergrundinformationen an, und beschreiben Sie, welche Veränderungen sich erwartungsgemäß aus der Projektarbeit ergeben."
+    },
+    "setLocation": {
+      "label": "Position festlegen"
+    },
+    "statusAndTimeline": {
+      "label": "Status und Zeitachse"
+    },
+    "status": {
+      "label": "Status",
+      "enum": {
+        "notStarted": "Nicht gestartet",
+        "inProgress": "Wird ausgeführt",
+        "complete": "Abgeschlossen"
+      }
+    },
+    "timeline": {
+      "label": "Zeitachse"
+    }
+  }
+}

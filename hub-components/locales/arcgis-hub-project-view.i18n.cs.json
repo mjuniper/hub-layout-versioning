@@ -1,0 +1,33 @@
+{
+  "purpose": "Účel",
+  "description": "Jak toho dosáhneme",
+  "details": "Podrobnosti",
+  "featuredImageAlt": "Reprezentativní obrázek projektu",
+  "trackProgress": "Sledujte náš pokrok",
+  "participatingGroups": "Zúčastněné skupiny",
+  "whosInvolved": "Kdo je zapojen",
+  "tags": "Klíčová slova",
+  "status": {
+    "label": "Stav projektu",
+    "notStarted": "Nespuštěno",
+    "inProgress": "Probíhá",
+    "complete": "Dokončeno"
+  },
+  "resources": "Zdroje",
+  "metadata": {
+    "sharing": {
+      "public": "Tento projekt uvidí všichni",
+      "org": "Tento projekt uvidí všichni ve vaší organizaci",
+      "private": "Tento projekt uvidíte pouze vy",
+      "shared": "Tento projekt mohou vidět vybrané skupiny",
+      "labels": {
+        "public": "Veřejné",
+        "org": "Organizace",
+        "private": "Vlastník",
+        "shared": "Sdíleno soukromě"
+      }
+    },
+    "dateCreated": "Datum vydání",
+    "dateUpdated": "Datum změny"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Aspeto",
+  "accordionData": "Dados",
+  "corners": {
+    "label": "Cantos",
+    "enum": {
+      "round": "Redondo",
+      "square": "Quadrado"
+    }
+  },
+  "dropShadow": {
+    "label": "Sombra",
+    "enum": {
+      "heavy": "Carregado",
+      "low": "Baixo",
+      "medium": "Médio",
+      "none": "Nenhum"
+    }
+  },
+  "layout": {
+    "label": "Layout Estatístico",
+    "enum": {
+      "dataViz": "Visualização de Dados",
+      "moreInfo": "Mais Informações",
+      "simple": "Simples"
+    }
+  },
+  "popoverTitle": "Título do Pop-over",
+  "popoverDescription": "Descrição do Pop-over",
+  "popoverLogo": "Logótipo do Pop-over",
+  "publisher": "Publicador",
+  "showShareIcon": "Ativar Partilha",
+  "shareableByValue": "Ativar Incorporações",
+  "shareableOnHover": "Ativar Sobreposição do Cursor",
+  "subtitle": "Subtítulo",
+  "textAlign": "Alinhamento de Texto",
+  "title": "Título",
+  "titleTooltip": "ToolTip",
+  "trailingText": "Texto Final",
+  "unit": "Unidade",
+  "unitPosition": {
+    "label": "Posição da Unidade",
+    "enum": {
+      "after": "Após",
+      "before": "Antes",
+      "below": "Abaixo"
+    }
+  },
+  "value": "Valor",
+  "valueColor": "Cor de Realce",
+  "visualInterest": {
+    "label": "Interesse Visual",
+    "enum": {
+      "icon": "Ícone",
+      "logo": "Logótipo",
+      "none": "Nenhum",
+      "sparkline": "Sparkline"
+    }
+  }
+}

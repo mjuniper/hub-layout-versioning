@@ -1,0 +1,42 @@
+{
+  "cancel": "Prekliči",
+  "create": "Ustvari",
+  "next": "Naprej",
+  "project": {
+    "form": {
+      "title": "Ustvari nov projekt",
+      "description": "Projekti so časovno omejeni in ciljno usmerjeni"
+    },
+    "describeProject": {
+      "label": "Opiši projekt"
+    },
+    "name": {
+      "label": "Ime"
+    },
+    "summary": {
+      "label": "Namen",
+      "helperText": "Na kratko opišite cilje vašega projekta."
+    },
+    "description": {
+      "label": "Opis",
+      "helperText": "Opišite kako bo vaš projekt dosegel te cilje. Vključite relevantne osnovne informacije in pričakovane spremembe projektnega dela."
+    },
+    "setLocation": {
+      "label": "Nastavi lokacijo"
+    },
+    "statusAndTimeline": {
+      "label": "Stanje in časovnica"
+    },
+    "status": {
+      "label": "Status",
+      "enum": {
+        "notStarted": "Ni začeto",
+        "inProgress": "V teku",
+        "complete": "Dokončano"
+      }
+    },
+    "timeline": {
+      "label": "Časovnica"
+    }
+  }
+}

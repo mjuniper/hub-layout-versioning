@@ -1,0 +1,16 @@
+{
+  "delete": "Delete",
+  "edit": "Edit",
+  "options": "Post options",
+  "noUser": "No Username",
+  "anonymous": "Anonymous",
+  "privateUser": "Private Member",
+  "edited": "Edited",
+  "error": "Something went wrong",
+  "deleteFailure": "Please try again to delete your reply.",
+  "deleted.title": "Reply Deleted",
+  "deleted.message": "The linked reply was deleted and cannot be displayed.",
+  "delete.action": "View all replies",
+  "replyingTo": "Replying to {fullName}",
+  "viewPost": "View Post"
+}

@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Görünüm",
+  "accordionData": "Veri",
+  "corners": {
+    "label": "Köşeler",
+    "enum": {
+      "round": "Yuvarlak",
+      "square": "Kare"
+    }
+  },
+  "dropShadow": {
+    "label": "Gölge Bırak",
+    "enum": {
+      "heavy": "Ağır",
+      "low": "Düşük",
+      "medium": "Orta",
+      "none": "Hiçbiri"
+    }
+  },
+  "layout": {
+    "label": "İstatistik Çıktı Düzeni",
+    "enum": {
+      "dataViz": "Veri Görselleştirme",
+      "moreInfo": "Daha Fazla Bilgi",
+      "simple": "Basit"
+    }
+  },
+  "popoverTitle": "Açılır Başlık",
+  "popoverDescription": "Açılır Açıklama",
+  "popoverLogo": "Açılır Logo",
+  "publisher": "Publisher",
+  "showShareIcon": "Paylaşımı Etkinleştir",
+  "shareableByValue": "Yerleştirmeleri Etkinleştir",
+  "shareableOnHover": "Dolaştırmayı Etkinleştir",
+  "subtitle": "Altbaşlık",
+  "textAlign": "Metin Hizalama",
+  "title": "Başlık",
+  "titleTooltip": "Araç ipucu",
+  "trailingText": "Sondaki Metin",
+  "unit": "Birim",
+  "unitPosition": {
+    "label": "Birim Konumu",
+    "enum": {
+      "after": "Sonrasında",
+      "before": "Öncesinde",
+      "below": "Altında"
+    }
+  },
+  "value": "Değer",
+  "valueColor": "Aksan Karakteri Rengi",
+  "visualInterest": {
+    "label": "Görsel İlgi Alanı",
+    "enum": {
+      "icon": "Simge",
+      "logo": "Logo",
+      "none": "Hiçbiri",
+      "sparkline": "Küçük grafik"
+    }
+  }
+}

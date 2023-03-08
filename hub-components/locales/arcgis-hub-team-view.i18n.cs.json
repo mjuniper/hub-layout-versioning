@@ -1,0 +1,11 @@
+{
+  "access-org": "Organizační tým",
+  "access-private": "Soukromý tým",
+  "access-public": "Veřejný tým",
+  "dateUpdated": "Aktualizováno",
+  "edit": "Máte přístup k úpravám",
+  "members": "{count, plural, =0 { žádní č lenové} one { # č len } other { # č lenové }}",
+  "teamAccess": "Přístup týmu",
+  "view": "Máte přístup k zobrazení",
+  "moreInfo": "Více informací"
+}

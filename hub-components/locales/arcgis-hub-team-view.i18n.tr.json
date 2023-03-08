@@ -1,0 +1,11 @@
+{
+  "access-org": "Kuruluş Ekibi",
+  "access-private": "Özel Ekip",
+  "access-public": "Genel Ekip",
+  "dateUpdated": "Güncellendi",
+  "edit": "Düzenleme erişiminiz var",
+  "members": "{count, plural, =0 { üye yok} one { # üye } other { # üyeler }}",
+  "teamAccess": "Ekip Erişimi",
+  "view": "Görüntüleme erişiminiz var",
+  "moreInfo": "Daha Fazla Bilgi"
+}

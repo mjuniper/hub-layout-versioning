@@ -1,0 +1,3 @@
+{
+  "members": "{count, plural, =0 { žádní č lenové} one { # č len } other { # č lenové }}"
+}

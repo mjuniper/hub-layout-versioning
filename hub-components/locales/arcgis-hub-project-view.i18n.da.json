@@ -1,0 +1,33 @@
+{
+  "purpose": "Formål",
+  "description": "Sådan når vi dertil",
+  "details": "Oplysninger",
+  "featuredImageAlt": "Projekt: Udvalgt billede",
+  "trackProgress": "Følg vores fremskridt",
+  "participatingGroups": "Deltagende grupper",
+  "whosInvolved": "Hvem er involveret?",
+  "tags": "Nøgleord",
+  "status": {
+    "label": "Projektstatus",
+    "notStarted": "Ikke startet",
+    "inProgress": "I gang",
+    "complete": "Afsluttet"
+  },
+  "resources": "Ressourcer",
+  "metadata": {
+    "sharing": {
+      "public": "Alle kan se dette projekt",
+      "org": "Alle i din organisation kan se dette projekt",
+      "private": "Det er kun dig, der kan se dette projekt",
+      "shared": "Udvalgte grupper kan se dette projekt",
+      "labels": {
+        "public": "Offentlig",
+        "org": "Organisation",
+        "private": "Ejer",
+        "shared": "Delt privat"
+      }
+    },
+    "dateCreated": "Publiceringsdato",
+    "dateUpdated": "Dato for opdatering"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Platsfilter",
+  "panel.reset": "Återställ filter",
+  "distance.title": "Avstånd",
+  "distance.placeholder": "Ange ett tal...",
+  "distance.message": "Ange ett tal för att expandera filtrerat område.",
+  "units.title": "Enheter"
+}

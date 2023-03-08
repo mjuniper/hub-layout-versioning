@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Udseende",
+  "accordionData": "Data",
+  "corners": {
+    "label": "Hjørner",
+    "enum": {
+      "round": "Rund",
+      "square": "Kvadrat"
+    }
+  },
+  "dropShadow": {
+    "label": "Skyggeeffekt",
+    "enum": {
+      "heavy": "Tung",
+      "low": "Lav",
+      "medium": "Mellem",
+      "none": "Ingen"
+    }
+  },
+  "layout": {
+    "label": "Statistisk layout",
+    "enum": {
+      "dataViz": "Datavisualisering",
+      "moreInfo": "Flere oplysninger",
+      "simple": "Enkel"
+    }
+  },
+  "popoverTitle": "Popover-titel",
+  "popoverDescription": "Popover-beskrivelse",
+  "popoverLogo": "Popover-logo",
+  "publisher": "Udgiver",
+  "showShareIcon": "Aktiver deling",
+  "shareableByValue": "Aktiver indlejringer",
+  "shareableOnHover": "Aktiver Hold musen over",
+  "subtitle": "Undertitel",
+  "textAlign": "Tekstjustering",
+  "title": "Titel",
+  "titleTooltip": "Værktøjstip",
+  "trailingText": "Følgetekst",
+  "unit": "Enhed",
+  "unitPosition": {
+    "label": "Enheds position",
+    "enum": {
+      "after": "Efter",
+      "before": "Før",
+      "below": "Under"
+    }
+  },
+  "value": "Værdi",
+  "valueColor": "Farve på accenttegn",
+  "visualInterest": {
+    "label": "Visuel interesse",
+    "enum": {
+      "icon": "Ikon",
+      "logo": "Logo",
+      "none": "Ingen",
+      "sparkline": "Sparkline"
+    }
+  }
+}

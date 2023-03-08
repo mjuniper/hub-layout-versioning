@@ -1,0 +1,33 @@
+{
+  "purpose": "Tujuan",
+  "description": "Cara Kami Mewujudkannya",
+  "details": "Detail",
+  "featuredImageAlt": "Gambar Unggulan Proyek",
+  "trackProgress": "Pantau Kemajuan Kami",
+  "participatingGroups": "Grup yang Berpartisipasi",
+  "whosInvolved": "Pihak yang Terlibat",
+  "tags": "Label",
+  "status": {
+    "label": "Status Proyek",
+    "notStarted": "Belum Dimulai",
+    "inProgress": "Dalam Proses",
+    "complete": "Selesai"
+  },
+  "resources": "Sumber Daya",
+  "metadata": {
+    "sharing": {
+      "public": "Semua orang dapat melihat proyek ini",
+      "org": "Semua orang di organisasi Anda dapat melihat proyek ini",
+      "private": "Hanya Anda yang dapat melihat proyek ini",
+      "shared": "Grup tertentu dapat melihat proyek ini",
+      "labels": {
+        "public": "Publik",
+        "org": "Organisasi",
+        "private": "Pemilik",
+        "shared": "Dibagikan Secara Pribadi"
+      }
+    },
+    "dateCreated": "Tanggal Publikasi",
+    "dateUpdated": "Tanggal Diperbarui"
+  }
+}

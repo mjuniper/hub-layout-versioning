@@ -1,0 +1,20 @@
+{
+  "posted": "Ubjavljeno u {groupName} na {channelAccess}",
+  "anonymous": "Anonimno",
+  "noUser": "Nema korisničkog imena",
+  "privateUser": "Privatni član",
+  "delete": "Izbriši",
+  "edit": "Uredi",
+  "public": "Javnost",
+  "org": "Moja organizacija",
+  "private": "Samo članovi",
+  "options": "Opcije objave",
+  "numReplies": "Broj odgovora",
+  "edited": "Uređeno",
+  "error": "Nešto je pošlo po zlu",
+  "deleteFailure": "Pokušajte ponovno izbrisati svoju objavu.",
+  "deleted.title": "Objava izbrisana",
+  "deleted.message": "Ta je objava izbrisana i ne može se prikazati.",
+  "actions.reply": "Odgovori",
+  "actions.view": "Prikaži sve odgovore."
+}

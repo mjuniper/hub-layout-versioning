@@ -1,0 +1,16 @@
+{
+  "delete": "Slett",
+  "edit": "Rediger",
+  "options": "Alternativer for innlegg",
+  "noUser": "Uten brukernavn",
+  "anonymous": "Anonym",
+  "privateUser": "Privat medlem",
+  "edited": "Redigert",
+  "error": "Noe gikk galt",
+  "deleteFailure": "Prøv på nytt for å slette svaret ditt.",
+  "deleted.title": "Svar slettet",
+  "deleted.message": "Det koblede svaret er slettet og kan ikke vises.",
+  "delete.action": "Vis alle svar",
+  "replyingTo": "Svarer på {fullName}",
+  "viewPost": "Vis post"
+}

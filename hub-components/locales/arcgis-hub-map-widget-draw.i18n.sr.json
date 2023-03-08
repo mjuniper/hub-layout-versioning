@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filter do ove oblasti",
+  "filter.point": "Filter do ove tačke",
+  "filter.polyline": "Filter do ove linije",
+  "delete": "Obriši crtanje",
+  "update": "Ažuriraj crtanje",
+  "cancel": "Otkaži promene",
+  "save": "Sačuvaj promene",
+  "select": "Izaberite",
+  "point": "Postavljanje tačke",
+  "polyline": "Nacrtaj liniju",
+  "polygon": "Nacrtajte oblast",
+  "options": "Opcije crtanja",
+  "close": "Zatvorite opcije crtanja",
+  "open": "Otvorite opcije crtanja",
+  "updating": "Ažuriranje crtanja",
+  "stop": "Zaustavi crtanje",
+  "finish": "Završite ažuriranje crteža"
+}

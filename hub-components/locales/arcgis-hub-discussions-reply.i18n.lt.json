@@ -1,0 +1,16 @@
+{
+  "delete": "Ištrinti",
+  "edit": "Redaguoti",
+  "options": "Įrašo parinktys",
+  "noUser": "Nėra naudotojo vardo",
+  "anonymous": "Anonimas",
+  "privateUser": "Privatus narys",
+  "edited": "Redaguota",
+  "error": "Įvyko klaida",
+  "deleteFailure": "Pabandykite iš naujo panaikinti savo atsakymą.",
+  "deleted.title": "Atsakymas panaikintas",
+  "deleted.message": "Susietas atsakymas buvo panaikintas ir jo parodyti negalima.",
+  "delete.action": "Peržiūrėti visus atsakymus",
+  "replyingTo": "Atsakoma į {fullName}",
+  "viewPost": "Peržiūrėti įrašą"
+}

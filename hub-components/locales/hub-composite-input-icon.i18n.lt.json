@@ -1,0 +1,15 @@
+{
+  "select": "Pasirinkti",
+  "cancel": "Atšaukti",
+  "iconModalTitle": "Pasirinkti piktogramą",
+  "scope": {
+    "enum": {
+      "library": "Pasirinkti iš bibliotekos",
+      "url": "Nurodykite savo URL"
+    }
+  },
+  "altText": {
+    "label": "Alternatyvusis tekstas",
+    "helperText": "Jei nepridėta, piktograma bus pažymėta kaip dekoratyvinė."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "posted": "Publicēts {groupName} līdz {channelAccess}",
+  "anonymous": "Anonīms",
+  "noUser": "Bez lietotājvārda",
+  "privateUser": "Privāts dalībnieks",
+  "delete": "Dzēst",
+  "edit": "Rediģēt",
+  "public": "Publisks",
+  "org": "Mana organizācija",
+  "private": "Tikai dalībnieki",
+  "options": "Publicēšanas iespējas",
+  "numReplies": "Atbilžu skaits",
+  "edited": "Rediģēts",
+  "error": "Radās kāda problēma",
+  "deleteFailure": "Lūdzu, mēģiniet vēlreiz izdzēst savu ziņu.",
+  "deleted.title": "Ziņa ir izdzēsta",
+  "deleted.message": "Šī ziņa tika izdzēsta, un to nevar parādīt.",
+  "actions.reply": "Atbildēt",
+  "actions.view": "Skatīt visas atbildes"
+}

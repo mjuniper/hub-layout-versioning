@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filtreeri selle alani",
+  "filter.point": "Filtreeri selle punktini",
+  "filter.polyline": "Filtreeri selle jooneni",
+  "delete": "Kustuta joonis",
+  "update": "Uuenda joonist",
+  "cancel": "Tühista muudatused",
+  "save": "Salvesta muudatused",
+  "select": "Vali",
+  "point": "Paiguta punkt",
+  "polyline": "Joonista joon",
+  "polygon": "Joonista ala",
+  "options": "Joonistamisvalikud",
+  "close": "Sule joonistamisvalikud",
+  "open": "Ava joonistamisvalikud",
+  "updating": "Joonistuse uuendamine",
+  "stop": "Peata joonistamine",
+  "finish": "Vii joonistamise uuendused lõpule"
+}

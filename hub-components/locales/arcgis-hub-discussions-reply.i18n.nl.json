@@ -1,0 +1,16 @@
+{
+  "delete": "Verwijderen",
+  "edit": "Bewerken",
+  "options": "Opties voor posten",
+  "noUser": "Geen gebruikersnaam",
+  "anonymous": "Anoniem",
+  "privateUser": "Privé lid",
+  "edited": "Bewerkt",
+  "error": "Er is iets fout gegaan",
+  "deleteFailure": "Probeer opnieuw uw antwoord te verwijderen.",
+  "deleted.title": "Antwoord verwijderd",
+  "deleted.message": "Het gekoppelde antwoord is verwijderd en kan niet worden weergegeven.",
+  "delete.action": "Alle antwoorden weergeven",
+  "replyingTo": "{fullName} beantwoorden",
+  "viewPost": "Post weergeven"
+}

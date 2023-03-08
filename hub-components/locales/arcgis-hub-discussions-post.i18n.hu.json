@@ -1,0 +1,20 @@
+{
+  "posted": "Közzétéve itt: {groupName}, {channelAccess} számára",
+  "anonymous": "Névtelen",
+  "noUser": "Nincs felhasználónév",
+  "privateUser": "Privát tag",
+  "delete": "Törlés",
+  "edit": "Szerkesztés",
+  "public": "Nyilvános",
+  "org": "Saját szervezet",
+  "private": "Csak tagok",
+  "options": "Közzététel beállításai",
+  "numReplies": "Válaszok száma",
+  "edited": "Szerkesztve",
+  "error": "Hiba történt",
+  "deleteFailure": "Próbálja meg újra törölni a közzétételét.",
+  "deleted.title": "Hozzászólás törölve",
+  "deleted.message": "A hozzászólás törölve lett, és nem jeleníthető meg.",
+  "actions.reply": "Válasz",
+  "actions.view": "Összes válasz megjelenítése"
+}

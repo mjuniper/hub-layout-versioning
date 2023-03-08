@@ -1,0 +1,20 @@
+{
+  "posted": "تم النشر في {groupName} إلى {channelAccess}",
+  "anonymous": "مجهول",
+  "noUser": "لا يوجد اسم مستخدم",
+  "privateUser": "عضو خاص",
+  "delete": "حذف",
+  "edit": "تحرير",
+  "public": "عام",
+  "org": "المنظمة",
+  "private": "الأعضاء فقط",
+  "options": "خيارات المنشور",
+  "numReplies": "عدد الردود",
+  "edited": "تم التحرير",
+  "error": "حدث خطأ ما",
+  "deleteFailure": "يُرجى المحاولة مرة أخرى لحذف منشورك.",
+  "deleted.title": "تم حذف المنشور",
+  "deleted.message": "تم حذف هذا المنشور ولا يمكن عرضه.",
+  "actions.reply": "الرد",
+  "actions.view": "عرض جميع الردود"
+}

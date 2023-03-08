@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "このエリアでフィルタリング",
+  "filter.point": "このポイントでフィルタリング",
+  "filter.polyline": "このラインでフィルタリング",
+  "delete": "描画を削除",
+  "update": "描画の更新",
+  "cancel": "変更をキャンセル",
+  "save": "変更の保存",
+  "select": "選択",
+  "point": "ポイントをドロップ",
+  "polyline": "ラインの描画",
+  "polygon": "エリアの描画",
+  "options": "描画オプション",
+  "close": "描画オプションを閉じる",
+  "open": "描画オプションを開く",
+  "updating": "描画の更新",
+  "stop": "描画の停止",
+  "finish": "描画の更新の完了"
+}

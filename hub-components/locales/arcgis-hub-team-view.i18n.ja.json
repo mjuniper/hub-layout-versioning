@@ -1,0 +1,11 @@
+{
+  "access-org": "組織のチーム",
+  "access-private": "非公開チーム",
+  "access-public": "公開チーム",
+  "dateUpdated": "更新",
+  "edit": "編集アクセス権があります",
+  "members": "{count, plural, =0 { メンバーがいません} one { # 人のメンバー } other { # 人のメンバー }}",
+  "teamAccess": "チーム アクセス",
+  "view": "表示アクセス権があります",
+  "moreInfo": "詳細情報"
+}

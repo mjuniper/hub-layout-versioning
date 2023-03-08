@@ -1,0 +1,7 @@
+{
+  "showMore": "Mostrar más {num}",
+  "showLess": "Mostrar menos",
+  "inputPlaceholder": "Filtrar opciones",
+  "noMatchesNotice": "No se han encontrado opciones coincidentes",
+  "inputAriaLabel": "Buscar opciones mediante palabras clave"
+}

@@ -1,0 +1,20 @@
+{
+  "posted": "Posted in {groupName} to {channelAccess}",
+  "anonymous": "Anonymous",
+  "noUser": "No Username",
+  "privateUser": "Private Member",
+  "delete": "Delete",
+  "edit": "Edit",
+  "public": "Public",
+  "org": "My Organization",
+  "private": "Members Only",
+  "options": "Post options",
+  "numReplies": "Number of replies",
+  "edited": "Edited",
+  "error": "Something went wrong",
+  "deleteFailure": "Please try again to delete your post.",
+  "deleted.title": "Post Deleted",
+  "deleted.message": "This post was deleted and cannot be displayed.",
+  "actions.reply": "Reply",
+  "actions.view": "View all replies"
+}

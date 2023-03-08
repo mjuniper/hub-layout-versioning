@@ -1,0 +1,33 @@
+{
+  "purpose": "Scop",
+  "description": "Cum vom îndeplini",
+  "details": "Detalii",
+  "featuredImageAlt": "Imagine prezentată în proiect",
+  "trackProgress": "Urmăriți progresul nostru",
+  "participatingGroups": "Grupuri participante",
+  "whosInvolved": "Cine este implicat",
+  "tags": "Etichete",
+  "status": {
+    "label": "Stare proiect",
+    "notStarted": "Neînceput",
+    "inProgress": "În derulare",
+    "complete": "Finalizată"
+  },
+  "resources": "Resurse",
+  "metadata": {
+    "sharing": {
+      "public": "Oricine poate vedea acest proiect",
+      "org": "Oricine din organizația dvs. poate vedea acest proiect",
+      "private": "Doar dvs. puteți vedea acest proiect",
+      "shared": "Selectați grupurile care pot vedea acest proiect",
+      "labels": {
+        "public": "Public",
+        "org": "Organizaţie",
+        "private": "Proprietar",
+        "shared": "Partajat privat"
+      }
+    },
+    "dateCreated": "Data publicării",
+    "dateUpdated": "Dată actualizată"
+  }
+}

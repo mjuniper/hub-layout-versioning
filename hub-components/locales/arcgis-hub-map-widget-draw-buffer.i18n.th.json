@@ -1,0 +1,8 @@
+{
+  "panel.heading": "ตัวกรองตำแหน่ง",
+  "panel.reset": "รีเซ็ตตัวกรอง",
+  "distance.title": "ระยะทาง",
+  "distance.placeholder": "ป้อนตัวเลข...",
+  "distance.message": "ป้อนตัวเลขเพื่อขยายพื้นที่ที่กรอง",
+  "units.title": "หน่วย"
+}

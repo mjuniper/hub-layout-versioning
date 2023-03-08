@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filtrera till det här området",
+  "filter.point": "Filtrera till den här punkten",
+  "filter.polyline": "Filtrera till den här linjen",
+  "delete": "Ta bort ritning",
+  "update": "Uppdatera ritning",
+  "cancel": "Avbryt ändringar",
+  "save": "Spara ändringar",
+  "select": "Välj",
+  "point": "Släpp en punkt",
+  "polyline": "Rita en linje",
+  "polygon": "Rita ett område",
+  "options": "Ritalternativ",
+  "close": "Stäng ritalternativ",
+  "open": "Visa ritalternativ",
+  "updating": "Uppdaterar ritning",
+  "stop": "Stoppa ritning",
+  "finish": "Slutför ritningsuppdateringar"
+}

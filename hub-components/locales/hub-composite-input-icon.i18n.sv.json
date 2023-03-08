@@ -1,0 +1,15 @@
+{
+  "select": "Välj",
+  "cancel": "Avbryt",
+  "iconModalTitle": "Välj en ikon",
+  "scope": {
+    "enum": {
+      "library": "Välj från bibliotek",
+      "url": "Ange URL för din egen"
+    }
+  },
+  "altText": {
+    "label": "Alt. text",
+    "helperText": "Om ikonen inte läggs till markeras den som dekorativ."
+  }
+}

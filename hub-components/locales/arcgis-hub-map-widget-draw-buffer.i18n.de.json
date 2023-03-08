@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Positionsfilter",
+  "panel.reset": "Filter zurücksetzen",
+  "distance.title": "Entfernung",
+  "distance.placeholder": "Zahl eingeben...",
+  "distance.message": "Eine Zahl eingeben, um den gefilterten Bereich zu erweitern.",
+  "units.title": "Einheiten"
+}

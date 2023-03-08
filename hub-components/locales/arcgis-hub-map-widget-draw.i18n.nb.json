@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filtrer til dette området",
+  "filter.point": "Filtrer til dette punktet",
+  "filter.polyline": "Filtrer til denne linjen",
+  "delete": "Slett tegning",
+  "update": "Oppdater tegning",
+  "cancel": "Avbryt endringer",
+  "save": "Lagre endringer",
+  "select": "Velg",
+  "point": "Slipp et punkt",
+  "polyline": "Tegn en linje",
+  "polygon": "Tegn et område",
+  "options": "Tegnealternativer",
+  "close": "Velg tegnealternativer",
+  "open": "Åpne tegnealternativer",
+  "updating": "Oppdater tegning",
+  "stop": "Stopp tegning",
+  "finish": "Fullfør tegningoppdateringer"
+}

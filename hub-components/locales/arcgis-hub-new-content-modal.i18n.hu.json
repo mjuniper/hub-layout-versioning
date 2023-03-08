@@ -1,0 +1,42 @@
+{
+  "cancel": "Mégse",
+  "create": "Létrehozás",
+  "next": "Tovább",
+  "project": {
+    "form": {
+      "title": "Új projekt létrehozása",
+      "description": "A projektek időhöz kötöttek és célorientáltak"
+    },
+    "describeProject": {
+      "label": "Projekt leírása"
+    },
+    "name": {
+      "label": "Név"
+    },
+    "summary": {
+      "label": "Cél",
+      "helperText": "Röviden írja le a projekt célkitűzéseit."
+    },
+    "description": {
+      "label": "Leírás",
+      "helperText": "Írja le, hogy a projekt hogyan fogja megvalósítani ezeket a célokat. Tartalmazza a releváns háttérinformációkat és a projektmunkától várt változásokat."
+    },
+    "setLocation": {
+      "label": "Hely beállítása"
+    },
+    "statusAndTimeline": {
+      "label": "Állapot és Idővonal"
+    },
+    "status": {
+      "label": "Állapot",
+      "enum": {
+        "notStarted": "Nem kezdődött el",
+        "inProgress": "Folyamatban",
+        "complete": "Befejeződött"
+      }
+    },
+    "timeline": {
+      "label": "Idővonal"
+    }
+  }
+}

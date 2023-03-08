@@ -1,0 +1,20 @@
+{
+  "moreResults": "Més resultats",
+  "search": "Cerca",
+  "filter": "Filtres",
+  "viewResults": "Mostra els resultats ({numResults})",
+  "resultsCount": "1 - {pageTotal} de {searchTotal}",
+  "backToTop": "Torna al principi",
+  "facets": {
+    "access": {
+      "private": "Jo",
+      "shared": "Propietari i grups",
+      "org": "Organització",
+      "public": "Públic"
+    }
+  },
+  "layoutOptions": {
+    "list": "Mostra la llista",
+    "grid": "Mostra la quadrícula"
+  }
+}

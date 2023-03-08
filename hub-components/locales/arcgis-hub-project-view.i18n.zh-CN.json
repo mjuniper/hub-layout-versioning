@@ -1,0 +1,33 @@
+{
+  "purpose": "用途",
+  "description": "我们将如何实现",
+  "details": "详细信息",
+  "featuredImageAlt": "项目精选图像",
+  "trackProgress": "追踪我们的进展",
+  "participatingGroups": "参与群组",
+  "whosInvolved": "参与人员",
+  "tags": "标签",
+  "status": {
+    "label": "工程状态",
+    "notStarted": "未开始",
+    "inProgress": "进行中",
+    "complete": "完全安装"
+  },
+  "resources": "资源",
+  "metadata": {
+    "sharing": {
+      "public": "所有人都可以查看此工程",
+      "org": "您组织中的任何人都可以查看此工程",
+      "private": "仅限您个人可查看此工程",
+      "shared": "选择可查看此工程的群组",
+      "labels": {
+        "public": "公共",
+        "org": "组织",
+        "private": "所有者",
+        "shared": "已私下共享"
+      }
+    },
+    "dateCreated": "发布日期",
+    "dateUpdated": "更新日期"
+  }
+}

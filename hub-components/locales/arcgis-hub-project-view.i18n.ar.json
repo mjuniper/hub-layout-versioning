@@ -1,0 +1,33 @@
+{
+  "purpose": "الغرض",
+  "description": "كيف سنصل إلى هناك",
+  "details": "التفاصيل",
+  "featuredImageAlt": "الصورة المميزة للمشروع",
+  "trackProgress": "تتبع تقدمنا",
+  "participatingGroups": "المجموعات المشاركة",
+  "whosInvolved": "المشاركون",
+  "tags": "العلامات",
+  "status": {
+    "label": "حالة المشروع",
+    "notStarted": "لم يبدأ",
+    "inProgress": "قيد التقدم",
+    "complete": "اكتمل"
+  },
+  "resources": "الموارد",
+  "metadata": {
+    "sharing": {
+      "public": "يمكن لأي شخص رؤية هذا المشروع",
+      "org": "يمكن لأي شخص في مؤسستك رؤية هذا المشروع",
+      "private": "أنت فقط من يمكنه رؤية هذا المشروع",
+      "shared": "يمكن للمجموعات المحددة رؤية هذا المشروع",
+      "labels": {
+        "public": "عام",
+        "org": "المؤسسة",
+        "private": "المالك",
+        "shared": "تمت المشاركة بشكل خاص"
+      }
+    },
+    "dateCreated": "تاريخ النشر",
+    "dateUpdated": "التاريخ الذي يتم تحديثه"
+  }
+}

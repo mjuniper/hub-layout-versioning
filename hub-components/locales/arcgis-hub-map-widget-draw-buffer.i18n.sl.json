@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Lokacijski filter",
+  "panel.reset": "Ponastavi filter",
+  "distance.title": "Razdalja",
+  "distance.placeholder": "Vnesi število...",
+  "distance.message": "Vnesite številko, da razširite filtrirano območje.",
+  "units.title": "Enote"
+}

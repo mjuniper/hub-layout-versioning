@@ -1,0 +1,11 @@
+{
+  "access-org": "Zespół instytucji",
+  "access-private": "Zespół prywatny",
+  "access-public": "Zespół publiczny",
+  "dateUpdated": "Zaktualizowane",
+  "edit": "Masz uprawnienia do edycji",
+  "members": "{count, plural, =0 { brak członków} one { # członek } other { # członków }}",
+  "teamAccess": "Dostęp zespołu",
+  "view": "Masz uprawnienia do wyświetlania",
+  "moreInfo": "Więcej informacji"
+}

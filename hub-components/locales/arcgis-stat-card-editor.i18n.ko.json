@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "모양",
+  "accordionData": "데이터",
+  "corners": {
+    "label": "코너",
+    "enum": {
+      "round": "원형",
+      "square": "사각형"
+    }
+  },
+  "dropShadow": {
+    "label": "그림자 넣기",
+    "enum": {
+      "heavy": "강하게",
+      "low": "낮음",
+      "medium": "보통",
+      "none": "없음"
+    }
+  },
+  "layout": {
+    "label": "통계 레이아웃",
+    "enum": {
+      "dataViz": "데이터 시각화",
+      "moreInfo": "추가 정보",
+      "simple": "단순"
+    }
+  },
+  "popoverTitle": "팝오버 제목",
+  "popoverDescription": "팝오버 설명",
+  "popoverLogo": "팝오버 로고",
+  "publisher": "발행자",
+  "showShareIcon": "공유 활성화",
+  "shareableByValue": "임베드 활성화",
+  "shareableOnHover": "표시기 활성화",
+  "subtitle": "부제목",
+  "textAlign": "텍스트 정렬",
+  "title": "제목",
+  "titleTooltip": "도구 팁",
+  "trailingText": "후행 텍스트",
+  "unit": "단위",
+  "unitPosition": {
+    "label": "단위 위치",
+    "enum": {
+      "after": "이후",
+      "before": "이전",
+      "below": "아래"
+    }
+  },
+  "value": "값",
+  "valueColor": "강조 색상",
+  "visualInterest": {
+    "label": "시각적 효과",
+    "enum": {
+      "icon": "아이콘",
+      "logo": "로고",
+      "none": "없음",
+      "sparkline": "스파크라인"
+    }
+  }
+}

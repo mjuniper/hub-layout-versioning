@@ -1,0 +1,42 @@
+{
+  "cancel": "取消",
+  "create": "创建",
+  "next": "下一步",
+  "project": {
+    "form": {
+      "title": "新建工程",
+      "description": "工程有时间限制和目标导向"
+    },
+    "describeProject": {
+      "label": "描述工程"
+    },
+    "name": {
+      "label": "名称"
+    },
+    "summary": {
+      "label": "用途",
+      "helperText": "简要描述工程的目标。"
+    },
+    "description": {
+      "label": "描述",
+      "helperText": "描述您的工程将如何实现这些目标。 包括相关背景信息和工程工作预期的变化。"
+    },
+    "setLocation": {
+      "label": "设置位置"
+    },
+    "statusAndTimeline": {
+      "label": "状态和时间线"
+    },
+    "status": {
+      "label": "状态",
+      "enum": {
+        "notStarted": "未开始",
+        "inProgress": "进行中",
+        "complete": "完全安装"
+      }
+    },
+    "timeline": {
+      "label": "时间轴"
+    }
+  }
+}

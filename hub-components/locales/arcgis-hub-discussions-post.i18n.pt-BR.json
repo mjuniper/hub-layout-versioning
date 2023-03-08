@@ -1,0 +1,20 @@
+{
+  "posted": "Postado em {groupName} no {channelAccess}",
+  "anonymous": "Anônimo",
+  "noUser": "Nenhum Nome de Usuário",
+  "privateUser": "Membro Privado",
+  "delete": "Excluir",
+  "edit": "Editar",
+  "public": "Público",
+  "org": "Minha Organização",
+  "private": "Somente Membros",
+  "options": "Opções de postagem",
+  "numReplies": "Número de réplicas",
+  "edited": "Editado",
+  "error": "Aconteceu algo errado",
+  "deleteFailure": "Tente novamente excluir sua postagem.",
+  "deleted.title": "Postagem excluída",
+  "deleted.message": "Esta postagem foi excluída e não pode ser exibida.",
+  "actions.reply": "Responder",
+  "actions.view": "Visualizar todas as respostas"
+}

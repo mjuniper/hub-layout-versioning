@@ -1,0 +1,20 @@
+{
+  "posted": "Publicado en {groupName} en {channelAccess}",
+  "anonymous": "Anónimo",
+  "noUser": "Sin nombre de usuario",
+  "privateUser": "Miembro privado",
+  "delete": "Eliminar",
+  "edit": "Editar",
+  "public": "Público",
+  "org": "Mi organización",
+  "private": "Solo miembros",
+  "options": "Opciones de publicación",
+  "numReplies": "Número de respuestas",
+  "edited": "Editado",
+  "error": "Se ha producido un error",
+  "deleteFailure": "Vuelva a intentar eliminar la publicación.",
+  "deleted.title": "Publicación eliminada",
+  "deleted.message": "Esta publicación se ha eliminado y no se puede mostrar.",
+  "actions.reply": "Responder",
+  "actions.view": "Ver todas las respuestas"
+}

@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Location Filter",
+  "panel.reset": "Reset filter",
+  "distance.title": "Distance",
+  "distance.placeholder": "Enter a number...",
+  "distance.message": "Enter a number to expand filtered area.",
+  "units.title": "Units"
+}

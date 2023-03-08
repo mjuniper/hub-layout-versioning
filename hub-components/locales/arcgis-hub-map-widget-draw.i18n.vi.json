@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Lọc đến khu vực này",
+  "filter.point": "Lọc đến điểm này",
+  "filter.polyline": "Lọc đến dòng này",
+  "delete": "Xóa bản vẽ",
+  "update": "Cập nhật bản vẽ",
+  "cancel": "Hủy các thay đổi",
+  "save": "Lưu thay đổi",
+  "select": "Chọn",
+  "point": "Đặt một điểm",
+  "polyline": "Vẽ một đường",
+  "polygon": "Vẽ khu vực",
+  "options": "Tùy chọn Vẽ",
+  "close": "Đóng tùy chọn vẽ",
+  "open": "Mở tùy chọn vẽ",
+  "updating": "Đang cập nhật việc vẽ",
+  "stop": "Dừng việc vẽ",
+  "finish": "Hoàn tất cập nhật việc vẽ"
+}

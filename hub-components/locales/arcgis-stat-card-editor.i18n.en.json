@@ -1,0 +1,92 @@
+{
+  "accordionAppearance": "Appearance",
+  "accordionData": "Data",
+  "corners": {
+    "label": "Corners",
+    "enum": {
+      "round": {
+        "label": "Round"
+      },
+      "square": {
+        "label": "Square"
+      }
+    }
+  },
+  "dropShadow": {
+    "label": "Drop Shadow",
+    "enum": {
+      "heavy": {
+        "label": "Heavy"
+      },
+      "low": {
+        "label": "Low"
+      },
+      "medium": {
+        "label": "Medium"
+      },
+      "none": {
+        "label": "Not Started"
+      }
+    }
+  },
+  "layout": {
+    "label": "Statistic Layout",
+    "enum": {
+      "dataViz": {
+        "label": "Data Visualization"
+      },
+      "moreInfo": {
+        "label": "More Info"
+      },
+      "simple": {
+        "label": "Simple"
+      }
+    }
+  },
+  "popoverTitle": "Popover Title",
+  "popoverDescription": "Popover Description",
+  "popoverLogo": "Popover Logo",
+  "publisher": "Publisher",
+  "showShareIcon": "Enable Sharing",
+  "shareableByValue": "Enable Embeds",
+  "shareableOnHover": "Enable Hover",
+  "subtitle": "Subtitle",
+  "textAlign": "Text Alignment",
+  "title": "Title",
+  "titleTooltip": "Tooltip",
+  "trailingText": "Trailing Text",
+  "unit": "Unit",
+  "unitPosition": {
+    "label": "Unit Position",
+    "enum": {
+      "after": {
+        "label": "After"
+      },
+      "before": {
+        "label": "Before"
+      },
+      "below": {
+        "label": "Below"
+      }
+    }
+  },
+  "value": "Value",
+  "valueColor": "Accent Color",
+  "visualInterest": {
+    "label": "Visual Interest",
+    "enum": {
+      "icon": {
+        "label": "Icon"
+      },
+      "logo": {
+        "label": "Logo"
+      },
+      "none": {
+        "label": "None"
+      },
+      "sparkline": {
+        "label": "Sparkline"
+      }
+    }
+  }
+}

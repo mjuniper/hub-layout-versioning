@@ -1,0 +1,20 @@
+{
+  "posted": "Pubblicato in {groupName} a {channelAccess}",
+  "anonymous": "Anonimo",
+  "noUser": "Nessun nome utente",
+  "privateUser": "Membro privato",
+  "delete": "Elimina",
+  "edit": "Modifica",
+  "public": "Pubblico",
+  "org": "La mia organizzazione",
+  "private": "Solo membri",
+  "options": "Opzioni messaggio",
+  "numReplies": "Numero di risposte",
+  "edited": "Modificata",
+  "error": "Si è verificato un errore",
+  "deleteFailure": "Riprovare per eliminare il post.",
+  "deleted.title": "Post eliminato",
+  "deleted.message": "Questo post è stato eliminato e non può essere visualizzato.",
+  "actions.reply": "Rispondi",
+  "actions.view": "Visualizza tutte le risposte"
+}

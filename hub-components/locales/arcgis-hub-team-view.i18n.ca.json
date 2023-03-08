@@ -1,0 +1,11 @@
+{
+  "access-org": "Equip de l'organització",
+  "access-private": "Equip privat",
+  "access-public": "Equip públic",
+  "dateUpdated": "Actualitzat",
+  "edit": "Teniu accés d'edició",
+  "members": "{count, plural, =0 { cap membre} one { # membre } other { # membres }}",
+  "teamAccess": "Accés de l'equip",
+  "view": "Teniu accés de visualització",
+  "moreInfo": "Més informació"
+}

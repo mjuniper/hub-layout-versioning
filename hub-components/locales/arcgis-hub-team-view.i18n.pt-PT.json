@@ -1,0 +1,11 @@
+{
+  "access-org": "Equipa da Organização",
+  "access-private": "Equipa Privada",
+  "access-public": "Equipa Pública",
+  "dateUpdated": "Atualizado",
+  "edit": "Tem acesso para editar",
+  "members": "{count, plural, =0 { sem membros} one { # membro } other { # membros }}",
+  "teamAccess": "Acesso de Equipa",
+  "view": "Tem acesso para visualizar",
+  "moreInfo": "Mais Informações"
+}

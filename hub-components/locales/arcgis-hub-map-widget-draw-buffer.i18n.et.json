@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Asukohafilter",
+  "panel.reset": "Lähtesta filter",
+  "distance.title": "Vahemaa",
+  "distance.placeholder": "Sisestage arv...",
+  "distance.message": "Filtreeritava ala laiendamiseks sisestage number.",
+  "units.title": "Ühikud"
+}

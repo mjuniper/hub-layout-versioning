@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Filter Lokasi",
+  "panel.reset": "Reset filter",
+  "distance.title": "Jarak",
+  "distance.placeholder": "Masukkan nomor...",
+  "distance.message": "Masukkan nomor untuk memperluas area filter.",
+  "units.title": "Unit"
+}

@@ -1,0 +1,11 @@
+{
+  "access-org": "Tim Organisasi",
+  "access-private": "Tim Pribadi",
+  "access-public": "Tim Publik",
+  "dateUpdated": "Diperbarui",
+  "edit": "Anda memiliki akses pengeditan",
+  "members": "{count, plural, =0 { tidak ada anggota} one { # anggota } other { # anggota }}",
+  "teamAccess": "Akses Tim",
+  "view": "Anda memiliki akses melihat",
+  "moreInfo": "Informasi Selengkapnya"
+}

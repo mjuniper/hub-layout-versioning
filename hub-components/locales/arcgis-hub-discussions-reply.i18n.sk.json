@@ -1,0 +1,16 @@
+{
+  "delete": "Zmazať",
+  "edit": "Editovať",
+  "options": "Možnosti príspevku",
+  "noUser": "Žiadne používateľské meno",
+  "anonymous": "Anonymný",
+  "privateUser": "Súkromný člen",
+  "edited": "Upravené",
+  "error": "Niečo sa pokazilo",
+  "deleteFailure": "Skúste prosím znova pre odstránenie vašej odpovede.",
+  "deleted.title": "Odpoveď odstránená",
+  "deleted.message": "Odkazovaná odpoveď bola odstránená a nie je možné ju zobraziť.",
+  "delete.action": "Zobraziť všetky odpovede",
+  "replyingTo": "Odpovedá sa {fullName}",
+  "viewPost": "Zobraziť príspevok"
+}

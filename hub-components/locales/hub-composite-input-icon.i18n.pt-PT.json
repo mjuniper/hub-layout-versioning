@@ -1,0 +1,15 @@
+{
+  "select": "Seleccionar",
+  "cancel": "Cancelar",
+  "iconModalTitle": "Selecionar um Ícone",
+  "scope": {
+    "enum": {
+      "library": "Escolher da biblioteca",
+      "url": "Introduza um URL para o seu próprio"
+    }
+  },
+  "altText": {
+    "label": "Texto alternativo",
+    "helperText": "Se não for adicionado, o ícone será marcado como decorativo."
+  }
+}

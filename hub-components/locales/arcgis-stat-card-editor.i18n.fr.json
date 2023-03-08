@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Apparence",
+  "accordionData": "Données",
+  "corners": {
+    "label": "Angles",
+    "enum": {
+      "round": "Arrondis",
+      "square": "Carrés"
+    }
+  },
+  "dropShadow": {
+    "label": "Ombre portée",
+    "enum": {
+      "heavy": "Dense",
+      "low": "Faible",
+      "medium": "Moyenne",
+      "none": "Aucune"
+    }
+  },
+  "layout": {
+    "label": "Mise en page de la statistique",
+    "enum": {
+      "dataViz": "Visualisation des données",
+      "moreInfo": "Plus d’informations",
+      "simple": "Simple"
+    }
+  },
+  "popoverTitle": "Titre de la fenêtre contextuelle",
+  "popoverDescription": "Description de la fenêtre contextuelle",
+  "popoverLogo": "Logo de la fenêtre contextuelle",
+  "publisher": "Éditeur",
+  "showShareIcon": "Activer le partage",
+  "shareableByValue": "Activer les intégrations",
+  "shareableOnHover": "Activer le survol",
+  "subtitle": "Sous-titre",
+  "textAlign": "Alignement du texte",
+  "title": "Titre",
+  "titleTooltip": "Info-bulle",
+  "trailingText": "Texte de fin",
+  "unit": "Unité",
+  "unitPosition": {
+    "label": "Position de l’unité",
+    "enum": {
+      "after": "Après",
+      "before": "Avant",
+      "below": "En dessous"
+    }
+  },
+  "value": "Valeur",
+  "valueColor": "Couleur d’accentuation",
+  "visualInterest": {
+    "label": "Intérêt visuel",
+    "enum": {
+      "icon": "Icône",
+      "logo": "Logo",
+      "none": "Aucun",
+      "sparkline": "Sparkline"
+    }
+  }
+}

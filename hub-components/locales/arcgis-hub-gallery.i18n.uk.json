@@ -1,0 +1,20 @@
+{
+  "moreResults": "Більше результатів",
+  "search": "Пошук",
+  "filter": "Фільтри",
+  "viewResults": "Переглянути результати ({numResults})",
+  "resultsCount": "1 - {pageTotal} з {searchTotal}",
+  "backToTop": "Повернутися до початку сторінки",
+  "facets": {
+    "access": {
+      "private": "Я",
+      "shared": "Власник і групи",
+      "org": "Організація",
+      "public": "Публічний"
+    }
+  },
+  "layoutOptions": {
+    "list": "Відображати список",
+    "grid": "Відображати сітку"
+  }
+}

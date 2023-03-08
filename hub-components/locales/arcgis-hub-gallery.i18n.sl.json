@@ -1,0 +1,20 @@
+{
+  "moreResults": "Več rezultatov",
+  "search": "Iskanje",
+  "filter": "Filtri",
+  "viewResults": "Pogled rezultatov ({numResults})",
+  "resultsCount": "1 – {pageTotal} od {searchTotal}",
+  "backToTop": "Nazaj na vrh",
+  "facets": {
+    "access": {
+      "private": "Jaz",
+      "shared": "Lastnik in Skupine",
+      "org": "Organizacija",
+      "public": "Javno"
+    }
+  },
+  "layoutOptions": {
+    "list": "Prikaži seznam",
+    "grid": "Prikaži mrežo"
+  }
+}

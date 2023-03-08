@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Weergave",
+  "accordionData": "Gegevens",
+  "corners": {
+    "label": "Hoeken",
+    "enum": {
+      "round": "Rond",
+      "square": "Vierkant"
+    }
+  },
+  "dropShadow": {
+    "label": "Slagschaduw",
+    "enum": {
+      "heavy": "Zwaar",
+      "low": "Laag",
+      "medium": "Gemiddeld",
+      "none": "Geen"
+    }
+  },
+  "layout": {
+    "label": "Statistieken lay-out",
+    "enum": {
+      "dataViz": "Datavisualisatie",
+      "moreInfo": "Meer informatie",
+      "simple": "Eenvoudig"
+    }
+  },
+  "popoverTitle": "Pop-over titel",
+  "popoverDescription": "Pop-over beschrijving",
+  "popoverLogo": "Pop-over logo",
+  "publisher": "Publisher",
+  "showShareIcon": "Delen inschakelen",
+  "shareableByValue": "Inbedden inschakelen",
+  "shareableOnHover": "Zweven inschakelen",
+  "subtitle": "Subtitel",
+  "textAlign": "Tekstuitlijning",
+  "title": "Titel",
+  "titleTooltip": "Tooltip",
+  "trailingText": "Trailing tekst",
+  "unit": "Eenheid",
+  "unitPosition": {
+    "label": "Positie eenheid",
+    "enum": {
+      "after": "Na",
+      "before": "Voor",
+      "below": "Onder"
+    }
+  },
+  "value": "Waarde",
+  "valueColor": "Accentkleur",
+  "visualInterest": {
+    "label": "Visuele interesse",
+    "enum": {
+      "icon": "Pictogram",
+      "logo": "Logo",
+      "none": "Geen",
+      "sparkline": "Sparkline"
+    }
+  }
+}

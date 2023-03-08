@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Megjelenés",
+  "accordionData": "Adatok",
+  "corners": {
+    "label": "Sarkok",
+    "enum": {
+      "round": "Kerek",
+      "square": "Négyzet"
+    }
+  },
+  "dropShadow": {
+    "label": "Árnyékhatás",
+    "enum": {
+      "heavy": "Nehéz",
+      "low": "Alacsony",
+      "medium": "Közepes",
+      "none": "Egyik sem"
+    }
+  },
+  "layout": {
+    "label": "Statisztikai elrendezés",
+    "enum": {
+      "dataViz": "Adatmegjelenítés",
+      "moreInfo": "További információ",
+      "simple": "Egyszerű"
+    }
+  },
+  "popoverTitle": "Előugró cím",
+  "popoverDescription": "Előugró leírás",
+  "popoverLogo": "Előugró logó",
+  "publisher": "Publikáló",
+  "showShareIcon": "Megosztás engedélyezése",
+  "shareableByValue": "Beágyazások engedélyezése",
+  "shareableOnHover": "Rámutatás engedélyezése",
+  "subtitle": "Alcím",
+  "textAlign": "Szöveg igazítása",
+  "title": "Beosztás",
+  "titleTooltip": "Eszköztipp",
+  "trailingText": "Befejező szöveg",
+  "unit": "Mértékegység",
+  "unitPosition": {
+    "label": "Mértékegység helyzete",
+    "enum": {
+      "after": "Után",
+      "before": "Előtt",
+      "below": "Alatta"
+    }
+  },
+  "value": "Érték",
+  "valueColor": "Kiemelőszín",
+  "visualInterest": {
+    "label": "Vizuális érdekesség",
+    "enum": {
+      "icon": "Ikon",
+      "logo": "Logó",
+      "none": "Egyik sem",
+      "sparkline": "Sparkline"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "posted": "פורסם ב-{groupName} ל-{channelAccess}",
+  "anonymous": "אנונימי",
+  "noUser": "אין שם משתמש",
+  "privateUser": "חבר פרטי",
+  "delete": "מחיקה",
+  "edit": "ערוך",
+  "public": "ציבורי",
+  "org": "הארגון שלי",
+  "private": "חברים בלבד",
+  "options": "אפשרויות פרסום",
+  "numReplies": "מספר תשובות",
+  "edited": "נערך",
+  "error": "משהו השתבש",
+  "deleteFailure": "נסה למחוק את הפרסום שוב.",
+  "deleted.title": "הפוסט נמחק",
+  "deleted.message": "הפוסט נמחק ואי אפשר להציג אותו.",
+  "actions.reply": "השב",
+  "actions.view": "הצג את כל התשובות"
+}

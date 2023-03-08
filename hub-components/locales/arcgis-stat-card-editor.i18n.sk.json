@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Vzhľad",
+  "accordionData": "Dáta",
+  "corners": {
+    "label": "Rohy",
+    "enum": {
+      "round": "Zaoblené",
+      "square": "Pravoúhle"
+    }
+  },
+  "dropShadow": {
+    "label": "Vrhaný tieň",
+    "enum": {
+      "heavy": "Silné",
+      "low": "Nízke",
+      "medium": "Stredné",
+      "none": "Žiadne"
+    }
+  },
+  "layout": {
+    "label": "Štatistické rozloženie",
+    "enum": {
+      "dataViz": "Vizualizácia dát",
+      "moreInfo": "Viac informácií",
+      "simple": "Jednoduché"
+    }
+  },
+  "popoverTitle": "Názov vysúvacieho panelu",
+  "popoverDescription": "Popis vysúvacieho panelu",
+  "popoverLogo": "Logo vysúvacieho panelu",
+  "publisher": "Vydavateľ",
+  "showShareIcon": "Povoliť zdieľanie",
+  "shareableByValue": "Povoliť vložené prvky",
+  "shareableOnHover": "Povoliť hover",
+  "subtitle": "Podtitul",
+  "textAlign": "Zarovnanie textu",
+  "title": "Názov",
+  "titleTooltip": "Tooltip",
+  "trailingText": "Koncový text",
+  "unit": "Jednotka",
+  "unitPosition": {
+    "label": "Pozícia jednotky",
+    "enum": {
+      "after": "Po",
+      "before": "Pred",
+      "below": "Pod"
+    }
+  },
+  "value": "Hodnota",
+  "valueColor": "Farba zvýraznenia",
+  "visualInterest": {
+    "label": "Vizuálny záujem",
+    "enum": {
+      "icon": "Ikona",
+      "logo": "Logo",
+      "none": "Žiadne",
+      "sparkline": "Minigraf"
+    }
+  }
+}

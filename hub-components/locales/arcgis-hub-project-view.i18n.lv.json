@@ -1,0 +1,33 @@
+{
+  "purpose": "Mērķis",
+  "description": "Kā mēs tur nokļūsim",
+  "details": "Papildinformācija",
+  "featuredImageAlt": "Projekta piedāvātais attēls",
+  "trackProgress": "Sekot līdzi mūsu progresam",
+  "participatingGroups": "Iesaistītās grupas",
+  "whosInvolved": "Kurš ir iesaistīts",
+  "tags": "Atslēgvārdi",
+  "status": {
+    "label": "Projekta statuss",
+    "notStarted": "Nav sākts",
+    "inProgress": "Procesā",
+    "complete": "Pabeigts"
+  },
+  "resources": "Resursi",
+  "metadata": {
+    "sharing": {
+      "public": "Ikviens var skatīt šo projektu",
+      "org": "Ikviens jūsu organizācijā var skatīt šo projektu",
+      "private": "Tikai jūs varat skatīt šo projektu",
+      "shared": "Izvēlieties grupas, kas var skatīt šo projektu",
+      "labels": {
+        "public": "Publisks",
+        "org": "Organizācija",
+        "private": "Īpašnieks",
+        "shared": "Privāta koplietošana"
+      }
+    },
+    "dateCreated": "Publicēšanas datums",
+    "dateUpdated": "Atjaunināšanas datums"
+  }
+}

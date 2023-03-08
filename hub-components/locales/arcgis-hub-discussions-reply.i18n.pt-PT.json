@@ -1,0 +1,16 @@
+{
+  "delete": "Excluir",
+  "edit": "Editar",
+  "options": "Opções da publicação",
+  "noUser": "Sem Nome de Utilizador",
+  "anonymous": "Anónimo",
+  "privateUser": "Membro Privado",
+  "edited": "Editado",
+  "error": "Algo correu mal",
+  "deleteFailure": "Tente eliminar a sua resposta novamente.",
+  "deleted.title": "Resposta Eliminada",
+  "deleted.message": "A resposta associada foi eliminada e não pode ser exibida.",
+  "delete.action": "Ver todas as respostas",
+  "replyingTo": "A responder a {fullName}",
+  "viewPost": "Ver Publicação"
+}

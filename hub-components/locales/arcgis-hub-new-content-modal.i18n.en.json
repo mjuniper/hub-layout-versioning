@@ -1,0 +1,54 @@
+{
+  "cancel": "Cancel",
+  "create": "Create",
+  "next": "Next",
+  "project": {
+    "sections": {
+      "details": {
+        "label": "Details"
+      },
+      "basicInfo": {
+        "label": "Basic Info"
+      },
+      "location": {
+        "label": "Location"
+      },
+      "statusAndTimeline": {
+        "label": "Status and Timeline"
+      },
+      "status": {
+        "label": "Status"
+      },
+      "timeline": {
+        "label": "Timeline"
+      }
+    },
+    "fields": {
+      "name": {
+        "label": "Project Name"
+      },
+      "summary": {
+        "label": "Purpose",
+        "helperText": "Briefly describe the objectives of your Project."
+      },
+      "description": {
+        "label": "Description",
+        "helperText": "Describe how your Project will meet these goals. Include relevant background information and changes expected from Project work."
+      },
+      "status": {
+        "label": "Project Status",
+        "enum": {
+          "notStarted": {
+            "label": "Not Started"
+          },
+          "inProgress": {
+            "label": "In Progress"
+          },
+          "complete": {
+            "label": "Complete"
+          }
+        }
+      }
+    }
+  }
+}

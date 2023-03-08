@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filtruoti pagal teritoriją",
+  "filter.point": "Filtruoti pagal tašką",
+  "filter.polyline": "Filtruoti pagal liniją",
+  "delete": "Trinti brėžinį",
+  "update": "Atnaujinti brėžinį",
+  "cancel": "Atšaukti keitimus",
+  "save": "Įrašyti keitimus",
+  "select": "Pasirinkti",
+  "point": "Pažymėti tašką",
+  "polyline": "Brėžti liniją",
+  "polygon": "Apibrėžti teritoriją",
+  "options": "Braižymo parinktys",
+  "close": "Uždaryti braižymo parinktis",
+  "open": "Atidaryti braižymo parinktis",
+  "updating": "Braižymas atnaujinamas",
+  "stop": "Stabdyti braižymą",
+  "finish": "Baigti braižymo atnaujinimus"
+}

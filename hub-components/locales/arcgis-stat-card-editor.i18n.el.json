@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Εμφάνιση",
+  "accordionData": "Δεδομένα",
+  "corners": {
+    "label": "Γωνίες",
+    "enum": {
+      "round": "Κυκλικό",
+      "square": "Τετράγωνο"
+    }
+  },
+  "dropShadow": {
+    "label": "Σκιά",
+    "enum": {
+      "heavy": "Έντονη",
+      "low": "Χαμηλό",
+      "medium": "Μεσαίο",
+      "none": "Καθόλου"
+    }
+  },
+  "layout": {
+    "label": "Διάταξη στατιστικών στοιχείων",
+    "enum": {
+      "dataViz": "Οπτικοποίηση Δεδομένων",
+      "moreInfo": "Περισσότερες πληροφορίες",
+      "simple": "Απλή"
+    }
+  },
+  "popoverTitle": "Τίτλος Αναδυόμενου Παράθυρου",
+  "popoverDescription": "Περιγραφή Αναδυόμενου Παράθυρου",
+  "popoverLogo": "Λογότυπο Αναδυόμενου Παράθυρου",
+  "publisher": "Publisher",
+  "showShareIcon": "Ενεργοποίηση κοινοποίησης",
+  "shareableByValue": "Ενεργοποίηση ενσωματώσεων",
+  "shareableOnHover": "Ενεργοποίηση Hover",
+  "subtitle": "Υπότιτλος",
+  "textAlign": "Ευθυγράμμιση κειμένου",
+  "title": "Τίτλος",
+  "titleTooltip": "Ετικέτα σύντομης επεξήγησης",
+  "trailingText": "Κείμενο τέλους",
+  "unit": "Μονάδα",
+  "unitPosition": {
+    "label": "Θέση Μονάδας",
+    "enum": {
+      "after": "Μετά",
+      "before": "Πριν",
+      "below": "Κάτω"
+    }
+  },
+  "value": "Αξία",
+  "valueColor": "Χρώμα έμφασης",
+  "visualInterest": {
+    "label": "Οπτική Ενδιαφέροντος",
+    "enum": {
+      "icon": "Εικονίδιο",
+      "logo": "Λογότυπο",
+      "none": "Καθόλου",
+      "sparkline": "Sparkline"
+    }
+  }
+}

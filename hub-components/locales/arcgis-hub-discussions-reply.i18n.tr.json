@@ -1,0 +1,16 @@
+{
+  "delete": "Sil",
+  "edit": "Düzenle",
+  "options": "Gönderi seçenekleri",
+  "noUser": "Kullanıcı Adı Yok",
+  "anonymous": "Anonim",
+  "privateUser": "Özel Üye",
+  "edited": "Düzenleme",
+  "error": "Bir şey ters gitti",
+  "deleteFailure": "Lütfen yanıtınızı silmeyi yeniden deneyin.",
+  "deleted.title": "Yanıt Silindi",
+  "deleted.message": "Bağlantılı yanıt silindi ve görüntülenemez.",
+  "delete.action": "Tüm yanıtları görüntüle",
+  "replyingTo": "{fullName}'a yanıt veriyor",
+  "viewPost": "Gönderiyi Görüntüle"
+}

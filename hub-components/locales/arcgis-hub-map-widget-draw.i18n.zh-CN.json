@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "过滤到该区域",
+  "filter.point": "过滤到该点",
+  "filter.polyline": "过滤到该线",
+  "delete": "删除绘图",
+  "update": "更新绘图",
+  "cancel": "取消更改",
+  "save": "保存更改",
+  "select": "选择",
+  "point": "放置一个点",
+  "polyline": "绘制一条线",
+  "polygon": "绘制区域",
+  "options": "绘制选项",
+  "close": "关闭绘制选项",
+  "open": "打开绘制选项",
+  "updating": "更新绘制",
+  "stop": "停止绘制",
+  "finish": "完成绘制更新"
+}

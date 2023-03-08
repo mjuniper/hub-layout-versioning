@@ -1,0 +1,15 @@
+{
+  "select": "Velg",
+  "cancel": "Avbryt",
+  "iconModalTitle": "Velg et ikon",
+  "scope": {
+    "enum": {
+      "library": "Velg fra bibliotek",
+      "url": "Angi URL for egen"
+    }
+  },
+  "altText": {
+    "label": "Alternativ tekst",
+    "helperText": "Hvis det ikke legges til, merkes ikonet som dekorativt."
+  }
+}

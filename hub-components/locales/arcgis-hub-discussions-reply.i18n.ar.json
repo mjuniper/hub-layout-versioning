@@ -1,0 +1,16 @@
+{
+  "delete": "حذف",
+  "edit": "تحرير",
+  "options": "خيارات المنشور",
+  "noUser": "لا يوجد اسم مستخدم",
+  "anonymous": "مجهول",
+  "privateUser": "عضو خاص",
+  "edited": "تم التحرير",
+  "error": "حدث خطأ ما",
+  "deleteFailure": "يُرجى المحاولة مرة أخرى لحذف ردك.",
+  "deleted.title": "تم حذف الرد",
+  "deleted.message": "تم حذف الرد المرتبط ولا يمكن عرضه.",
+  "delete.action": "عرض جميع الردود",
+  "replyingTo": "الرد على {fullName}",
+  "viewPost": "عرض المنشور"
+}

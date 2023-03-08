@@ -1,0 +1,16 @@
+{
+  "delete": "Ta bort",
+  "edit": "Redigera",
+  "options": "Alternativ för inlägg",
+  "noUser": "Inget användarnamn",
+  "anonymous": "Anonymt",
+  "privateUser": "Privat medlem",
+  "edited": "Redigerad",
+  "error": "Det uppstod ett fel",
+  "deleteFailure": "Försök igen för att radera ditt svar.",
+  "deleted.title": "Svaret har tagits bort",
+  "deleted.message": "Det länkade svaret har tagits bort och kan inte visas.",
+  "delete.action": "Visa alla svar",
+  "replyingTo": "Svarar till {fullName}",
+  "viewPost": "Visa inlägg"
+}

@@ -1,0 +1,20 @@
+{
+  "posted": "Dikirimkan dalam {groupName} ke {channelAccess}",
+  "anonymous": "Anonim",
+  "noUser": "Tidak Ada Nama Pengguna",
+  "privateUser": "Anggota Pribadi",
+  "delete": "Hapus",
+  "edit": "Edit",
+  "public": "Publik",
+  "org": "Organisasi Saya",
+  "private": "Hanya Anggota",
+  "options": "Opsi kiriman",
+  "numReplies": "Jumlah balasan",
+  "edited": "Diedit",
+  "error": "Ada masalah",
+  "deleteFailure": "Silakan coba lagi untuk menghapus postingan Anda.",
+  "deleted.title": "Postingan Dihapus",
+  "deleted.message": "Postingan ini dihapus dan tidak dapat ditampilkan.",
+  "actions.reply": "Balas",
+  "actions.view": "Tampilkan semua balasan"
+}

@@ -1,0 +1,16 @@
+{
+  "delete": "Kustuta",
+  "edit": "Muuda",
+  "options": "Postituse valikud",
+  "noUser": "Kasutajanimi puudub",
+  "anonymous": "Anonüümne",
+  "privateUser": "Privaatne liige",
+  "edited": "Muudetud",
+  "error": "Midagi läks valesti",
+  "deleteFailure": "Proovige oma vastust uuesti kustutada.",
+  "deleted.title": "Vastus kustutatud",
+  "deleted.message": "Lingitud vastus kustutati ja seda ei saa kuvada.",
+  "delete.action": "Kuva kõik vastused",
+  "replyingTo": "Vastus kasutajale {fullName}",
+  "viewPost": "Kuva postitus"
+}

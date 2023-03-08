@@ -1,0 +1,42 @@
+{
+  "cancel": "Annullér",
+  "create": "Opret",
+  "next": "Næste",
+  "project": {
+    "form": {
+      "title": "Opret et nyt projekt",
+      "description": "Projekterne er tidsafgrænsede og målorienterede"
+    },
+    "describeProject": {
+      "label": "Beskriv projekt"
+    },
+    "name": {
+      "label": "Navn"
+    },
+    "summary": {
+      "label": "Formål",
+      "helperText": "Beskriv kort målene for dit projekt."
+    },
+    "description": {
+      "label": "Beskrivelse",
+      "helperText": "Beskriv, hvordan dit projekt vil opfylde disse mål. Inkluder relevant baggrundsinformation og de ændringer, der forventes i forbindelse med projektarbejdet."
+    },
+    "setLocation": {
+      "label": "Angiv placering"
+    },
+    "statusAndTimeline": {
+      "label": "Status og tidslinje"
+    },
+    "status": {
+      "label": "Status",
+      "enum": {
+        "notStarted": "Ikke startet",
+        "inProgress": "I gang",
+        "complete": "Afsluttet"
+      }
+    },
+    "timeline": {
+      "label": "Tidslinje"
+    }
+  }
+}

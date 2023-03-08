@@ -1,0 +1,16 @@
+{
+  "delete": "Usuń",
+  "edit": "Edycja",
+  "options": "Opcje publikowania",
+  "noUser": "Brak nazwy użytkownika",
+  "anonymous": "Anonimowe",
+  "privateUser": "Członek prywatny",
+  "edited": "Zmodyfikowano",
+  "error": "Wystąpiły problemy",
+  "deleteFailure": "Spróbuj ponownie usunąć odpowiedź.",
+  "deleted.title": "Odpowiedź usunięta",
+  "deleted.message": "Powiązana odpowiedź została usunięta i nie można jej wyświetlić.",
+  "delete.action": "Wyświetl wszystkie odpowiedzi",
+  "replyingTo": "Odpowiadam {fullName}",
+  "viewPost": "Wyświetl wpis"
+}

@@ -1,0 +1,16 @@
+{
+  "delete": "Xóa",
+  "edit": "Chỉnh sửa",
+  "options": "Tuỳ chọn đăng",
+  "noUser": "Không có Tên người dùng",
+  "anonymous": "Ẩn danh",
+  "privateUser": "Thành viên Riêng tư",
+  "edited": "Đã chỉnh sửa",
+  "error": "Đã xảy ra sự cố",
+  "deleteFailure": "Vui lòng thử lại để xóa câu trả lời.",
+  "deleted.title": "Câu trả lời Đã bị xóa",
+  "deleted.message": "Câu trả lời được liên kết đã bị xóa và không thể hiển thị.",
+  "delete.action": "Xem tất cả các câu trả lời",
+  "replyingTo": "Trả lời {fullName}",
+  "viewPost": "Xem Bài đăng"
+}

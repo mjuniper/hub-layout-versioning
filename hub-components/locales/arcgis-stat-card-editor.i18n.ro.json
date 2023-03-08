@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Aspect",
+  "accordionData": "Date",
+  "corners": {
+    "label": "Colțuri",
+    "enum": {
+      "round": "Rotund",
+      "square": "Pătrat"
+    }
+  },
+  "dropShadow": {
+    "label": "Plasare umbră",
+    "enum": {
+      "heavy": "Mare",
+      "low": "Redus",
+      "medium": "Mediu",
+      "none": "Niciunul"
+    }
+  },
+  "layout": {
+    "label": "Prezentare statistică",
+    "enum": {
+      "dataViz": "Vizualizare date",
+      "moreInfo": "Mai multe informaţii",
+      "simple": "Simplu"
+    }
+  },
+  "popoverTitle": "Titlu semn de carte",
+  "popoverDescription": "Descriere semn de carte",
+  "popoverLogo": "Sigla semn de carte",
+  "publisher": "Editor",
+  "showShareIcon": "Activați partajarea",
+  "shareableByValue": "Activați încorporările",
+  "shareableOnHover": "Activați trecerea cu mouse-ul",
+  "subtitle": "Subtitlu",
+  "textAlign": "Aliniere text",
+  "title": "Titlu",
+  "titleTooltip": "Sugestie instrument",
+  "trailingText": "Text sfârşit",
+  "unit": "Unitate",
+  "unitPosition": {
+    "label": "Poziție unitate",
+    "enum": {
+      "after": "După",
+      "before": "Înainte",
+      "below": "Dedesubt"
+    }
+  },
+  "value": "Valoare",
+  "valueColor": "Culoare de evidenţiere",
+  "visualInterest": {
+    "label": "Interes vizual",
+    "enum": {
+      "icon": "Pictogramă",
+      "logo": "Siglă",
+      "none": "Niciunul",
+      "sparkline": "Diagramă miniaturală"
+    }
+  }
+}

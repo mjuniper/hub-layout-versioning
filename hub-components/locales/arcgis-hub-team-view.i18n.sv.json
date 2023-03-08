@@ -1,0 +1,11 @@
+{
+  "access-org": "Organisationsteam",
+  "access-private": "Privat team",
+  "access-public": "Offentligt team",
+  "dateUpdated": "Uppdaterad",
+  "edit": "Du har redigeringsåtkomst",
+  "members": "{count, plural, =0 { inga medlemmar} one { # medlem } other { # medlemmar }}",
+  "teamAccess": "Teamåtkomst",
+  "view": "Du har visningsåtkomst",
+  "moreInfo": "Mer information"
+}

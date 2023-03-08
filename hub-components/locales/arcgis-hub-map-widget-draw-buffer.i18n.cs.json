@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Filtr umístění",
+  "panel.reset": "Obnovit filtr",
+  "distance.title": "Vzdálenost",
+  "distance.placeholder": "Zadejte číslo...",
+  "distance.message": "Zadáním čísla rozšiřte filtrovanou plochu.",
+  "units.title": "Jednotky"
+}

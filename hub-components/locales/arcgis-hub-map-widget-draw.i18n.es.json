@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filtrar por esta área",
+  "filter.point": "Filtrar por este punto",
+  "filter.polyline": "Filtrar por esta línea",
+  "delete": "Eliminar dibujo",
+  "update": "Actualizar dibujo",
+  "cancel": "Cancelar cambios",
+  "save": "Guardar cambios",
+  "select": "Seleccionar",
+  "point": "Soltar un punto",
+  "polyline": "Dibujar una línea",
+  "polygon": "Dibujar un área",
+  "options": "Opciones de dibujo",
+  "close": "Cerrar opciones de dibujo",
+  "open": "Abrir opciones de dibujo",
+  "updating": "Actualizando dibujo",
+  "stop": "Dejar de dibujar",
+  "finish": "Terminar de dibujar actualizaciones"
+}

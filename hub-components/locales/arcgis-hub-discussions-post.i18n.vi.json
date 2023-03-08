@@ -1,0 +1,20 @@
+{
+  "posted": "Đã đăng trong {groupName} lên {channelAccess}",
+  "anonymous": "Ẩn danh",
+  "noUser": "Không có Tên người dùng",
+  "privateUser": "Thành viên Riêng tư",
+  "delete": "Xóa",
+  "edit": "Chỉnh sửa",
+  "public": "Công khai",
+  "org": "Tổ chức của tôi",
+  "private": "Chỉ Thành viên",
+  "options": "Tuỳ chọn đăng",
+  "numReplies": "Số lượng phản hồi",
+  "edited": "Đã chỉnh sửa",
+  "error": "Đã xảy ra sự cố",
+  "deleteFailure": "Vui lòng thử lại để xóa bài đăng.",
+  "deleted.title": "Bài đăng Đã bị xóa",
+  "deleted.message": "Bài đăng này đã bị xóa và không thể hiển thị.",
+  "actions.reply": "Trả lời",
+  "actions.view": "Xem tất cả các câu trả lời"
+}

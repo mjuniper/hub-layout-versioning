@@ -1,0 +1,19 @@
+{
+  "chooseButton": "Válasszon licencet",
+  "editorLabel": "Kiválasztott licenc",
+  "editorRemoveWarning": "Figyelmeztetés, a felhasználási feltételek törlésére készül.",
+  "licenseDescriptionCc0": "Ezt a munkát nyilvánosnak szánták",
+  "licenseDescriptionCcBy": "Megjelölés szükséges",
+  "licenseDescriptionCcByNc": "Megjelölést igényel, engedélyezi az átalakítást, de tiltja a kereskedelmi felhasználást.",
+  "licenseDescriptionCcByNcNd": "A leginkább korlátozó, megköveteli a forrásmegjelölést, tiltja a kereskedelmi felhasználást és az átalakítást.",
+  "licenseDescriptionCcByNcSa": "Megjelölést igényel, engedélyezi az átalakítást, de tiltja a kereskedelmi felhasználást, valamint a származékos munkáknak ugyanazt a licencet kell megtartaniuk.",
+  "licenseDescriptionCcByNd": "Megköveteli a megjelölést, engedélyezi a kereskedelmi felhasználást, de tiltja a származékok megosztását.",
+  "licenseDescriptionCcBySa": "Megjelölést igényel, engedélyezi az átalakítást és a kereskedelmi felhasználást.",
+  "licenseDescriptionCustom": "A részletekért tekintse meg a licencet",
+  "licenseDescriptionOdbl": "Engedélyezi a megosztást, a létrehozást és az adaptációt, valamint más attribútumokat, a másolatok megosztását és azok további felhasználását is.",
+  "licenseDescriptionOdcBy": "Engedélyezi a megosztást, a létrehozást és az adaptációt, valamint más attribútumokat",
+  "licenseDescriptionPddl": "Engedélyezi a megosztást, a létrehozást és az adaptációt",
+  "licenseInfoButtonAriaLabel": "Licencadatok, új fülön nyílik meg",
+  "selectedLicenseLabelFallback": "Egyéni",
+  "selectedLicenseLabelNoLicense": "Nincs licenc"
+}

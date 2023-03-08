@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filtrovat na tuto oblast",
+  "filter.point": "Filtrovat na tento bod",
+  "filter.polyline": "Filtrovat na tuto linii",
+  "delete": "Odstranit kresbu",
+  "update": "Aktualizovat kresbu",
+  "cancel": "Zrušit změny",
+  "save": "Uložit změny",
+  "select": "Vybrat",
+  "point": "Umístit bod",
+  "polyline": "Nakreslit linii",
+  "polygon": "Vykreslit oblast",
+  "options": "Možnosti kreslení",
+  "close": "Zavřít možnosti kreslení",
+  "open": "Otevřít možnosti kreslení",
+  "updating": "Probíhá aktualizace kresby",
+  "stop": "Ukončit kreslení",
+  "finish": "Dokončit aktualizace kresby"
+}

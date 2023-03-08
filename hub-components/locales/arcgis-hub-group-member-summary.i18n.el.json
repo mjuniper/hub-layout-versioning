@@ -1,0 +1,3 @@
+{
+  "members": "{count, plural, =0 { κανένα μέλος} one { # μέλους  } other { # μέλη }}"
+}

@@ -1,0 +1,11 @@
+{
+  "access-org": "Organizacijski tim",
+  "access-private": "Zasebni tim",
+  "access-public": "Javni tim",
+  "dateUpdated": "Posodobljeno",
+  "edit": "Imate dostop za urejanje",
+  "members": "{count, plural, =0 { ni članov} one { # član } other { # članov }}",
+  "teamAccess": "Skupinski dostop",
+  "view": "Imate dostop za ogled",
+  "moreInfo": "Več informacij"
+}

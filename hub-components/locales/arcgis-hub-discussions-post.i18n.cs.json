@@ -1,0 +1,20 @@
+{
+  "posted": "Odesláno do {groupName} pro {channelAccess}",
+  "anonymous": "Anonymní",
+  "noUser": "Žádné uživatelské jméno",
+  "privateUser": "Soukromý člen",
+  "delete": "Odstranit",
+  "edit": "Upravit",
+  "public": "Veřejné",
+  "org": "Moje organizace",
+  "private": "Pouze pro členy",
+  "options": "Možnosti odesílání příspěvků",
+  "numReplies": "Počet odpovědí",
+  "edited": "Upraveno",
+  "error": "Něco se pokazilo",
+  "deleteFailure": "Zkuste prosím svůj příspěvek smazat znovu.",
+  "deleted.title": "Příspěvek odstraněn",
+  "deleted.message": "Tento příspěvek byl odstraněn a nelze jej zobrazit.",
+  "actions.reply": "Odpovědět",
+  "actions.view": "Zobrazit všechny odpovědi"
+}

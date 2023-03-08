@@ -1,0 +1,8 @@
+{
+  "panel.heading": "Filtr lokalizacji",
+  "panel.reset": "Resetuj filtr",
+  "distance.title": "Odległość",
+  "distance.placeholder": "Wprowadź liczbę...",
+  "distance.message": "Wprowadź liczbę, aby rozszerzyć filtrowany obszar.",
+  "units.title": "Jednostki"
+}

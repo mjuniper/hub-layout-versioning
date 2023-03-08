@@ -1,0 +1,16 @@
+{
+  "delete": "削除",
+  "edit": "編集",
+  "options": "ポスト オプション",
+  "noUser": "ユーザー名がありません",
+  "anonymous": "匿名",
+  "privateUser": "プライベート メンバー",
+  "edited": "編集済み",
+  "error": "問題が発生しました",
+  "deleteFailure": "返信の削除をもう一度お試しください。",
+  "deleted.title": "返信が削除されました",
+  "deleted.message": "リンクされている返信は削除されたため、表示できません。",
+  "delete.action": "すべての返信を表示",
+  "replyingTo": "{fullName} に返信しています",
+  "viewPost": "投稿を表示"
+}

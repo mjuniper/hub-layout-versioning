@@ -1,0 +1,20 @@
+{
+  "moreResults": "Daha Fazla Sonuç",
+  "search": "Ara",
+  "filter": "Filtreler",
+  "viewResults": "Sonuçları Görüntüle ({numResults})",
+  "resultsCount": "1 - {pageTotal} / {searchTotal}",
+  "backToTop": "Başa Dön",
+  "facets": {
+    "access": {
+      "private": "Kendim",
+      "shared": "Sahibi ve Gruplar",
+      "org": "Kuruluş",
+      "public": "Genel"
+    }
+  },
+  "layoutOptions": {
+    "list": "Listeyi Görüntüle",
+    "grid": "Gridi Görüntüle"
+  }
+}

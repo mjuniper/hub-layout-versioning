@@ -1,0 +1,20 @@
+{
+  "posted": "Veröffentlicht in {groupName} auf {channelAccess}",
+  "anonymous": "Anonym",
+  "noUser": "Kein Benutzername",
+  "privateUser": "Privates Mitglied",
+  "delete": "Löschen",
+  "edit": "Bearbeiten",
+  "public": "Öffentlich",
+  "org": "Eigene Organisation",
+  "private": "Nur Mitglieder",
+  "options": "Beitragsoptionen",
+  "numReplies": "Anzahl Antworten",
+  "edited": "Bearbeitet",
+  "error": "Ein Fehler ist aufgetreten.",
+  "deleteFailure": "Versuchen Sie erneut, Ihren Beitrag zu löschen.",
+  "deleted.title": "Beitrag gelöscht",
+  "deleted.message": "Dieser Beitrag wurde gelöscht und kann nicht angezeigt werden.",
+  "actions.reply": "Antwort",
+  "actions.view": "Alle Antworten anzeigen"
+}

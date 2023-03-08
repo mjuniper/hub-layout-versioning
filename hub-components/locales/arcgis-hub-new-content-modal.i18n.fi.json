@@ -1,0 +1,42 @@
+{
+  "cancel": "Peruuta",
+  "create": "Luo",
+  "next": "Seuraava",
+  "project": {
+    "form": {
+      "title": "Luo uusi projekti",
+      "description": "Projektit ovat aikasidonnaisia ja tavoitehakuisia"
+    },
+    "describeProject": {
+      "label": "Kuvaile projektia"
+    },
+    "name": {
+      "label": "Nimi"
+    },
+    "summary": {
+      "label": "Tarkoitus",
+      "helperText": "Kerro lyhyesti projektisi tavoitteet."
+    },
+    "description": {
+      "label": "Kuvaus",
+      "helperText": "Kerro, miten projektisi saavuttaa nämä tavoitteet. Sisällytä oleelliset taustatiedot ja odotettavat muutokset projektityöstä."
+    },
+    "setLocation": {
+      "label": "Määritä sijainti"
+    },
+    "statusAndTimeline": {
+      "label": "Tila ja aikajana"
+    },
+    "status": {
+      "label": "Tila",
+      "enum": {
+        "notStarted": "Ei aloitettu",
+        "inProgress": "Käynnissä",
+        "complete": "Valmis"
+      }
+    },
+    "timeline": {
+      "label": "Aikajana"
+    }
+  }
+}

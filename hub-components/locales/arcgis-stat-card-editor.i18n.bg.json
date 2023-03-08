@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Външно представяне",
+  "accordionData": "Данни",
+  "corners": {
+    "label": "Ъгли",
+    "enum": {
+      "round": "Кръг",
+      "square": "Квадрат"
+    }
+  },
+  "dropShadow": {
+    "label": "Поставяне на сянка",
+    "enum": {
+      "heavy": "Силно",
+      "low": "Ниско",
+      "medium": "Средно",
+      "none": "Няма"
+    }
+  },
+  "layout": {
+    "label": "Оформление на статистика",
+    "enum": {
+      "dataViz": "Визуализация на данни",
+      "moreInfo": "Повече информация",
+      "simple": "Пример"
+    }
+  },
+  "popoverTitle": "Изкачащо заглавие",
+  "popoverDescription": "Изкачащо описание",
+  "popoverLogo": "Изкачащо лого",
+  "publisher": "Издател",
+  "showShareIcon": "Активиране на споделяне",
+  "shareableByValue": "Активиране на вграждане",
+  "shareableOnHover": "Активиране на въртенето с помощта на компютърната мишка",
+  "subtitle": "Подзаглавие",
+  "textAlign": "Подравняване на текст",
+  "title": "Заглавие",
+  "titleTooltip": "ToolTip",
+  "trailingText": "Завършващ текст",
+  "unit": "Мерна единица",
+  "unitPosition": {
+    "label": "Позиция на мерна единица",
+    "enum": {
+      "after": "След",
+      "before": "Преди",
+      "below": "Отдолу"
+    }
+  },
+  "value": "Стойност",
+  "valueColor": "Акцентен цвят",
+  "visualInterest": {
+    "label": "Визуален интерес",
+    "enum": {
+      "icon": "Икона",
+      "logo": "Лого",
+      "none": "Няма",
+      "sparkline": "Крива"
+    }
+  }
+}

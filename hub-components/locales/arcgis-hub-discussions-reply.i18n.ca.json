@@ -1,0 +1,16 @@
+{
+  "delete": "Suprimeix",
+  "edit": "Edita",
+  "options": "Opcions de la publicació",
+  "noUser": "Sense nom d'usuari",
+  "anonymous": "Anònim",
+  "privateUser": "Membre privat",
+  "edited": "Editat",
+  "error": "Hi ha hagut algun problema",
+  "deleteFailure": "Torneu a provar de suprimir la resposta.",
+  "deleted.title": "Resposta eliminada",
+  "deleted.message": "La resposta enllaçada s'ha eliminat i no es pot visualitzar.",
+  "delete.action": "Visualitza totes les respostes",
+  "replyingTo": "S'està responent a {fullName}",
+  "viewPost": "Mostra la publicació"
+}

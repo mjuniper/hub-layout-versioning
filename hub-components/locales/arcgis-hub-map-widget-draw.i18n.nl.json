@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filter op dit gebied",
+  "filter.point": "Filter op dit punt",
+  "filter.polyline": "Filter op deze regel",
+  "delete": "Tekening verwijderen",
+  "update": "Tekening bijwerken",
+  "cancel": "Wijzigingen annuleren",
+  "save": "Wijzigingen opslaan",
+  "select": "Selecteren",
+  "point": "Punt neerzetten",
+  "polyline": "Lijn tekenen",
+  "polygon": "Een gebied tekenen",
+  "options": "Tekenopties",
+  "close": "Tekenopties sluiten",
+  "open": "Tekenopties openen",
+  "updating": "Tekening wordt bijgewerkt",
+  "stop": "Tekenen stoppen",
+  "finish": "Updates tekening voltooien"
+}

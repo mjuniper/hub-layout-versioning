@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "外观",
+  "accordionData": "数据",
+  "corners": {
+    "label": "角",
+    "enum": {
+      "round": "圆形",
+      "square": "正方形"
+    }
+  },
+  "dropShadow": {
+    "label": "下拉阴影",
+    "enum": {
+      "heavy": "重",
+      "low": "低",
+      "medium": "中",
+      "none": "无"
+    }
+  },
+  "layout": {
+    "label": "统计数据布局",
+    "enum": {
+      "dataViz": "数据可视化",
+      "moreInfo": "更多信息",
+      "simple": "简单"
+    }
+  },
+  "popoverTitle": "弹出窗口标题",
+  "popoverDescription": "弹出窗口描述",
+  "popoverLogo": "弹出窗口徽标",
+  "publisher": "发布者",
+  "showShareIcon": "启用共享",
+  "shareableByValue": "启用嵌入",
+  "shareableOnHover": "启用悬停",
+  "subtitle": "子标题",
+  "textAlign": "文本对齐方式",
+  "title": "标题",
+  "titleTooltip": "工具提示",
+  "trailingText": "尾随文本",
+  "unit": "单位",
+  "unitPosition": {
+    "label": "单位位置",
+    "enum": {
+      "after": "之后",
+      "before": "之前",
+      "below": "下方"
+    }
+  },
+  "value": "值",
+  "valueColor": "强调颜色",
+  "visualInterest": {
+    "label": "视觉效果",
+    "enum": {
+      "icon": "图标",
+      "logo": "徽标",
+      "none": "无",
+      "sparkline": "迷你图"
+    }
+  }
+}

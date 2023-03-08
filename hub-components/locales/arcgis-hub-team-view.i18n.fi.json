@@ -1,0 +1,11 @@
+{
+  "access-org": "Organisaation tiimi",
+  "access-private": "Yksityinen tiimi",
+  "access-public": "Julkinen tiimi",
+  "dateUpdated": "Päivitetty",
+  "edit": "Sinulla on muokkausoikeudet",
+  "members": "{count, plural, =0 { ei jäseniä} one { # jäsen } other { # jäsentä }}",
+  "teamAccess": "Tiimin käyttöoikeudet",
+  "view": "Sinulla on tarkasteluoikeudet",
+  "moreInfo": "Lisätietoja"
+}

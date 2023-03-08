@@ -1,0 +1,20 @@
+{
+  "posted": "Slået op i {groupName} til {channelAccess}",
+  "anonymous": "Anonym",
+  "noUser": "Intet brugernavn",
+  "privateUser": "Privat medlem",
+  "delete": "Slet",
+  "edit": "Redigér",
+  "public": "Offentlig",
+  "org": "Min organisation",
+  "private": "Kun medlemmer",
+  "options": "Indstillinger for opslag",
+  "numReplies": "Antal svar",
+  "edited": "Redigeret",
+  "error": "Der gik noget galt",
+  "deleteFailure": "Prøv at slette dit opslag igen.",
+  "deleted.title": "Opslag slettet",
+  "deleted.message": "Dette opslag er slettet og kan ikke vises.",
+  "actions.reply": "Svar",
+  "actions.view": "Vis alle svar"
+}

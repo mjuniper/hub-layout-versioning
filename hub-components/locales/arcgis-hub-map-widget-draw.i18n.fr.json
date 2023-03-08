@@ -1,0 +1,19 @@
+{
+  "filter.polygon": "Filtrer sur cette surface",
+  "filter.point": "Filtrer sur ce point",
+  "filter.polyline": "Filtrer sur cette ligne",
+  "delete": "Supprimer le dessin",
+  "update": "Mettre à jour le dessin",
+  "cancel": "Annuler les modifications",
+  "save": "Enregistrer les modifications",
+  "select": "Sélectionner",
+  "point": "Déposer un point",
+  "polyline": "Dessiner une ligne",
+  "polygon": "Dessiner une zone",
+  "options": "Options de dessin",
+  "close": "Fermer les options de dessin",
+  "open": "Ouvrir les options de dessin",
+  "updating": "Mise à jour du dessin",
+  "stop": "Arrêter le dessin",
+  "finish": "Terminer les mises à jour du dessin"
+}

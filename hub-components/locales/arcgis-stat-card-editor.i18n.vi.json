@@ -1,0 +1,60 @@
+{
+  "accordionAppearance": "Giao diện",
+  "accordionData": "Dữ liệu",
+  "corners": {
+    "label": "Góc",
+    "enum": {
+      "round": "Hình tròn",
+      "square": "Square (Bình phương)"
+    }
+  },
+  "dropShadow": {
+    "label": "Đổ Bóng",
+    "enum": {
+      "heavy": "Mạnh",
+      "low": "Thấp",
+      "medium": "Trung bình",
+      "none": "Không có"
+    }
+  },
+  "layout": {
+    "label": "Bố cục Thống kê",
+    "enum": {
+      "dataViz": "Trực quan hóa Dữ liệu",
+      "moreInfo": "Thông tin Khác",
+      "simple": "Đơn giản"
+    }
+  },
+  "popoverTitle": "Tiêu đề Bật lên",
+  "popoverDescription": "Thông tin mô tả Bật lên",
+  "popoverLogo": "Logo Bật lên",
+  "publisher": "Publisher",
+  "showShareIcon": "Cho phép Chia sẻ",
+  "shareableByValue": "Bật Nội dung nhúng",
+  "shareableOnHover": "Cho phép Di chuột",
+  "subtitle": "Phụ đề",
+  "textAlign": "Căn chỉnh Văn bản",
+  "title": "Tiêu đề",
+  "titleTooltip": "Chú giải công cụ",
+  "trailingText": "Văn bản cuối câu",
+  "unit": "Đơn vị",
+  "unitPosition": {
+    "label": "Vị trí Đơn vị",
+    "enum": {
+      "after": "Sau",
+      "before": "Trước",
+      "below": "Ở dưới"
+    }
+  },
+  "value": "Giá trị",
+  "valueColor": "Màu Chủ đề",
+  "visualInterest": {
+    "label": "Sự thu hút về mặt trực quan",
+    "enum": {
+      "icon": "Biểu tượng",
+      "logo": "Logo",
+      "none": "Không có",
+      "sparkline": "Biểu đồ đường nhỏ"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "delete": "Törlés",
+  "edit": "Szerkesztés",
+  "options": "Közzététel beállításai",
+  "noUser": "Nincs felhasználónév",
+  "anonymous": "Névtelen",
+  "privateUser": "Privát tag",
+  "edited": "Szerkesztve",
+  "error": "Hiba történt",
+  "deleteFailure": "Próbálja meg újra törölni a válaszát.",
+  "deleted.title": "Válasz törölve",
+  "deleted.message": "A hivatkozott válasz törölve lett, és nem jeleníthető meg.",
+  "delete.action": "Összes válasz megjelenítése",
+  "replyingTo": "Válasz: {fullName}",
+  "viewPost": "Közzététel megtekintése"
+}
